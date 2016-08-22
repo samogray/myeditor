@@ -1,0 +1,88 @@
+<svg id="disc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36.5" height="33" viewBox="0 0 36.5 33">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: #1071e9;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #1071e9;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        filter: url(#filter-3);
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        filter: url(#filter-4);
+      }
+
+      .cls-5 {
+        filter: url(#filter-5);
+      }
+
+      .cls-6 {
+        filter: url(#filter-6);
+      }
+    </style>
+    <filter id="filter" x="0.5" y="0.5" width="8" height="8" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#222"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="0.5" y="12.5" width="8" height="8" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#222"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="0.5" y="24.5" width="8" height="8" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#222"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="1534" y="567" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-5" x="1534" y="579" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-6" x="1534" y="591" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: #1071e9; filter: url(#filter)">
+    <circle id="Еліпс_940_копія_3" data-name="Еліпс 940 копія 3" class="cls-1" cx="4.5" cy="4.5" r="4" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Еліпс_940_копія_3" style="stroke: #1071e9; filter: none; fill: none"/>
+  <g style="fill: #1071e9; filter: url(#filter-2)">
+    <circle id="Еліпс_940_копія_3-2" data-name="Еліпс 940 копія 3" class="cls-2" cx="4.5" cy="16.5" r="4" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Еліпс_940_копія_3-2" style="stroke: #1071e9; filter: none; fill: none"/>
+  <g style="fill: #1071e9; filter: url(#filter-3)">
+    <circle id="Еліпс_940_копія_3-3" data-name="Еліпс 940 копія 3" class="cls-3" cx="4.5" cy="28.5" r="4" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Еліпс_940_копія_3-3" style="stroke: #1071e9; filter: none; fill: none"/>
+  <path id="Фігура_818_копія_6" data-name="Фігура 818 копія 6" class="cls-4" d="M1534,570v-3h24v3h-24Z" transform="translate(-1521.5 -563.5)"/>
+  <path id="Фігура_818_копія_6-2" data-name="Фігура 818 копія 6" class="cls-5" d="M1534,582v-3h24v3h-24Z" transform="translate(-1521.5 -563.5)"/>
+  <path id="Фігура_818_копія_6-3" data-name="Фігура 818 копія 6" class="cls-6" d="M1534,594v-3h24v3h-24Z" transform="translate(-1521.5 -563.5)"/>
+</svg>

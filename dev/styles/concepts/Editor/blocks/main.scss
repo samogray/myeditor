@@ -1,0 +1,22 @@
+.main {
+  position: relative;
+  &__page {
+    width: 100%;
+    box-shadow: 0 0 43px rgba(0, 0, 0, 0.18);
+    @include respondTo(md) {
+      box-shadow: 0 3px 22px rgba(0, 0, 0, 0.12);
+    }
+  }
+  &__control {
+    width: 102px;
+    background-color: #353535;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+  }
+}
+
+iframe {
+  width: 100%;
+}

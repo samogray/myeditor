@@ -1,0 +1,92 @@
+@import "../../bower/susy/sass/susy";
+/*@import "~susy/sass/susy";
+*/
+
+
+$susy: (
+        columns: 12,
+        gutters: 1/4,
+        math: fluid,
+        output: float,
+        gutter-position: inside,
+);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10px;
+  @include susy-clearfix;
+
+  @include respondTo(desktop) {
+    max-width: 1200px;
+    padding: 0;
+  }
+}
+
+.container-fluide {
+  @include container(100%);
+  display: flex;
+  align-items: stretch;
+  min-height: 1000px;
+  /*height: auto;*/
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.col3 {
+  @include span(4 of 12);
+  transition: all .2s ease-in-out;
+
+  @include respondTo(tablet) {
+    @include span(6 of 12);
+  }
+
+  @include respondTo(smartphone) {
+    @include span(12 of 12);
+  }
+
+}
+
+.col6 {
+  @include span(6 of 12);
+}
+
+.nopadding {
+  @include respondTo(desktop) {
+    padding: 0;
+  }
+}
+
+.nopadding-r {
+  padding-right: 0;
+}
+
+.nopadding-l {
+
+  @include respondTo(desktop) {
+    padding-left: 0;
+  }
+
+}
+
+.fwrap {
+  display: flex;
+  position: relative;
+  z-index: 5;
+
+  &_section {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 680px;
+  }
+}
+
+.push-col6  {
+  @include push(6 of 12);
+}
+
+.row {
+  width:100%;
+  @include susy-clearfix;
+}

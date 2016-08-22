@@ -1,0 +1,135 @@
+.add-new-page {
+  .label {
+    float:right;
+    text-decoration:none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .add {
+    @include svg('add.svg','#{$color}', 11px, 11px, $mr:5px);
+    @include animation;
+    &:hover {
+      @include svg('add.svg','#{$color}', 11px, 11px, $mr:5px);
+    }
+  }
+}
+.add-pages{
+
+  &__title {
+    color: #646464;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 45px;
+    text-decoration: none;
+    @include susy-clearfix;
+    border:none;
+    margin-top: 8px;
+
+    .add {
+      @include svg('add.svg','#{$color}', 11px, 11px, $mr:3px);
+      @include animation;
+      &:hover {
+        @include svg('add.svg','#{$color}', 11px, 11px, $mr:3px);
+      }
+    }
+
+    &:hover {
+      color: #646464;
+    }
+
+    .label_blue, .label_red {
+      float: right;
+      margin-top: 16px;
+      padding-left:0;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      /*.add {
+        margin-top: 0;
+        float:none;
+        background: svg-load('../img/add.svg', 'fill:#008eff');
+      }*/
+    }
+  }
+
+  &__name {
+    padding-bottom: 3px;
+    position: relative;
+    z-index: 5;
+    box-sizing: border-box;
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+    border-bottom: 1px solid $border;
+    @include susy-clearfix;
+    input, input[disabled] {
+
+      border: none;
+      background: transparent;
+      max-width: 50%;
+      @include animation;
+    }
+  }
+
+  &__link{
+    color: #c1c1c1;
+    position: relative;z-index: 5;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 34px;
+    @include animation;
+  }
+
+  &__edit {
+    float: right;
+    padding-top: 3px;
+    opacity: 0;
+    @include animation;
+
+
+    .close-ico {
+      @include svg('close.svg','#ffffff', 15px, 15px, $mr:0);
+    }
+    li {
+      display: inline-block;
+      &:not(:last-child){
+        margin-right: 3px;
+      }
+    }
+  }
+}
+.page {
+  &_sub {
+    @include susy-clearfix;
+    .panel {
+      width: 90%;
+      float: right;
+    }
+  }
+}
+
+.input {
+
+  &_add {
+    width: 100%;
+    height: 38px;
+    background-color:$body;
+    padding: 7px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border:none;
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
+  }
+}
+

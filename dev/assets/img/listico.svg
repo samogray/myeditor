@@ -1,0 +1,22 @@
+<svg id="listico" xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 23.528px;
+        fill: #fff;
+        font-family: "PT Sans";
+      }
+
+      .cls-2 {
+        fill: #1071e9;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <text id="_1." data-name="1." class="cls-1" transform="translate(-0.173 8.48) scale(0.461)">1.</text>
+  <text id="_2." data-name="2." class="cls-1" transform="translate(-0.173 20.48) scale(0.461)">2.</text>
+  <text id="_3." data-name="3." class="cls-1" transform="translate(-0.173 32.481) scale(0.461)">3.</text>
+  <path id="Фігура_818" data-name="Фігура 818" class="cls-2" d="M560,570v-3h24v3H560Z" transform="translate(-549 -564)"/>
+  <path id="Фігура_818_копія" data-name="Фігура 818 копія" class="cls-2" d="M560,582v-3h24v3H560Z" transform="translate(-549 -564)"/>
+  <path id="Фігура_818_копія_2" data-name="Фігура 818 копія 2" class="cls-2" d="M560,594v-3h24v3H560Z" transform="translate(-549 -564)"/>
+</svg>

@@ -1,0 +1,50 @@
+.new-block {
+  .btn {
+    padding: 0;
+  }
+li {
+  @include span(2 of 10);
+}
+}
+
+.option-btn {
+  @include susy-clearfix;
+  &_adde {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    max-width:100%px;
+    border-bottom: 1px solid $border;
+    li {
+      margin-right: 0;
+      @include span(3 of 12);
+    }
+
+    .btn_adde {
+      .ico {
+        margin-bottom: 8px;
+      }
+      &:hover .image  {
+        background: svg-load('#{$img-path}picture.svg', 'fill:#00A7FF');
+      }
+      &:hover .padding-ico {
+        background: svg-load('#{$img-path}fit.svg', 'fill:#00A7FF');
+      }
+
+      &:hover .chart-ico {
+        background: svg-load('#{$img-path}chart.svg', 'fill:#00A7FF');
+      }
+      &:hover .star-ico {
+        background: svg-load('#{$img-path}star.svg', 'fill:#00A7FF');
+      }
+      &:hover .line-ico {
+        background: svg-load('#{$img-path}resize.svg', 'fill:#00A7FF');
+      }
+      &:hover .list-ico {
+        background: svg-load('#{$img-path}list.svg', 'fill:#00A7FF');
+      }
+    }
+
+
+  }
+}

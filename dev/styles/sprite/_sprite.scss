@@ -1,0 +1,114 @@
+// Icons from directory ""
+%icon {
+  background-repeat: no-repeat
+}
+.icon-arrow-ico,
+.icon-arrow-ico\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 0;
+}
+.icon-arrow-ico-dims {
+  width: 7px;
+  height: 13px;
+}
+.icon-facebook-ico,
+.icon-facebook-ico\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 -13px;
+}
+.icon-facebook-ico-dims {
+  width: 11px;
+  height: 21px;
+}
+.icon-icon_baterry,
+.icon-icon_baterry\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 -34px;
+}
+.icon-icon_baterry-dims {
+  width: 16px;
+  height: 30px;
+}
+.icon-icon_blutoth,
+.icon-icon_blutoth\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 -64px;
+}
+.icon-icon_blutoth-dims {
+  width: 26px;
+  height: 30px;
+}
+.icon-icon_hand,
+.icon-icon_hand\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 -94px;
+}
+.icon-icon_hand-dims {
+  width: 21px;
+  height: 31px;
+}
+.icon-icon_time,
+.icon-icon_time\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 -125px;
+}
+.icon-icon_time-dims {
+  width: 30px;
+  height: 30px;
+}
+.icon-kickstarter-ico,
+.icon-kickstarter-ico\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 -155px;
+}
+.icon-kickstarter-ico-dims {
+  width: 19px;
+  height: 22px;
+}
+.icon-linkedin-ico,
+.icon-linkedin-ico\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 -177px;
+}
+.icon-linkedin-ico-dims {
+  width: 16px;
+  height: 16px;
+}
+.icon-play-icon-big,
+.icon-play-icon-big\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 -193px;
+}
+.icon-play-icon-big-dims {
+  width: 90px;
+  height: 90px;
+}
+.icon-play-icon,
+.icon-play-icon\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 -283px;
+}
+.icon-play-icon-dims {
+  width: 24px;
+  height: 24px;
+}
+.icon-twitter-ico,
+.icon-twitter-ico\:regular {
+  @extend %icon;
+  background-image: url('icons.svg');
+  background-position: 0 -307px;
+}
+.icon-twitter-ico-dims {
+  width: 21px;
+  height: 16px;
+}

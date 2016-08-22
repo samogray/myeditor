@@ -1,0 +1,20 @@
+<svg id="circle" xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #1071e9;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Еліпс_940" data-name="Еліпс 940" class="cls-1" cx="4" cy="4" r="4"/>
+  <circle id="Еліпс_940_копія" data-name="Еліпс 940 копія" class="cls-1" cx="4" cy="16" r="4"/>
+  <circle id="Еліпс_940_копія_2" data-name="Еліпс 940 копія 2" class="cls-1" cx="4" cy="28" r="4"/>
+  <path id="Фігура_818_копія_6" data-name="Фігура 818 копія 6" class="cls-2" d="M1470,570v-3h24v3h-24Z" transform="translate(-1459 -564)"/>
+  <path id="Фігура_818_копія_6-2" data-name="Фігура 818 копія 6" class="cls-2" d="M1470,582v-3h24v3h-24Z" transform="translate(-1459 -564)"/>
+  <path id="Фігура_818_копія_6-3" data-name="Фігура 818 копія 6" class="cls-2" d="M1470,594v-3h24v3h-24Z" transform="translate(-1459 -564)"/>
+</svg>

@@ -1,0 +1,230 @@
+/*
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+@mixin triangle($direction, $size: 6px, $color: #222){
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0; width: 0;
+  @if ($direction == 'up'){
+    border-bottom: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @else if ($direction == 'down'){
+    border-top: $size solid $color;
+    border-left:$size solid transparent;
+    border-right:$size solid transparent;
+  }
+  @else if ($direction == 'left'){
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  }
+  @else if ($direction == 'right'){
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  }
+}
+
+// Breakpoints for each query
+$smartphone: 480px;
+$tabletPortrait: 780px;
+$stablet:600px;
+$tabletLandscape: 991px;
+$desktop: 1860px;
+$largeScreen: 2199px;
+$xlargeScreen: 2200px;
+@mixin respondTo($media) {
+  @if $media == smartphone {
+    @media (max-width: $smartphone) { @content; }
+  }
+  @else if $media == tablet {
+    @media (max-width: $tabletPortrait){ @content; }
+  }
+  @else if $media == stablet {
+    @media (max-width: $stablet){ @content; }
+  }
+  @else if $media == md {
+    @media (max-width: $desktop) { @content; }
+  }
+  @else if $media == sd {
+    @media (max-width: $tabletLandscape) { @content; }
+  }
+  @else if $media == lg {
+    @media (max-width: $largeScreen) { @content; }
+  }
+  @else if $media == xlg {
+    @media (min-width: $xlargeScreen) { @content; }
+  }
+}
+
+@mixin svg($file, $fill, $w:22px , $h:22px, $mr:5px){
+  &:before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    margin-right: $mr;
+    width:$w;
+    height:$h;
+    background: svg-load('#{$img-path}#{$file}', 'fill:#{$fill}');
+    //@include animation;
+  }
+
+}
+
+
+/*Ghost Vertical Align*/
+@mixin ghostVerticalAlign(){
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; width: .1px;
+  }
+}
+@mixin gradient (){
+
+}
+@mixin  textgradient {
+
+
+}
+/*Truncate Text*/
+
+@mixin truncateText($overflow: ellipsis){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: $overflow; // values are: clip, ellipsis, or a string
+}
+/*Alerted*/
+@mixin alerted() {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 6px; right: 6px;
+    height: 8px; width: 8px;
+    @include border-radius(10px);
+    background-color: gold;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    height: 20px; width: 20px;
+    @include border-radius(20px);
+    background-color: transparent;
+    border: solid gold;
+    border-width: 2px; // animates
+    @include box-sizing(border-box);
+    @include animation($name: alertMe);
+  }
+}
+
+@keyframes alertMe {
+  // -vendor prefixes omitted for brevity, but should be used in production
+  from {
+    border-width: 3px;
+    border-color: gold;
+  }
+  to {
+    border-width: 0;
+    border-color: rgba(gold, .1);
+  }
+}
+
+/*Tooltips*/
+
+@mixin hui_tooltip($content: attr(data-tooltip), $direction: top) {
+  position: relative;
+
+  &:before, &:after {
+    display: none;
+    z-index: 98;
+    @include fadeInUp($duration: .2s);
+  }
+  &:hover {
+    &:after {
+      content: $content;
+      position: absolute;
+      height: 20px;
+      text-shadow:none;
+      padding: 2px 12px;
+      display: block;
+      line-height: normal;
+      z-index: 200;
+      font-size: 13px;
+      white-space: nowrap;
+      border-radius: 3px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 1)
+    }
+    @if ($direction == 'top'){
+      &:before {
+        @include triangle(down, 6px, rgba(0, 0, 0, 1));
+        right: 29px;
+        margin-top: 0;
+        left: 50%;
+        top: -3px;
+        margin-left: -10px;
+      }
+      &:after {
+        top: -26px;
+        left: 50%;
+        margin-left: -37px;
+      }
+    }
+    @if ($direction == 'right'){
+      &:before {
+        position: absolute;
+        @include triangle(right, 6px, rgba(0, 0, 0,1));
+        top: 5px;
+        margin-top: 0;
+        left: 2px;
+        margin-left: -10px;
+        @include fadeInRight($duration: .1s);
+      }
+      &:after {
+        font-weight: bold;
+        top: 50%;
+        margin-top: -13px;
+        right: 100%;
+        margin-right: 7px;
+        margin-left: -31px;
+        @include fadeInRight($duration: .2s);
+      }
+    }
+    @else if ($direction == 'bottom'){
+      &:before {
+        @include triangle(up, 6px, #222);
+
+       margin-top: 0;
+        top: -2px;
+        left: 23%;
+      }
+      &:after {
+        bottom: -28px;
+        left: 47%; margin-left: -20px;
+      }
+    }
+  }
+}
+
+@mixin button ($bc:white, $padding: 6px 12px, $color: #222, $fsz:14px, $br:4px){
+  display: inline-block;
+  background-color: $bc;
+  padding: $padding;
+  text-align: center;
+  font-size: $fsz;
+  font-family: 'PT Sans', sans-serif;
+  color:$color;
+  border-radius: $br;
+  text-decoration: none;
+
+}
+
+@mixin animation() {
+  transition: all .1s linear;
+}

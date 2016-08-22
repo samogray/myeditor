@@ -1,0 +1,28 @@
+
+.gradient  .rc-slider {
+  background-image: linear-gradient(to right, #cd1bdd 0%, #127cff 100%);
+  height:1px;
+}
+.gradient  .rc-slider-track {
+  background-image: linear-gradient(to right, #cd1bdd 0%, #127cff 100%);
+  height:1px;
+}
+.gradient .rc-slider {
+  width: 100%;
+}
+
+.rc-slider {
+  background-color: #127cff;
+  height:1px;
+  width: 50%;
+}
+.rc-slider-track {
+  background-color: #127cff;
+  height:1px;
+}
+
+.rc-slider-handle {
+  margin-top: -7px;
+  border: none;
+  background-color:#127cff;
+}

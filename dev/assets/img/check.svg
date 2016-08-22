@@ -1,0 +1,43 @@
+<svg id="check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="31" viewBox="0 0 37 31">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #1071e9;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        filter: url(#filter-2);
+      }
+
+      .cls-4 {
+        filter: url(#filter-3);
+      }
+    </style>
+    <filter id="filter" x="1470" y="628" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="1470" y="640" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="1470" y="652" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Фігура_932" data-name="Фігура 932" class="cls-1" d="M1459.52,629.148l1.22,2.426s1.98-4.93,5.11-6.574a6.643,6.643,0,0,0,.15,3.443c-1.37.314-4.19,3.835-5.11,5.557a10.635,10.635,0,0,0-3.89-3.287Z" transform="translate(-1457 -625)"/>
+  <path id="Фігура_932_копія" data-name="Фігура 932 копія" class="cls-1" d="M1459.52,641.148l1.22,2.426s1.98-4.93,5.11-6.574a6.643,6.643,0,0,0,.15,3.443c-1.37.314-4.19,3.835-5.11,5.557a10.635,10.635,0,0,0-3.89-3.287Z" transform="translate(-1457 -625)"/>
+  <path id="Фігура_932_копія_2" data-name="Фігура 932 копія 2" class="cls-1" d="M1460.52,651.148l1.22,2.426s1.98-4.93,5.11-6.574a6.643,6.643,0,0,0,.15,3.443c-1.37.313-4.19,3.835-5.11,5.557a10.625,10.625,0,0,0-3.89-3.287Z" transform="translate(-1457 -625)"/>
+  <path id="Фігура_818_копія_6" data-name="Фігура 818 копія 6" class="cls-2" d="M1470,631v-3h24v3h-24Z" transform="translate(-1457 -625)"/>
+  <path id="Фігура_818_копія_6-2" data-name="Фігура 818 копія 6" class="cls-3" d="M1470,643v-3h24v3h-24Z" transform="translate(-1457 -625)"/>
+  <path id="Фігура_818_копія_6-3" data-name="Фігура 818 копія 6" class="cls-4" d="M1470,655v-3h24v3h-24Z" transform="translate(-1457 -625)"/>
+</svg>

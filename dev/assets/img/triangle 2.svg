@@ -1,0 +1,43 @@
+<svg id="triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="32" viewBox="0 0 34 32">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #1071e9;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        filter: url(#filter-3);
+      }
+    </style>
+    <filter id="filter" x="1532" y="628" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="1532" y="640" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="1532" y="652" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Фігура_818_копія_6" data-name="Фігура 818 копія 6" class="cls-1" d="M1532,631v-3h24v3h-24Z" transform="translate(-1522 -625)"/>
+  <path id="Фігура_818_копія_6-2" data-name="Фігура 818 копія 6" class="cls-2" d="M1532,643v-3h24v3h-24Z" transform="translate(-1522 -625)"/>
+  <path id="Фігура_818_копія_6-3" data-name="Фігура 818 копія 6" class="cls-3" d="M1532,655v-3h24v3h-24Z" transform="translate(-1522 -625)"/>
+  <path id="Фігура_935" data-name="Фігура 935" class="cls-4" d="M1529,629l-7-4v8l7-4" transform="translate(-1522 -625)"/>
+  <path id="Фігура_935_копія" data-name="Фігура 935 копія" class="cls-4" d="M1529,641l-7-4v8l7-4" transform="translate(-1522 -625)"/>
+  <path id="Фігура_935_копія_2" data-name="Фігура 935 копія 2" class="cls-4" d="M1529,653l-7-4v8l7-4" transform="translate(-1522 -625)"/>
+</svg>

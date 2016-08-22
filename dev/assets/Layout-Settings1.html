@@ -1,0 +1,274 @@
+<!--Layout Settings-->
+<div class="function-layout function-layout_settings">
+    <div class="panel-tabs">
+        <a href="#0" class="panel-tabs__tab">General</a>
+        <a href="#0" class="panel-tabs__tab active" data-badge="5">Design</a>
+        <a href="#0" class="panel-tabs__tab" data-badge="10">Analytics</a>
+    </div>
+    <div class="tab-content tab-content_general" style="display: block">
+        <form>
+            <div class="layout__title">Site Name</div>
+            <input type="text" class="input input_normal"/>
+            <div class="layout__title">Site Address (URL)</div>
+            <ul class="adress-opt">
+                <li class="adress-opt__item">
+                    <input class="radio" id="radio-1" name="adress" type="radio" checked>
+                    <label tabindex="4" for="radio-1" class="radio-label"><span>Use Weblium Subdomain</span>
+                                <span class="adress-opt__content">
+                                    <span class="group group-btn_flex">
+                                        <input type="text" class="input_normal input">
+                                        <span class="label label_grey">.weblium.com</span>
+                                    </span>
+                                    <span class="group group-btn_flex">
+                                        <div class="label label_red">Sorry, but this subdomain is already taken.</div>
+                                    </span>
+                                </span>
+                    </label>
+
+                </li>
+                <li class="adress-opt__item">
+                    <input class="radio" id="radio-2" name="adress" type="radio">
+                    <label tabindex="5" for="radio-2"
+                           class="radio-label"><span>I already have my Own Domain</span>
+                            <span class="adress-opt__content">
+                                <span class="group group-btn_flex">
+                                    <span class="panel">
+                                        <p class="label_grey">
+                                            You need to Update your Website to Premium to connect personal Domain Name.
+                                        </p>
+                                        <a href="#0" class="btn btn_premium"><i class="logo-wh"></i>Update to
+                                            Premium</a>
+                                    </span>
+                                </span>
+                            </span>
+                    </label>
+
+                </li>
+                <li class="adress-opt__item">
+                    <input class="radio" id="radio-3" name="adress" type="radio">
+                    <label tabindex="5" for="radio-3" class="radio-label"><span>Buy New Domain Name</span>
+                            <span class="adress-opt__content">
+                                <span class="group group-btn_flex">
+                                    <span class="input-wrp">
+                                        <input type="text" class="input input_normal" placeholder="Search new domain "/>
+                                        <i class="ico search-ico"></i>
+                                    </span>
+                                </span>
+                            </span>
+                    </label>
+                </li>
+            </ul>
+            <div class="layout__title">Site Admin Email</div>
+            <ul class="email-opt">
+                <li class="email-opt__item">
+                    <input type="text" class="input input_normal"/>
+                    <a href="#0" class="ico close-ico"></a>
+                </li>
+                <li class="email-opt__item">
+                    <input type="text" class="input input_normal" value="email"/>
+                    <a href="#0" class="ico close-ico"></a>
+                </li>
+            </ul>
+            <a href="#0" class="btn btn_link-add">+ Add More</a>
+            <div class="layout__title">Site favicon</div>
+            <div class="input input_normal vcenter favicon">
+                <img src="img/logo.png" alt="favicon">
+                <span class="label_grey">agency.weblium.com</span>
+                <a href="#0" class="btn btn_link-add">Change</a>
+            </div>
+            <div class="layout__title">Maintenance Mode</div>
+            <div class="group-btn group-btn_flex">
+                <input type="checkbox" name="maintenance" id="maintenance" class="checkbox">
+                <label for="maintenance" class="checkbox-label"></label>
+                <div class="label label_normal label_grey">Enable Maintenance Mode</div>
+            </div>
+        </form>
+    </div>
+    <!---->
+    <div class="tab-content tab-content_design" style="display: block">
+        <div class="option-box option-box_layout">
+            <div class="box-drop">
+                <a href="#0" class="box-drop__open active">Site Layout <span
+                        class="ico triangle"></span></a>
+                <div class="box-drop__content box-drop__content_screen active">
+                    <input class="radio" id="full" name="layout" type="radio" checked>
+                    <label tabindex="4" for="full" class="radio-label fullscreen">Fullscreen</label>
+                    <input class="radio" id="boxed" name="layout" type="radio">
+                    <label tabindex="5" for="boxed" class="radio-label boxed">Boxed</label>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="option-box option-box_drdp">
+            <div class="box-drop">
+                <a href="#0" class="box-drop__open active">Drag&Drop Colors<span
+                        class="ico triangle"></span></a>
+                <div class="box-drop__content active">
+                    <div class="label label_option">Drag&Drop a specific colour to any location on your
+                        website.
+                    </div>
+                    <ul class="color-palette">
+                        <li class="color-palette__item"><span class="color-palette__color cf4f4f4"></span>#f4f4f4
+                        </li>
+                        <li class="color-palette__item"><span class="color-palette__color cf11e5e"></span>#f11e5e
+                        </li>
+                        <li class="color-palette__item"><span class="color-palette__color c3ad9ff"></span>#3ad9ff
+                        </li>
+                        <li class="color-palette__item"><span class="color-palette__color c07172c"></span>#07172c
+                        </li>
+                        <li class="color-palette__item"><span class="color-palette__color cb2c100"></span>#b2c100
+                        </li>
+                        <li class="color-palette__item"><span class="color-palette__color c18646d"></span>#18646d
+                        </li>
+                        <li class="color-palette__item"><span class="color-palette__color c2286bc"></span>#2286bc
+                        </li>
+                        <li class="color-palette__item"><span class="color-palette__color ce74803"></span>#e74803
+                        </li>
+                    </ul>
+                    <a href="#0" class="btn btn_link-add">+ Add New</a>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="option-box option-box_color-theme">
+            <div class="box-drop">
+                <a href="#0" class="box-drop__open active">Current Color Theme<span
+                        class="ico triangle"></span></a>
+                <div class="box-drop__content active">
+                    <div class="label label_option">Click colors below to edit them and it will be applied
+                        to all website.
+                    </div>
+                    <ul class="add-theme">
+                        <li class="add-theme__item">
+                            <a href="#0" class="color-palette__item"><span
+                                    class="color-palette__color cf4f4f4"></span>#f4f4f4</a>
+                            Background Color
+                        </li>
+                        <li class="add-theme__item">
+                            <a href="#0" class="color-palette__item"><span
+                                    class="color-palette__color cb2c100"></span>#f4f4f4</a>
+                            Primary Accent Color
+                        </li>
+                        <li class="add-theme__item">
+                            <a href="#0" class="color-palette__item"><span
+                                    class="color-palette__color c18646d"></span>#f4f4f4</a>
+                            Secondary Accent Color
+                        </li>
+                        <li class="add-theme__item">
+                            <a href="#0" class="color-palette__item"><span
+                                    class="color-palette__color ce74803"></span>#f4f4f4</a>
+                            Main Text Color
+                        </li>
+                    </ul>
+                    <a href="#0" class="btn btn_link-add">+ More Options</a>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="option-box option-box_color-theme">
+            <div class="box-drop">
+                <a href="#0" class="box-drop__open active">Color Themes Gallery<span
+                        class="ico triangle"></span></a>
+                <div class="box-drop__content active">
+                    <div class="label label_option">Click colors below to edit them and it will be applied
+                        to all website.
+                    </div>
+                    <ul class="color-palette color-palette_theme">
+                        <li>
+                            <input type="radio" checked class="radio-theme" id="theme-1" name="color-theme">
+                            <label for="theme-1" title="palette-theme__item"
+                                   class="palette-theme__item active">
+                                <div class="palettecolordivcon">
+                                    <div class="palettecolordiv" style="background-color:#5b8a81"></div>
+                                    <div class="palettecolordiv" style="background-color:#7fb5a5"></div>
+                                    <div class="palettecolordiv" style="background-color:#4f606c"></div>
+                                    <div class="palettecolordiv" style="background-color:#77818a"></div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" checked class="radio-theme" id="theme-2" name="color-theme">
+                            <label for="theme-2" title="palette-theme__item"
+                                   class="palette-theme__item active">
+                                <div class="palettecolordivcon">
+                                    <div class="palettecolordiv" style="background-color:#5b8a81"></div>
+                                    <div class="palettecolordiv" style="background-color:#7fb5a5"></div>
+                                    <div class="palettecolordiv" style="background-color:#4f606c"></div>
+                                    <div class="palettecolordiv" style="background-color:#77818a"></div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" checked class="radio-theme" id="theme-3" name="color-theme">
+                            <label for="theme-3" title="palette-theme__item"
+                                   class="palette-theme__item active">
+                                <div class="palettecolordivcon">
+                                    <div class="palettecolordiv" style="background-color:#5b8a81"></div>
+                                    <div class="palettecolordiv" style="background-color:#7fb5a5"></div>
+                                    <div class="palettecolordiv" style="background-color:#4f606c"></div>
+                                    <div class="palettecolordiv" style="background-color:#77818a"></div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" checked class="radio-theme" id="theme-4" name="color-theme">
+                            <label for="theme-4" title="palette-theme__item"
+                                   class="palette-theme__item active">
+                                <div class="palettecolordivcon">
+                                    <div class="palettecolordiv" style="background-color:#9aff2a"></div>
+                                    <div class="palettecolordiv" style="background-color:#7fb5a5"></div>
+                                    <div class="palettecolordiv" style="background-color:#ff6962"></div>
+                                    <div class="palettecolordiv" style="background-color:#77818a"></div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" checked class="radio-theme" id="theme-5" name="color-theme">
+                            <label for="theme-5" title="palette-theme__item" class="palette-theme__item">
+                                <div class="palettecolordivcon">
+                                    <div class="palettecolordiv" style="background-color:#5b8a81"></div>
+                                    <div class="palettecolordiv" style="background-color:#b5201a"></div>
+                                    <div class="palettecolordiv" style="background-color:#4f606c"></div>
+                                    <div class="palettecolordiv" style="background-color:#ffba50"></div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" checked class="radio-theme" id="theme-6" name="color-theme">
+                            <label for="theme-6" title="palette-theme__item"
+                                   class="palette-theme__item active">
+                                <div class="palettecolordivcon">
+                                    <div class="palettecolordiv" style="background-color:#5b8a81"></div>
+                                    <div class="palettecolordiv" style="background-color:#07fff5"></div>
+                                    <div class="palettecolordiv" style="background-color:#ffe517"></div>
+                                    <div class="palettecolordiv" style="background-color:#dbc8ff"></div>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                    <a href="#0" class="btn btn_link-add">+ Add New</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content tab-content_analytics" style="display: block">
+        <form action="#0">
+            <div class="box-drop">
+                <a href="#0" class="box-drop__open active">Google Analytics ID<span
+                        class="ico triangle"></span></a>
+                <div class="box-drop__content active">
+                    <input type="text" class="input_normal" placeholder="for example: UA-3454677">
+                </div>
+            </div>
+            <div class="box-drop">
+                <a href="#0" class="box-drop__open active">Facebook Pixel ID<span
+                        class="ico triangle"></span></a>
+                <div class="box-drop__content active">
+                    <input type="text" class="input_normal" placeholder="for example: e45746758">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--END Layout Settings-->
+</div>

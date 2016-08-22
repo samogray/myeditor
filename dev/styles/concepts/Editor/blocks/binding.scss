@@ -1,0 +1,160 @@
+.binding {
+  &__img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 100%;
+    max-height: 212px;
+    background-image: url('../img/binding.jpg');
+    background-size: cover;
+    background-position: center;
+    img {
+      width: 100%;
+      max-height: 212px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  }
+
+  &__control {
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: normal;
+    height: 55px;
+    position: relative;
+    .label_blue {
+      text-decoration: none;
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+
+      &:hover {
+        color: $color;
+      }
+      &:hover .locked-ico {
+        background: svg-load('../img/locked-ico.svg', 'fill:#00A7FF');
+      }
+      &:hover .padlock {
+        background: svg-load('../img/padlock.svg', 'fill:#00A7FF');
+      }
+
+      .locked-ico, .padlock {
+        float: left;
+        margin-top: -4px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+}
+
+.panel {
+
+  &_binding {
+    padding: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 28px;
+  }
+}
+
+.box-drop__open {
+  &_bind {
+    color: $border-dark;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    height: auto;
+
+    position: relative;
+    padding: 0;
+    padding-left: 22px;
+    line-height: 45px;
+    text-decoration: none;
+
+    &:hover {
+      color:$color;
+    }
+    .ico {
+      margin-top: 0;
+    }
+    .ico-drop {
+      position: absolute;
+      left: -5px;
+      top: 11px;
+      width: 22px;
+      height: 22px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+
+
+  }
+}
+
+.box-drop__content {
+
+  &_abs {
+    display: block;
+    height: 0;
+    position: absolute;
+    box-sizing: border-box;
+    left: -18px;
+    top: 41px;
+    z-index: 50;
+    background-color: white;
+    width: 188px;
+    padding: 0 41px;
+    box-shadow: 2.5px 12.3px 16px rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    @include animation;
+    li {
+      &:first-child {
+        button {
+          position: relative;
+        }
+      }
+      &:last-child {
+        button {
+          margin-bottom: 0;
+        }
+      }
+    }
+    button {
+      color: $border-dark;
+      text-decoration: none;
+      font-size: 13px;
+      display: block;
+      margin-bottom: 23px;
+
+      &:hover {
+        color: #a71010;
+      }
+    }
+
+    .ico {
+      display: inline-block;
+      margin: 0;
+      margin-right: 7px;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: -26px;
+      top: 2px;
+    }
+  }
+}
+.box-drop {
+  &_binding {
+    &:hover .menu-min {
+      background: svg-load('../img/up-ico.svg', 'fill:#00A7FF');
+      width: 15px;
+      height: 15px;
+    }
+    &:hover .box-drop__open_bind{
+      color:$color;
+    }
+  }
+}

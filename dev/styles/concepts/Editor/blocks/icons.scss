@@ -1,0 +1,738 @@
+
+.ico {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.add {
+  @include svg('add.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  &:hover {
+    @include svg('add.svg', '#{$color}', 22px, 22px, $mr: 0);
+  }
+}
+
+.image {
+  @include svg('picture.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  @include animation;
+
+  &:before {
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+
+  &:hover {
+    @include svg('picture.svg', '#{$color}', 22px, 22px, $mr: 0);
+    &:before {
+      display: block;
+      margin: auto;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.left-arrow {
+  background: svg-load('#{$img-path}left-arrow.svg', 'fill:#00A7FF');
+  @include animation;
+  &:hover {
+    background: svg-load('#{$img-path}left-arrow.svg', 'fill:#000000');
+  }
+}
+
+.right-arrow {
+  background: svg-load('#{$img-path}right-arrow.svg', 'fill:#00A7FF');
+  @include animation;
+  &:hover {
+    background: svg-load('#{$img-path}right-arrow.svg', 'fill:#000000');
+  }
+}
+
+.triangle {
+  @include svg('triangular.svg', '#646464', 10px, 10px, $mr: 0);
+  @include animation;
+
+  &:hover {
+    @include svg('triangular.svg', '#{$color}', 10px, 10px, $mr: 0);
+
+  }
+}
+
+.image_1 {
+  background: svg-load('#{$img-path}image.svg', 'fill:#ffffff');
+  @include animation;
+
+  &:before {
+    display: block;
+  }
+}
+
+.undo-ico {
+  @include svg('undo.svg', '#4d4d4d', $mr: 0);
+  @include animation;
+  &:hover {
+    @include svg('undo.svg', '#00A7FF', $mr: 0);
+  }
+}
+
+.button-ico {
+  width: 31px;
+  height: 16px;
+  background: url('#{$img-path}button.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.undo-ico.next {
+  @include svg('undo.svg', '#4d4d4d', $mr: 0);
+  transform: scaleX(-1);
+  @include animation;
+  &:hover {
+    @include svg('undo.svg', '#00A7FF', $mr: 0);
+  }
+}
+
+.undo-ico.disabled {
+  @include svg('undo.svg', '#dedfe0', $mr: 0);
+  @include animation;
+  &:hover {
+    @include svg('undo.svg', '#dedfe0', $mr: 0);
+  }
+}
+
+.ico-upload {
+  background: svg-load('#{$img-path}upload-ico.svg', 'fill:#00A7FF');
+  width: 63px;
+  height: 76px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
+.hat-ico {
+  width: 44px;
+  height: 44px;
+  background: svg-load('#{$img-path}hat-ico.svg', 'fill:#00A7FF');
+}
+
+.cup-ico {
+  width: 46px;
+  height: 58px;
+  background: svg-load('#{$img-path}cup-ico.svg', 'fill:#00A7FF');
+}
+
+.desktop-ico {
+  @include svg('desktop.svg', '#000', 26px, 26px, $mr: 0);
+  &:hover {
+    @include svg('desktop.svg', '#{$color}', 26px, 26px, $mr: 0);
+  }
+  &.active {
+    @include svg('desktop.svg', '#{$color}', 26px, 26px, $mr: 0);
+  }
+}
+
+.eye-ico {
+  @include svg('eye.svg', '#000', 23px, 23px, $mr: 0);
+  &:hover {
+    @include svg('eye.svg', '#{$color}', 23px, 23px, $mr: 0);
+  }
+  &.active {
+    @include svg('eye.svg', '#{$color}', 23px, 23px, $mr: 0);
+  }
+}
+
+.save-ico {
+  @include svg('save.svg', '#000', 23px, 23px, $mr: 0);
+  &:hover {
+    @include svg('save.svg', '#{$color}', 23px, 23px, $mr: 0);
+  }
+}
+
+.mobile-ico {
+  @include svg('mobile.svg', '#000', 26px, 26px, $mr: 0);
+  &:hover {
+    @include svg('mobile.svg', '#{$color}', 26px, 26px, $mr: 0);
+  }
+&.active {
+  @include svg('mobile.svg', '#{$color}', 26px, 26px, $mr: 0);
+}
+}
+
+.tablet-ico {
+  @include svg('tablet.svg', '#000', 26px, 26px, $mr: 0);
+  &:hover {
+    @include svg('tablet.svg', '#{$color}', 26px, 26px, $mr: 0);
+  }
+  &.active {
+    @include svg('tablet.svg', '#{$color}', 26px, 26px, $mr: 0);
+  }
+}
+
+.close-ico {
+  /* background: svg-load('#{$img-path}close.svg', 'fill:white');*/
+  @include svg('close.svg', '#ffffff', 22px, 22px, $mr: 0);
+  @include animation;
+}
+
+.edit-ico {
+  @include svg('edit.svg', '#ffffff', 15px, 15px, $mr: 0);
+  @include animation;
+}
+
+.clipboard {
+  @include svg('clipboard.svg', '#ffffff', 15px, 15px, $mr: 0);
+  @include animation;
+}
+
+.settings {
+  @include svg('settings.svg', '#ffffff', 15px, 15px, $mr: 0);
+  @include animation;
+}
+
+.cloud-ico {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: svg-load('#{$img-path}cloud-ico.svg', 'fill:#4d4d4d');
+}
+
+.menu-min {
+  background: svg-load('#{$img-path}menu-min.svg', 'fill:#4d4d4d');
+  background-size: cover;
+  background-position: center;
+}
+
+/*
+.down-ico {
+  background: svg-load('#{$img-path}down.svg', 'fill:#4d4d4d');
+  background-size: cover;
+  background-position: center;
+  width: 11px;
+  height: 12px;
+  @include animation;
+}*/
+.down-ico {
+  @include svg('down.svg', '#4d4d4d', $mr: 0);
+  @include animation;
+}
+
+.menu-big {
+  @include svg('menu.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  &:hover {
+    @include svg('menu.svg', '#{$color}', 22px, 22px, $mr: 0);
+  }
+}
+
+.puzzle-ico {
+  @include svg('puzzle.svg', '#4d4d4d', 26px, 26px, $mr: 0);
+  &:hover {
+    @include svg('puzzle.svg', '#{$color}', 26px, 26px, $mr: 0);
+  }
+}
+
+.text-ico {
+  @include svg('text-label.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  @include animation;
+
+  &:before {
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+
+  &:hover {
+    @include svg('text-label.svg', '#{$color}', 22px, 22px, $mr: 0);
+    @include animation;
+
+    &:before {
+      display: block;
+      margin: auto;
+      margin-bottom: 8px;
+    }
+  }
+}
+.t-ico {
+  @include svg('text-tool.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  @include animation;
+
+  &:before {
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+
+  &:hover {
+    @include svg('text-tool.svg', '#{$color}', 22px, 22px, $mr: 0);
+    @include animation;
+
+    &:before {
+      display: block;
+      margin: auto;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.shuffle-ico {
+  @include svg('shuffle.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  &:hover {
+    @include svg('shuffle.svg', '#{$color}', 22px, 22px, $mr: 0);
+  }
+}
+
+.history-ico {
+  @include svg('history.svg', '#4d4d4d', 26px, 26px, $mr: 0);
+  &:hover {
+    @include svg('history.svg', '#{$color}', 26px, 26px, $mr: 0);
+  }
+}
+
+.levels-ico {
+  @include svg('levels.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  &:hover {
+    @include svg('levels.svg', '#{$color}', 22px, 22px, $mr: 0);
+
+  }
+}
+
+.help-ico {
+  @include svg('help.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  &:hover {
+    @include svg('help.svg', '#{$color}', 22px, 22px, $mr: 0);
+  }
+}
+
+.locked-ico {
+  background: svg-load('#{$img-path}locked-ico.svg', 'fill:#c2c2c2');
+}
+
+.up-ico {
+  background: svg-load('#{$img-path}up-ico.svg', 'fill:#4d4d4d');
+
+}
+
+.padding-ico {
+  @include svg('fit.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  @include animation;
+
+  &:before {
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+  &:hover {
+    @include svg('fit.svg', '#{$color}', 22px, 22px, $mr: 0);
+    &:before {
+      display: block;
+      margin: auto;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.logo-wh {
+  background: url('#{$img-path}logo-wh.png') no-repeat center;
+  width: 21px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.full-ico {
+  background: url('#{$img-path}full-ico.png') no-repeat center;
+
+}
+
+.box-ico {
+  background: url('#{$img-path}box-ico.png') no-repeat center;
+}
+
+.chart-ico {
+  @include svg('chart.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  @include animation;
+
+  &:hover {
+    @include svg('chart.svg', '#{$color}', 22px, 22px, $mr: 0);
+    &:before {
+      display: block;
+      margin: auto;
+      margin-bottom: 8px;
+    }
+  }
+
+  &:before {
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+}
+
+.star-ico {
+  @include svg('star.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+    &:before {
+      display: block;
+      margin: auto;
+    margin-bottom: 8px;
+  }
+
+  &:hover {
+    @include svg('star.svg', '#{$color}', 22px, 22px, $mr: 0);
+    &:before {
+      display: block;
+      margin: auto;
+      margin-bottom: 8px;
+    }
+  }
+  @include animation;
+}
+
+.list-ico {
+  @include svg('list.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  @include animation;
+
+  &:hover {
+    @include svg('list.svg', '#{$color}', 22px, 22px, $mr: 0);
+    &:before {
+      display: block;
+      margin: auto;
+      margin-bottom: 8px;
+    }
+  }
+
+  &:before {
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+}
+
+.line-ico {
+  @include svg('resize.svg', '#4d4d4d', 22px, 22px, $mr: 0);
+  &:hover {
+    @include svg('resize.svg', '#{$color}', 22px, 22px, $mr: 0);
+    &:before {
+      display: block;
+      margin: auto;
+      margin-bottom: 8px;
+    }
+  }
+  &:before {
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+  @include animation;
+}
+
+.padlock {
+  background: svg-load('#{$img-path}padlock.svg', 'fill:#c2c2c2');
+  @include animation;
+}
+
+/*.undo-ico {
+  background: svg-load('#{$img-path}undo-ico.svg', 'fill:#a6a6a6');
+  width: 24px;
+  height: 24px;
+  @include animation;
+}*/
+
+.drawing-ico {
+  background: svg-load('#{$img-path}drawing-ico.svg', 'fill:#00A7FF');
+  width: 50px;
+  height: 46px;
+}
+
+.time-ico {
+  background: svg-load('#{$img-path}time-ico.svg', 'fill:#a6a6a6');
+  @include animation;
+}
+
+.database-ico {
+  background: svg-load('#{$img-path}database-ico.svg', 'fill:#a6a6a6');
+  @include animation;
+}
+
+.search-ico {
+  @include svg('search-ico.svg', '#898989', 16px, 16px, $mr: 0);
+  @include animation;
+}
+
+.brightness-ico {
+  background: svg-load('#{$img-path}brightness.svg', 'fill:#127cff');
+  @include animation;
+  width: 16px;
+  height: 16px;
+}
+
+.blur-ico {
+  background: svg-load('#{$img-path}blur.svg', 'fill:#127cff');
+  @include animation;
+  width: 16px;
+  height: 16px;
+}
+
+.contrast-ico {
+  background: svg-load('#{$img-path}contrast.svg', 'fill:#127cff');
+  @include animation;
+  width: 16px;
+  height: 16px;
+}
+
+.drag-ico {
+  cursor: move;
+  @include svg('menu.svg', '#414141', 15px, 15px, $mr: 0);
+
+  &:hover {
+    @include svg('menu.svg', '#b0b0b0', 15px, 15px, $mr: 0);
+  }
+}
+
+.view-ico {
+  @include svg('eye.svg', '#b0b0b0', 22px, 22px, $mr: 0);
+  @include animation;
+  &:hover {
+    @include svg('eye.svg', '#127cff', 22px, 22px, $mr: 0);
+  }
+  &.active {
+    @include svg('eye.svg', '#127cff', 22px, 22px, $mr: 0);
+  }
+}
+
+.rgb-ico {
+  @include svg('rgb.svg', '#b0b0b0', 22px, 22px, $mr: 0);
+}
+
+.paste-ico {
+  @include svg('copy.svg', '#FFFFFF', 19px, 19px, $mr: 0);
+  &:hover {
+    @include svg('copy.svg', '#{$color}', 19px, 19px, $mr: 0);
+  }
+  font-size: 12px;
+}
+
+.cut-ico {
+  @include svg('openned-scissors.svg', '#FFFFFF', 19px, 19px, $mr: 0);
+  &:hover {
+    @include svg('openned-scissors.svg', '#{$color}', 19px, 19px, $mr: 0);
+  }
+
+  &.disabled {
+    @include svg('openned-scissors.svg', '#{$disabled}', 19px, 19px, $mr: 0);
+    &:hover {
+      @include svg('openned-scissors.svg', '#{$disabled}', 19px, 19px, $mr: 0);
+
+    }
+  }
+}
+
+.copy-ico {
+  @include svg('copy-archive.svg', '#FFFFFF', 19px, 19px, $mr: 0);
+  &:hover {
+    @include svg('copy-archive.svg', '#{$color}', 19px, 19px, $mr: 0);
+  }
+  &.disabled {
+    @include svg('copy-archive.svg', '#{$disabled}', 19px, 19px, $mr: 0);
+    &:hover {
+      @include svg('copy-archive.svg', '#{$disabled}', 19px, 19px, $mr: 0);
+
+    }
+  }
+}
+
+.bold-ico {
+  color: white;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
+  @include animation;
+  &:hover {
+    color: $color;
+  }
+}
+
+.strikethrough-ico {
+  color: white;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: line-through;
+  &:hover {
+    color: $color;
+  }
+}
+
+.italic-ico {
+  color: white;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+  &:hover {
+    color: $color;
+  }
+}
+
+.underline-ico {
+  color: white;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: underline;
+  &:hover {
+    color: $color;
+  }
+
+}
+
+.x2-ico {
+  color: white;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
+  sup {
+    font-size: 12px;
+  }
+  &:hover {
+    color: $color;
+  }
+}
+
+.center-ico {
+  @include svg('center-alignment.svg', '#FFFFFF', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('center-alignment.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.left-ico {
+  @include svg('left-alignment.svg', '#FFFFFF', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('left-alignment.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.right-ico {
+  @include svg('right-alignment.svg', '#FFFFFF', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('right-alignment.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.justified-ico {
+  @include svg('justified.svg', '#FFFFFF', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('justified.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.numlist-ico {
+  @include svg('numbered-list.svg', '#FFFFFF', 19px, 19px, $mr: 0);
+  &:hover {
+    @include svg('numbered-list.svg', '#{$color}', 19px, 19px, $mr: 0);
+  }
+}
+
+.numlist-ico {
+  @include svg('numbered-list.svg', '#FFFFFF', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('numbered-list.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+
+  &.active {
+    @include svg('numbered-list.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.ico-list {
+  @include svg('list-with-bullets.svg', '#FFFFFF', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('list-with-bullets.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+
+  &.active {
+    @include svg('list-with-bullets.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.eraser-ico {
+  @include svg('double-sided-eraser.svg', '#FFFFFF', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('double-sided-eraser.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.water-ico {
+  @include svg('water-drop.svg', '#FFFFFF', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('water-drop.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+  &.active {
+    @include svg('water-drop.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.color-text-ico {
+  @include svg('color-text.svg', '#FFFFFF', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('color-text.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+
+  &.active {
+    @include svg('color-text.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.link-ico {
+  @include svg('link-interface-symbol.svg', '#FFFFFF', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('link-interface-symbol.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.link-break-ico {
+  @include svg('link-break.svg', '#b5b5b5', 18px, 18px, $mr: 0);
+  &:hover {
+    @include svg('link-break.svg', '#{$color}', 18px, 18px, $mr: 0);
+  }
+}
+
+.command-ico {
+  @include svg('command.svg', '#7f7f7f', 12px, 12px, $mr: 3px);
+  &:hover {
+    @include svg('command.svg', '#{$color}', 12px, 12px, $mr: 0);
+  }
+  &:before {
+    transition: none;
+  }
+}
+
+.quest-ico {
+  @include svg('quest.svg', '#d6d6d6', 15px, 15px, $mr: 0);
+  &:hover {
+    @include svg('quest.svg', '#{$color}', 15px, 15px, $mr: 0);
+  }
+}
+
+.disc-ico {
+  @include svg('disc.svg', '#d6d6d6', 15px, 15px, $mr: 0);
+  &:hover {
+    @include svg('disc.svg', '#{$color}', 15px, 15px, $mr: 0);
+  }
+}
+
+
+.rome-ico {
+  @include svg('ico-rome.svg', '#d6d6d6', 34px, 32px, $mr: 0);
+  &:hover {
+    @include svg('ico-rome.svg', '#{$color}', 34px, 34px, $mr: 0);
+  }
+}

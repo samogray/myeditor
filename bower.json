@@ -1,0 +1,29 @@
+{
+  "name": "gulp",
+  "description": "Template gulp project Samogray",
+  "main": "index.js",
+  "authors": [
+    "Samogray Alex"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "samogray"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "susy": "^2.2.12",
+    "reset-scss": "^2.0.2",
+    "normalize-scss": "^3.0.3"
+  },
+  "dependencies": {
+    "jquery-3.0.0.min": "https://code.jquery.com/jquery-3.0.0.min.js",
+    "animatewithsass": "^3.2.2"
+  }
+}

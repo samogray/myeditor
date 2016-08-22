@@ -1,0 +1,119 @@
+.history {
+  &__item {
+    box-sizing: border-box;
+    color: #a6a6a6;
+    height: 58px;
+    padding: 0 7px;
+    border-top: 1px solid $border;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include animation;
+    &:last-child {
+      border-bottom: 1px solid $border;
+    }
+    .label {
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+      &:not(:last-child){
+        margin-right: 10px;
+      }
+      @include animation;
+      opacity: 0;
+
+
+      &:hover {
+        color:$color;
+      }
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: #646464;
+    }
+    &:hover .undo-ico {
+      background: svg-load('../img/undo-ico.svg', 'fill:#0af');
+
+    }
+    &:hover .label{
+      opacity: 1;
+    }
+
+    .group-btn {
+      display: flex;
+      flex-grow: 2;
+      justify-content: flex-end;
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 700;
+    max-width: 208px;
+  }
+
+  &__ico {
+    width: 24px;
+    margin-right: 10px;
+    float: left;
+    text-align: center;
+    .btn {
+      padding: 0;
+    }
+  }
+
+  &__time {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+  &__list {
+
+    &_backup {
+      .history__name {
+        .ico {
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+
+
+}
+.tab-content_hsettigs {
+
+  .group-btn {
+    margin-bottom: 35px;
+  }
+}
+
+.panel {
+  &_backups {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    background-color: white;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    margin:25px 0;
+    border-radius: 0;
+    position: relative;
+    padding:0 18px;
+    justify-content: space-between;
+    .close-ico {
+      right: 11px;
+      top: 50%;
+      margin: 0;
+      margin-top:-4.5px;
+      position: absolute;
+      background: svg-load('../img/close.svg', 'fill:#0f0f0f;');
+      width: 9px;
+      height: 9px;
+      &:hover {
+        background: svg-load('../img/close.svg', 'fill:#A71010');
+      }
+    }
+
+  }
+}

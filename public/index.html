@@ -1,0 +1,2584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fitable</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,700,600,800,900' rel='stylesheet'
+				type='text/css'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-fluide">
+	<aside class="aside">
+		<ul class="aside__control">
+			<li class="aside__control-item_logo">
+				<button class="logo">
+					<img src="img/logo1.png" alt="logo">
+				</button>
+			</li>
+			<li class="aside__control-item">
+				<button class="btn add">Add</button>
+			</li>
+			<li class="aside__control-item">
+				<button class="btn menu-big">Pages</button>
+			</li>
+			<li class="aside__control-item ">
+				<button class="btn puzzle-ico">Apps</button>
+			</li>
+			<li class="aside__control-item">
+				<button class="btn shuffle-ico">Bindings</button>
+			</li>
+			<li class="aside__control-item">
+				<button class="btn history-ico">History</button>
+			</li>
+			<li class="aside__control-item active">
+				<button class="btn levels-ico">Settings</button>
+			</li>
+			<li class="aside__control-item">
+				<button class="btn help-ico">Help</button>
+			</li>
+		</ul>
+		<div class="option-wrp">
+			<div class="aside__title">
+				<textarea name="suite-name" maxlength="45">Advertising Agency Promo Website Name 2.0</textarea>
+			</div>
+			<div class="search-wrp">
+				<input type="text" name="search" id="search" class="input input_search" placeholder="Search everything">
+			</div>
+			<!--Here layout-->
+
+			<!--Layout Settings-->
+			<div class="function-layout function-layout_settings">
+				<div class="panel-tabs">
+					<button class="panel-tabs__tab">General</button>
+					<button class="panel-tabs__tab active" data-badge="5">Design</button>
+					<button class="panel-tabs__tab" data-badge="10">Analytics</button>
+				</div>
+				<div class="tab-content tab-content_general" style="display: block">
+					<form>
+						<div class="layout__title">Site Name</div>
+						<input type="text" class="input input_normal"/>
+						<div class="layout__title">Site Address (URL)</div>
+						<ul class="adress-opt">
+							<li class="adress-opt__item">
+								<input class="radio" id="radio-1" name="adress" type="radio" checked>
+								<label tabindex="4" for="radio-1" class="radio-label">
+									<span>Use Weblium Subdomain</span>
+									<span class="adress-opt__content">
+                    <span class="group group-btn_flex">
+                      <input type="text" class="input_normal input">
+                      <span class="label label_grey">.weblium.com</span>
+                    </span>
+                    <span class="group group-btn_flex">
+                      <div class="label label_red">Sorry, but this subdomain is already taken.
+                      </div>
+                    </span>
+                  </span>
+								</label>
+							</li>
+							<li class="adress-opt__item">
+								<input class="radio" id="radio-2" name="adress" type="radio">
+								<label tabindex="5" for="radio-2" class="radio-label">
+									<span>I already have my Own Domain</span>
+									<span class="adress-opt__content">
+										<span class="group group-btn_flex">
+											<span class="panel">
+												<p class="label_grey">
+                          You need to Update your Website to Premium to connect personal Domain Name.
+                        </p>
+												<button class="btn btn_premium"><i class="logo-wh"></i>Update to Premium</button>
+											</span>
+										</span>
+									</span>
+								</label>
+							</li>
+							<li class="adress-opt__item">
+								<input class="radio" id="radio-3" name="adress" type="radio">
+								<label tabindex="5" for="radio-3" class="radio-label"><span>Buy New Domain Name</span>
+									<span class="adress-opt__content">
+                      <span class="group group-btn_flex">
+                        <span class="input-wrp">
+                          <input type="text" class="input input_normal" placeholder="Search new domain "/>
+                            <i class="ico search-ico"></i>
+                           </span>
+                          </span>
+                        </span>
+								</label>
+							</li>
+						</ul>
+						<div class="layout__title">Site Admin Email</div>
+						<ul class="email-opt">
+							<li class="email-opt__item">
+								<input type="text" class="input input_normal"/>
+								<button class="close-ico"></button>
+							</li>
+							<li class="email-opt__item">
+								<input type="text" class="input input_normal" value="email"/>
+								<button class="close-ico"></button>
+							</li>
+						</ul>
+						<button class="btn btn_link-add">+ Add More</button>
+						<div class="layout__title">Site favicon</div>
+						<div class="input input_normal vcenter favicon">
+							<img src="img/logo.png" alt="favicon">
+							<span class="label_grey">agency.weblium.com</span>
+							<button class="btn btn_link-add">Change</button>
+						</div>
+						<div class="layout__title">Maintenance Mode</div>
+						<div class="group-btn group-btn_flex">
+							<input type="checkbox" name="maintenance" id="maintenance" class="checkbox">
+							<label for="maintenance" class="checkbox-label"></label>
+							<div class="label label_normal label_grey">Enable Maintenance Mode</div>
+						</div>
+					</form>
+				</div>
+				<!---->
+				<div class="tab-content tab-content_design" style="display: block">
+					<div class="option-box option-box_layout">
+						<div class="box-drop">
+							<div class="box-drop__open active triangle">Site Layout</div>
+							<div class="box-drop__content box-drop__content_screen active">
+								<input class="radio" id="full" name="layout" type="radio" checked>
+								<label tabindex="4" for="full" class="radio-label fullscreen">Fullscreen</label>
+								<input class="radio" id="boxed" name="layout" type="radio">
+								<label tabindex="5" for="boxed" class="radio-label boxed">Boxed</label>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div class="option-box option-box_drdp">
+						<div class="box-drop">
+							<div class="box-drop__open triangle active">Drag&Drop Colors</div>
+							<div class="box-drop__content active">
+								<div class="label label_option">Drag&Drop a specific colour to any location on your
+									website.
+								</div>
+								<ul class="color-palette">
+									<li class="color-palette__item"><span class="color-palette__color cf4f4f4"></span>#f4f4f4
+									</li>
+									<li class="color-palette__item"><span class="color-palette__color cf11e5e"></span>#f11e5e
+									</li>
+									<li class="color-palette__item"><span class="color-palette__color c3ad9ff"></span>#3ad9ff
+									</li>
+									<li class="color-palette__item"><span class="color-palette__color c07172c"></span>#07172c
+									</li>
+									<li class="color-palette__item"><span class="color-palette__color cb2c100"></span>#b2c100
+									</li>
+									<li class="color-palette__item"><span class="color-palette__color c18646d"></span>#18646d
+									</li>
+									<li class="color-palette__item"><span class="color-palette__color c2286bc"></span>#2286bc
+									</li>
+									<li class="color-palette__item"><span class="color-palette__color ce74803"></span>#e74803
+									</li>
+								</ul>
+								<button class="btn btn_link-add">+ Add New</button>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div class="option-box option-box_color-theme">
+						<div class="box-drop">
+							<div class="box-drop__open triangle active">Current Color Theme</div>
+							<div class="box-drop__content active">
+								<div class="label label_option">Click colors below to edit them and it will be applied
+									to all website.
+								</div>
+								<ul class="add-theme">
+									<li class="add-theme__item">
+										<div class="color-palette__item"><span
+												class="color-palette__color cf4f4f4"></span>#f4f4f4
+										</div>
+										Background Color
+									</li>
+									<li class="add-theme__item">
+										<div class="color-palette__item"><span
+												class="color-palette__color cb2c100"></span>#f4f4f4
+										</div>
+										Primary Accent Color
+									</li>
+									<li class="add-theme__item">
+										<div class="color-palette__item"><span
+												class="color-palette__color c18646d"></span>#f4f4f4
+										</div>
+										Secondary Accent Color
+									</li>
+									<li class="add-theme__item">
+										<div class="color-palette__item"><span
+												class="color-palette__color ce74803"></span>#f4f4f4
+										</div>
+										Main Text Color
+									</li>
+								</ul>
+								<button class="btn btn_link-add">+ More Options</button>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div class="option-box option-box_color-theme">
+						<div class="box-drop">
+							<div class="box-drop__open triangle active">Color Themes Gallery</div>
+							<div class="box-drop__content active">
+								<div class="label label_option">Click colors below to edit them and it will be applied
+									to all website.
+								</div>
+								<ul class="color-palette color-palette_theme">
+									<li>
+										<input type="radio" checked class="radio-theme" id="theme-1" name="color-theme">
+										<label for="theme-1" title="palette-theme__item"
+													 class="palette-theme__item active">
+											<div class="palettecolordivcon">
+												<div class="palettecolordiv" style="background-color:#5b8a81"></div>
+												<div class="palettecolordiv" style="background-color:#7fb5a5"></div>
+												<div class="palettecolordiv" style="background-color:#4f606c"></div>
+												<div class="palettecolordiv" style="background-color:#77818a"></div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="radio" checked class="radio-theme" id="theme-2" name="color-theme">
+										<label for="theme-2" title="palette-theme__item"
+													 class="palette-theme__item active">
+											<div class="palettecolordivcon">
+												<div class="palettecolordiv" style="background-color:#5b8a81"></div>
+												<div class="palettecolordiv" style="background-color:#7fb5a5"></div>
+												<div class="palettecolordiv" style="background-color:#4f606c"></div>
+												<div class="palettecolordiv" style="background-color:#77818a"></div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="radio" checked class="radio-theme" id="theme-3" name="color-theme">
+										<label for="theme-3" title="palette-theme__item"
+													 class="palette-theme__item active">
+											<div class="palettecolordivcon">
+												<div class="palettecolordiv" style="background-color:#5b8a81"></div>
+												<div class="palettecolordiv" style="background-color:#7fb5a5"></div>
+												<div class="palettecolordiv" style="background-color:#4f606c"></div>
+												<div class="palettecolordiv" style="background-color:#77818a"></div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="radio" checked class="radio-theme" id="theme-4" name="color-theme">
+										<label for="theme-4" title="palette-theme__item"
+													 class="palette-theme__item active">
+											<div class="palettecolordivcon">
+												<div class="palettecolordiv" style="background-color:#9aff2a"></div>
+												<div class="palettecolordiv" style="background-color:#7fb5a5"></div>
+												<div class="palettecolordiv" style="background-color:#ff6962"></div>
+												<div class="palettecolordiv" style="background-color:#77818a"></div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="radio" checked class="radio-theme" id="theme-5" name="color-theme">
+										<label for="theme-5" title="palette-theme__item" class="palette-theme__item">
+											<div class="palettecolordivcon">
+												<div class="palettecolordiv" style="background-color:#5b8a81"></div>
+												<div class="palettecolordiv" style="background-color:#b5201a"></div>
+												<div class="palettecolordiv" style="background-color:#4f606c"></div>
+												<div class="palettecolordiv" style="background-color:#ffba50"></div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="radio" checked class="radio-theme" id="theme-6" name="color-theme">
+										<label for="theme-6" title="palette-theme__item"
+													 class="palette-theme__item active">
+											<div class="palettecolordivcon">
+												<div class="palettecolordiv" style="background-color:#5b8a81"></div>
+												<div class="palettecolordiv" style="background-color:#07fff5"></div>
+												<div class="palettecolordiv" style="background-color:#ffe517"></div>
+												<div class="palettecolordiv" style="background-color:#dbc8ff"></div>
+											</div>
+										</label>
+									</li>
+								</ul>
+								<button class="btn btn_link-add">+ Add New</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content tab-content_analytics" style="display: block">
+					<form action="#0">
+						<div class="box-drop">
+							<div class="box-drop__open triangle active">Google Analytics ID</div>
+							<div class="box-drop__content active">
+								<input type="text" class="input_normal" placeholder="for example: UA-3454677">
+							</div>
+						</div>
+						<div class="box-drop">
+							<div class="box-drop__open triangle active">Facebook Pixel ID</div>
+							<div class="box-drop__content active">
+								<input type="text" class="input_normal" placeholder="for example: e45746758">
+							</div>
+						</div>
+					</form>
+				</div>
+				<!--END Layout Settings-->
+			</div>
+			<div class="function-layout function-layout_apps">
+				<form action="#0">
+					<div class="myselect">
+						<select name="myselect">
+							<option value="t">Tower</option>
+							<option value="c">Cover</option>
+							<option value="b">Bower</option>
+						</select>
+						<div class="myselect__open">eCommence</div>
+						<ul class="myselect__opt">
+							<li>
+								<button class="myselect__option">Cover</button>
+							</li>
+							<li>
+								<button class="myselect__option">Games</button>
+							</li>
+							<li>
+								<button class="myselect__option">Buisness</button>
+							</li>
+						</ul>
+					</div>
+				</form>
+				<div class="panel-tabs">
+					<button class="panel-tabs__tab">Free</button>
+					<button class="panel-tabs__tab active">Favoritei</button>
+					<button class="panel-tabs__tab">Popular</button>
+				</div>
+				<div class="tab-content tab-content_free">
+					<ul class="apps-list">
+						<li class="panel app">
+							<span class="ico cloud-ico"></span>
+							<div class="app__img">
+								<img src="img/app.jpg" alt="app">
+							</div>
+							<div class="app__wrp">
+								<div class="app__name">MailChimp Intergarion</div>
+								<div class="app__rating">
+									<div class="star-rating">
+										<div class="star-rating__wrap">
+											<span>4/5</span>
+											<input class="star-rating__input" id="star-rating-15" type="radio"
+														 name="rating1" value="5">
+											<label class="star-rating__ico ico star-ico" for="star-rating-15"
+														 title="5 out of 5 stars"></label>
+											<input class="star-rating__input" id="star-rating-14" type="radio"
+														 name="rating1" value="4">
+											<label class="star-rating__ico ico star-ico" for="star-rating-14"
+														 title="4 out of 5 stars"></label>
+											<input class="star-rating__input" id="star-rating-13" type="radio"
+														 name="rating1" value="3">
+											<label class="star-rating__ico ico star-ico" for="star-rating-13"
+														 title="3 out of 5 stars"></label>
+											<input class="star-rating__input" id="star-rating-12" type="radio"
+														 name="rating1" value="2">
+											<label class="star-rating__ico ico star-ico" for="star-rating-12"
+														 title="2 out of 5 stars"></label>
+											<input class="star-rating__input" id="star-rating-16" type="radio"
+														 name="rating1" value="1">
+											<label class="star-rating__ico ico star-ico" for="star-rating-16"
+														 title="1 out of 5 stars"></label>
+										</div>
+									</div>
+								</div>
+								<div class="app__desc">Intergate popular MailChimp services
+									to your website fast and easy.
+								</div>
+							</div>
+						</li>
+						<li class="panel app">
+							<span class="ico cloud-ico"></span>
+							<div class="app__img">
+								<img src="img/app2.jpg" alt="app">
+							</div>
+							<div class="app__wrp">
+								<div class="app__name">VK Social Likes</div>
+								<div class="app__rating">
+									<div class="star-rating">
+										<div class="star-rating__wrap">
+											<span>4/5</span>
+											<input class="star-rating__input" id="star-rating-5" type="radio"
+														 name="rating" value="5">
+											<label class="star-rating__ico ico star-ico" for="star-rating-5"
+														 title="5 out of 5 stars"></label>
+											<input class="star-rating__input" id="star-rating-4" type="radio"
+														 name="rating" value="4">
+											<label class="star-rating__ico ico star-ico" for="star-rating-4"
+														 title="4 out of 5 stars"></label>
+											<input class="star-rating__input" id="star-rating-3" type="radio"
+														 name="rating" value="3">
+											<label class="star-rating__ico ico star-ico" for="star-rating-3"
+														 title="3 out of 5 stars"></label>
+											<input class="star-rating__input" id="star-rating-2" type="radio"
+														 name="rating" value="2">
+											<label class="star-rating__ico ico star-ico" for="star-rating-2"
+														 title="2 out of 5 stars"></label>
+											<input class="star-rating__input" id="star-rating-1" type="radio"
+														 name="rating" value="1">
+											<label class="star-rating__ico ico star-ico" for="star-rating-1"
+														 title="1 out of 5 stars"></label>
+										</div>
+									</div>
+
+								</div>
+								<div class="app__desc">VK Social Likes to your website
+									fast and easy.
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="label label_grey tcenter">Total <i> 3 </i> apps</div>
+				</div>
+
+
+			</div>
+			<div class="function-layout function-layout_add">
+				<div class="panel-tabs">
+					<button class="panel-tabs__tab">Your Logo</button>
+					<button class="panel-tabs__tab active">Add Elements</button>
+					<button class="panel-tabs__tab">Apps</button>
+				</div>
+				<!---->
+				<div class="tab-content tab-content_adde" style="display: block">
+					<div class="option-box option-box_layout">
+						<div class="box-drop">
+							<div class="box-drop__open triangle active">Add Elements</div>
+							<div class="box-drop__content active">
+								<ul class="option-btn option-btn_adde">
+									<li>
+										<button class="btn btn_adde text-ico">Text</button>
+									</li>
+									<li>
+										<button class="btn btn_adde image active">Image</button>
+									</li>
+									<li>
+										<button class="btn btn_adde padding-ico">Padding</button>
+									</li>
+									<li>
+										<button class="btn btn_adde list-ico">Pretty List</button>
+									</li>
+									<li>
+										<button class="btn btn_adde "><i class="ico button-ico"></i>Button</button>
+									</li>
+									<li>
+										<button class="btn btn_adde t-ico">Title</button>
+									</li>
+									<li>
+										<button class="btn btn_adde chart-ico">Chart</button>
+									</li>
+									<li>
+										<button class="btn btn_adde star-ico">Icon</button>
+									</li>
+									<li>
+										<button class="btn btn_adde line-ico">Line</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End layout "ADD -- Elements "-->
+				<!--layout "ADD -- Your Logo "-->
+				<div class="tab-content tab-content_logo">
+					<div class="option-box option-box_layout">
+						<div class="box-drop">
+							<div class="box-drop__open triangle">Select one of Your Logos</div>
+							<div class="box-drop__content active">
+								<ul class="option-btn option-btn_logo">
+									<li>
+										<input type="radio" checked class="radio-logo" id="logo_1" name="add-logo">
+										<label for="logo_1" title="palette-theme__item" class="logo-item">
+											<img src="img/ylogo2.jpg" alt="logo">
+										</label>
+									</li>
+									<li>
+										<input type="radio" class="radio-logo" id="logo_2" name="add-logo">
+										<label for="logo_2" title="palette-theme__item" class="logo-item">
+											<img src="" alt="logo">
+										</label>
+									</li>
+									<li>
+										<input type="radio" class="radio-logo" id="logo_4" name="add-logo">
+										<label for="logo_4" title="palette-theme__item" class="logo-item">
+											<img src="img/ylogo2.jpg" alt="logo">
+										</label>
+									</li>
+									<li>
+										<input type="radio" class="radio-logo" id="logo_5" name="add-logo">
+										<label for="logo_5" title="palette-theme__item" class="logo-item">
+											<img src="img/ylogo.jpg" alt="logo">
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="option-box option-box_layout">
+							<div class="box-drop">
+								<div class="box-drop__open triangle">Upload Existing Logo</div>
+								<div class="box-drop__content active">
+									<div class="option-btn option-btn_logo  option-btn_logoadd clearfix">
+										<div class="col3">
+											<span class="ico ico-upload"></span>
+										</div>
+										<div class="col9">
+											<p>
+												Upload a logo if you have one.
+												We accept any format, raster or vector.
+												Minimum size of raster image is 200x200.
+											</p>
+											<button class="btn btn_flat">Upload My Logo</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option-box option-box_layout">
+							<div class="box-drop">
+								<div class="box-drop__open triangle">Ask a Designer to Insert My Logo</div>
+								<div class="box-drop__content active ">
+									<div class="option-btn option-btn_logo  option-btn_logoadd clearfix">
+										<div class="col3">
+											<span class="ico hat-ico"></span>
+										</div>
+										<div class="col9">
+											<p>
+												If you need help to insert a logo - our designer will help you. Just
+												describe your situation.
+											</p>
+											<button class="btn btn_flat">Ask Help</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option-box option-box_layout">
+							<div class="box-drop">
+								<div class="box-drop__open triangle">Build Your Logo</div>
+								<div class="box-drop__content active">
+									<div class="option-btn option-btn_logo  option-btn_logoadd clearfix">
+										<div class="col3">
+											<span class="ico cup-ico"></span>
+										</div>
+										<div class="col9">
+											<p>
+												Create your personal logo using our professional tool. Select from
+												hundreds of fonts and thousands of icons.
+											</p>
+											<button class="btn btn_flat">Build Your Logo</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option-box option-box_layout">
+							<div class="box-drop">
+								<div class="box-drop__open active triangle">Order Custom Logo</div>
+								<div class="box-drop__content active">
+									<div class="option-btn option-btn_logo  option-btn_logoadd clearfix">
+										<div class="col3">
+											<span class="ico drawing-ico"></span>
+										</div>
+										<div class="col9">
+											<p>
+												Create your personal logo using our professional tool. Select from
+												hundreds of fonts and thousands of icons.
+											</p>
+											<!-- <button class="btn btn_flat">Order Custom Logo</button>-->
+											<button class="btn btn_flat">Order Custom Logo</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content tab-content_app">
+				</div>
+				<!--End layout "ADD -- Your Logo "-->
+			</div>
+			<!--Layout Bindings-->
+			<div class="function-layout function-layout_bindings">
+				<div class="add-pages__title">Binded Elements</div>
+				<ul>
+					<li class="panel panel_binding">
+						<div class="binding__img">
+							<img src="img/binding.jpg" alt="bin">
+						</div>
+						<div class="binding__control">
+							<div class="box-drop box-drop_binding">
+								<div class="box-drop__open box-drop__open_bind active">
+									<i class="ico-drop"><i class="ico menu-min"></i></i>Header Block
+								</div>
+								<ul class="box-drop__content box-drop__content_abs">
+									<li>
+										<button>Image Slider</button>
+									</li>
+									<li>
+										<button>Manage Locations</button>
+									</li>
+									<li>
+										<button>Lock Bind</button>
+									</li>
+									<li>
+										<button>Unbind Block</button>
+									</li>
+								</ul>
+							</div>
+							<div class="binding__option">
+								<button class="label label_blue locked"><i class="ico locked-ico"></i>Locked</button>
+								<button class="label label_blue locked">on 5 Pages</button>
+							</div>
+						</div>
+					</li>
+					<li class="panel panel_binding">
+						<div class="binding__img">
+							<img src="img/binding2.jpg" alt="bin">
+						</div>
+						<div class="binding__control">
+							<div class="box-drop box-drop_binding">
+								<div class="box-drop__open box-drop__open_bind active">
+									<i class="ico-drop"><i class="ico menu-min"></i></i>Header Block
+								</div>
+								<ul class="box-drop__content box-drop__content_abs">
+									<li>
+										<button>Image Slider</button>
+									</li>
+									<li>
+										<button>Manage Locations</button>
+									</li>
+									<li>
+										<button>Lock Bind</button>
+									</li>
+									<li>
+										<button>Unbind Block</button>
+									</li>
+								</ul>
+							</div>
+							<div class="binding__option">
+								<button class="label label_blue locked">
+									<i class="ico padlock"></i>Unocked
+								</button>
+								<button class="label label_blue locked">on 5 Pages</button>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<!--END Layout Bindings-->
+
+			<!--Layout "Pages"-->
+			<div class="function-layout function-layout_pages">
+				<div class="add-new-page">
+					<div class="add-pages__title">Add New Page
+						<button class="label label_red">Cancel</button>
+					</div>
+					<div class="panel clearfix">
+						<form action="#0">
+							<input type="text" class="input input_add" placeholder="Enter page name">
+							<input type="text" class="input input_add" placeholder="Page slug">
+						</form>
+						<button class="label label_bold label_blue add">Add Page</button>
+					</div>
+
+				</div>
+				<div class="add-pages__title">Pages
+					<button class="label label_blue add"></span>
+						Add New Page
+					</button>
+				</div>
+				<ul class="add-pages__list">
+					<li class="page">
+						<div class="panel panel_page">
+							<div class="add-pages__name">
+								<input type="text" value="Home (main page)" disabled>
+								<ul class="add-pages__edit">
+									<li>
+										<button class="close-ico"></button>
+									</li>
+									<li>
+										<button class="edit-ico"></button>
+									</li>
+									<li>
+										<button class="clipboard"></button>
+									</li>
+									<li>
+										<button class="settings"></button>
+									</li>
+								</ul>
+							</div>
+							<div class="add-pages__link">/homepage/</div>
+						</div>
+					</li>
+					<li class="page">
+						<div class="panel panel_page">
+							<div class="add-pages__name">
+								<input type="text" value="About" disabled>
+								<ul class="add-pages__edit">
+									<li>
+										<button class="close-ico"></button>
+									</li>
+									<li>
+										<button class="edit-ico"></button>
+									</li>
+									<li>
+										<button class="clipboard"></button>
+									</li>
+									<li>
+										<button class="settings"></button>
+									</li>
+								</ul>
+							</div>
+							<div class="add-pages__link">/about/</div>
+						</div>
+					</li>
+					<li class="page">
+						<div class="panel panel_page">
+							<div class="add-pages__name">
+								<input type="text" value="Services" disabled>
+								<ul class="add-pages__edit">
+									<li>
+										<button class="close-ico"></button>
+									</li>
+									<li>
+										<button class="edit-ico"></button>
+									</li>
+									<li>
+										<button class="clipboard"></button>
+									</li>
+									<li>
+										<button class="settings"></button>
+									</li>
+								</ul>
+							</div>
+							<div class="add-pages__link">/services/</div>
+						</div>
+						<ul class="page page_sub">
+							<li>
+								<div class="panel panel_page">
+									<div class="add-pages__name">
+										<input type="text" value="Web Design" disabled>
+										<ul class="add-pages__edit">
+											<li>
+												<button class="close-ico"></button>
+											</li>
+											<li>
+												<button class="edit-ico"></button>
+											</li>
+											<li>
+												<button class="clipboard"></button>
+											</li>
+											<li>
+												<button class="settings"></button>
+											</li>
+										</ul>
+									</div>
+									<div class="add-pages__link">/web-design/</div>
+								</div>
+							</li>
+							<li>
+								<div class="panel panel_page">
+									<div class="add-pages__name">
+										<input type="text" value="Logo Design" disabled>
+										<ul class="add-pages__edit">
+											<li>
+												<button class="close-ico"></button>
+											</li>
+											<li>
+												<button class="edit-ico"></button>
+											</li>
+											<li>
+												<button class="clipboard"></button>
+											</li>
+											<li>
+												<button class="settings"></button>
+											</li>
+										</ul>
+									</div>
+									<div class="add-pages__link">/logo-design/</div>
+								</div>
+							</li>
+							<li>
+								<div class="panel panel_page">
+									<div class="add-pages__name">
+										<input type="text" value="Programming" disabled>
+										<ul class="add-pages__edit">
+											<li>
+												<button class="close-ico"></button>
+											</li>
+											<li>
+												<button class="edit-ico"></button>
+											</li>
+											<li>
+												<button class="clipboard"></button>
+											</li>
+											<li>
+												<button class="settings"></button>
+											</li>
+										</ul>
+									</div>
+									<div class="add-pages__link">/programming/</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--End Layout "Pages"-->
+			<div class="function-layout function-layout_search">
+				<div class="layout__title">Search Results</div>
+				<span class="label label_normal">Nothing found on your request...</span>
+				<ul>
+					<li class="result-search">
+						<div class="result-search result-search_title layout__title">
+							Apps
+						</div>
+						<ul class="apps-list">
+							<li class="panel app">
+								<span class="ico cloud-ico"></span>
+								<div class="app__img">
+									<img src="img/app.jpg" alt="app">
+								</div>
+								<div class="app__wrp">
+									<div class="app__name">MailChimp Intergarion</div>
+									<div class="app__rating">
+										<div class="star-rating">
+											<div class="star-rating__wrap">
+												<span>4/5</span>
+												<input class="star-rating__input" id="star-rating-156" type="radio"
+															 name="rating16" value="5">
+												<label class="star-rating__ico ico star-ico" for="star-rating-156"
+															 title="5 out of 5 stars"></label>
+												<input class="star-rating__input" id="star-rating-146" type="radio"
+															 name="rating16" value="4">
+												<label class="star-rating__ico ico star-ico" for="star-rating-146"
+															 title="4 out of 5 stars"></label>
+												<input class="star-rating__input" id="star-rating-136" type="radio"
+															 name="rating16" value="3">
+												<label class="star-rating__ico ico star-ico" for="star-rating-136"
+															 title="3 out of 5 stars"></label>
+												<input class="star-rating__input" id="star-rating-126" type="radio"
+															 name="rating16" value="2">
+												<label class="star-rating__ico ico star-ico" for="star-rating-126"
+															 title="2 out of 5 stars"></label>
+												<input class="star-rating__input" id="star-rating-166" type="radio"
+															 name="rating61" value="1">
+												<label class="star-rating__ico ico star-ico" for="star-rating-166"
+															 title="1 out of 5 stars"></label>
+											</div>
+										</div>
+									</div>
+									<div class="app__desc">Intergate popular MailChimp services
+										to your website fast and easy.
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="result-search">
+						<div class="result-search result-search_title layout__title">
+							Pages
+						</div>
+						<div class="page">
+							<div class="panel">
+								<div class="add-pages__name">
+									<input type="text" value="About" disabled>
+									<ul class="add-pages__edit">
+										<li>
+											<button class="btn ico close-ico"></button>
+										</li>
+										<li>
+											<button class="btn ico edit-ico"></button>
+										</li>
+										<li>
+											<button class="btn ico clipboard"></button>
+										</li>
+										<li>
+											<button class="btn ico settings"></button>
+										</li>
+									</ul>
+								</div>
+								<div class="add-pages__link">/about/</div>
+							</div>
+						</div>
+					</li>
+					<li class="result-search">
+						<div class="result-search result-search_title layout__title">
+							Bindings
+						</div>
+						<div class="panel panel_binding">
+							<div class="binding__img">
+								<img src="img/binding2.jpg" alt="bin">
+							</div>
+							<div class="binding__control">
+								<div class="box-drop box-drop_binding">
+									<div class="box-drop__open box-drop__open_bind active"><i
+											class="ico-drop"><i class="ico menu-min"></i></i>Header Block
+									</div>
+									<ul class="box-drop__content box-drop__content_abs">
+										<li>
+											<button>Image Slider</button>
+										</li>
+										<li>
+											<button>Manage Locations</button>
+										</li>
+										<li>
+											<button>Lock Bind</button>
+										</li>
+										<li>
+											<button>Unbind Block</button>
+										</li>
+									</ul>
+								</div>
+								<div class="binding__option">
+									<button class="label label_blue locked"><i class="ico padlock"></i>Unocked</button>
+									<button class="label label_blue">on 5 Pages</button>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<!--Here layout-->
+		</div>
+	</aside>
+	<section class="section">
+		<div class="nav">
+			<div class="menu-wrp">
+				<button class="btn btn_add-mobile"><span class="ico menu-big"></span></button>
+				<ul class="menu menu_left">
+					<li class="menu menu_group">
+						<ul>
+							<li>
+								<button>Homepage</button>
+							</li>
+							<li>
+								<button>About</button>
+							</li>
+							<li>
+								<button>Services</button>
+							</li>
+							<li class="drop-menu">
+								<button class="drop-menu__menu down-ico">More</button>
+								<ul class="drop-menu__content">
+									<li>
+										<button>Homepage</button>
+									</li>
+									<li>
+										<button>About</button>
+									</li>
+									<li>
+										<button>Services</button>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="menu__add-item">
+						<button class="menu__add">Add</button>
+					</li>
+				</ul>
+			</div>
+			<ul class="menu menu_right">
+				<li class="group group_history">
+					<button class="undo-ico disabled"></button>
+					<button class="undo-ico next "></button>
+				</li>
+				<li class="group group_viewport">
+					<ul class="drop-menu_view">
+						<li>
+							<button class="desktop-ico curent-btn active "></button>
+							<div class="drop-wrap">
+								<button class="tablet-ico"></button>
+								<button class="mobile-ico "></button>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="group group_last">
+					<button class="eye-ico tooltip" data-tooltip="Preview"></button>
+					<button class="save-ico tooltip" data-tooltip="Publish"></button>
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="main__page">
+				<section class="one-block">
+					<div class="one-block__settings">
+						<div class="add-wrap">
+							<div class="wrap-outer">
+								<button class="btn btn_arrow-menu prev"><i class="ico left-arrow"></i></button>
+								<ul class="menu menu_add-block">
+									<li class="menu__item">
+										<button>
+											Header
+										</button>
+									</li>
+									<li class="menu__item">
+										<button>Navigation</button>
+									</li>
+									<li class="menu__item">
+										<button>Features</button>
+									</li>
+									<li class="menu__item">
+										<button>Team</button>
+									</li>
+									<li class="menu__item">
+										<button>CTA</button>
+									</li>
+									<li class="menu__item">
+										<button>Contacts</button>
+									</li>
+									<li class="menu__item">
+										<button>Social Features</button>
+									</li>
+									<li class="menu__item">
+										<button>Video</button>
+									</li>
+									<li class="menu__item">
+										<button>Image Gallery</button>
+									</li>
+									<li class="menu__item">
+										<button>Testimonials</button>
+									</li>
+									<li class="menu__item">
+										<button>Team Members</button>
+									</li>
+									<li class="menu__item">
+										<button>Map</button>
+									</li>
+									<li class="menu__item">
+										<button>Subscribe Form</button>
+									</li>
+									<li class="menu__item">
+										<button>Pop-up</button>
+									</li>
+									<li class="menu__item">
+										<button>FAQ</button>
+									</li>
+									<li class="menu__item">
+										<button>Footer</button>
+									</li>
+								</ul>
+								<button class="btn btn_arrow-menu next"><i class="ico right-arrow"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="one-block__page">
+						<div class="win-setting" style="margin-left:100px; display: none">
+							<div class="win-setting__header">
+								<div>Background Settings</div>
+								<div class="group-btn">
+									<i class="drag-ico"></i>
+									<i class="close-ico"></i>
+								</div>
+							</div>
+							<div class="win-setting__layout">
+								<ul class="tabs-control">
+									<li>
+										<button class="tabs-control__btn active" data-target="bg">bg</button>
+									</li>
+									<li>
+										<button class="tabs-control__btn rgb-ico" data-target="rgb"></button>
+									</li>
+									<li>
+										<button class="tabs-control__btn view-ico" data-target="view"></button>
+									</li>
+								</ul>
+								<div class="tab win-setting_bg active" id="bg">
+									<div class="win-setting__section">
+										<div class="input-wrp clearfix">
+											<span class="vertical-c">Background Type</span>
+											<div class="myselect myselect_dark myselect_sm fright">
+												<button class="myselect__open">Image</button>
+												<ul class="myselect__opt">
+													<li>
+														<button class="myselect__option">Video</button>
+													</li>
+													<li>
+														<button class="myselect__option">Color</button>
+													</li>
+													<li>
+														<button class="myselect__option">Color Gradient</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="type-wrap active" id="image-type">
+										<div class="win-setting__section">
+											<div class="bg-view">
+												<div class="bg-view__control">
+													<button class="btn btn_link-add">Change</button>
+													<button class="btn btn_link-add label_red">Delete</button>
+												</div>
+											</div>
+											<div class="input-wrp">
+												<span class="vertical-c">Background  Position</span>
+												<div class="myselect myselect_dark myselect_sm fright">
+													<div class="myselect__open">Center</div>
+													<ul class="myselect__opt">
+														<li>
+															<button class="myselect__option">Left</button>
+														</li>
+														<li>
+															<button class="myselect__option">Right</button>
+														</li>
+														<li>
+															<button class="myselect__option">Top</button>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="input-wrp">
+												<input type="checkbox" id="cover" class="checkbox_dark">
+												<label for="cover" class="label_dark">Cover whole background</label>
+											</div>
+											<div class="input-wrp">
+												<input type="checkbox" id="paralax1" class="checkbox_dark">
+												<label for="paralax1" class="label_dark">Enable Parallax</label>
+												<div class="flex-field flex-field_right open-check">
+													<span>Speed</span>
+													<input type="range" id="paralax-range">
+													<label for="height" class="form-label">
+														<input type="text" class="input input_dark input_sm"
+																	 id="paralax-val">
+														<label for="paralax-val">px</label>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="win-setting__section">
+											<ul class="image-control">
+												<li class="image-control__item"><span><i class="ico contrast-ico"></i>Contrast</span>
+													<input type="range" id="contrast">
+													<label class="form-label" for="contrast">60%</label>
+												</li>
+												<li class="image-control__item"><span><i class="ico brightness-ico"></i>Brightness</span>
+													<input type="range" id="brightness"><label class="form-label"
+																																		 for="brightness">40%</label>
+												</li>
+												<li class="image-control__item"><span><i
+														class="ico blur-ico"></i>Blur</span>
+													<input type="range" id="blur"><label class="form-label" for="blur">70%</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="type-wrap" id="video-type">
+										<div class="win-setting__section">
+											<div class="input-wrp clearfix">
+																								<span class="vertical-c bold">Video URL <i
+																										class="sub">YouTube, Vimeo</i></span>
+												<input type="text" class="input_dark input_lg fright">
+											</div>
+										</div>
+										<div class="win-setting__section">
+											<div class="input-wrp">
+												<input type="checkbox" id="cover33" class="checkbox_dark">
+												<label for="cover33" class="label_dark">Cover whole background</label>
+											</div>
+											<div class="input-wrp">
+												<input type="checkbox" id="paralax133" class="checkbox_dark">
+												<label for="paralax133" class="label_dark">Enable Parallax</label>
+												<div class="flex-field flex-field_right open-check">
+													<span>Speed</span>
+													<input type="range" id="paralax-range1333">
+													<label for="paralax-range1333" class="form-label">
+														<input type="text" class="input input_dark input_sm"
+																	 id="paralax-val">
+														<label for="paralax-val">px</label>
+													</label>
+												</div>
+											</div>
+											<div class="input-wrp">
+												<input type="checkbox" id="cover44" class="checkbox_dark">
+												<label for="cover44" class="label_dark">Enable Color Overlay</label>
+												<div class="flex-field flex-field_right open-check">
+													<div class="grp-right fright">
+														<div class="color_ov clearfix">
+															<span class="vertical-c">Overlay Type</span>
+															<div class="myselect myselect_dark myselect_sm fright">
+																<div class="myselect__open">Gradient</div>
+																<ul class="myselect__opt">
+																	<li>
+																		<button class="myselect__option">Cover</button>
+																	</li>
+																	<li>
+																		<button class="myselect__option">Bower</button>
+																	</li>
+																	<li>
+																		<button class="myselect__option">Tower</button>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<ul>
+															<li class="drag-color color_ov clearfix">
+																<span class="vertical-c drag-ico">Select Color</span>
+																<div class="drag-color__color">
+																	<button class="color-pick color-pick_dark"
+																					data-color="#cfcfcf"
+																					style="background:#cd1bdd;"></button>
+																</div>
+															</li>
+															<li class="drag-color color_ov clearfix">
+																<span class="vertical-c drag-ico">Select Color</span>
+																<div class="drag-color__color">
+																	<button class="color-pick color-pick_dark"
+																					data-color="#127cff"
+																					style="background:#127cff;"></button>
+																</div>
+															</li>
+														</ul>
+														<div class="input-wrp">
+															<input type="range" id="color_ov" class="range_mm" min="20"
+																		 max="50" multiple>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="type-wrap" id="color-type">
+										<div class="win-setting__section">
+											<div class="drag-color color_ov clearfix">
+												<span class="vertical-c">Select Color</span>
+												<div class="drag-color__color">
+													<button class="color-pick color-pick_dark" data-color="#cfcfcf"
+																	style="background:#cd1bdd;"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="type-wrap" id="gradient-type">
+										<div class="win-setting__section">
+											<div class="input-wrp">
+												<div class="color_ov clearfix">
+													<span class="vertical-c">Overlay Type</span>
+													<div class="myselect myselect_dark myselect_sm fright">
+														<div class="myselect__open">Gradient</div>
+														<ul class="myselect__opt">
+															<li>
+																<button class="myselect__option">Cover</button>
+															</li>
+															<li>
+																<button class="myselect__option">Bower</button>
+															</li>
+															<li>
+																<button class="myselect__option">Tower</button>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<ul>
+													<li class="drag-color color_ov clearfix">
+														<span class="vertical-c drag-ico">Select Color</span>
+														<div class="drag-color__color">
+															<button class="color-pick color-pick_dark"
+																			data-color="#cfcfcf"
+																			style="background:#cd1bdd;"></button>
+														</div>
+													</li>
+													<li class="drag-color color_ov clearfix">
+														<span class="vertical-c drag-ico">Select Color</span>
+														<div class="drag-color__color">
+															<button class="color-pick color-pick_dark"
+																			data-color="#127cff"
+																			style="background:#127cff;"></button>
+														</div>
+													</li>
+												</ul>
+												<div class="input-wrp">
+													<button class="btn btn_link-add">+Add color</button>
+												</div>
+												<div class="input-wrp">
+													<input type="range" id="color_ov" class="range_mm">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab win-setting_filter" id="rgb">
+									<div class="win-setting__section">
+										<div class="input-wrp clearfix">
+											<span class="vertical-c">Select one of the photo filters for the background image</span>
+										</div>
+										<div class="input-wrp">
+											<ul class="filter-list">
+												<li class="filter-list__item">
+													<button><img src="img/filter1.jpg" alt="filter"><span>No</span>
+													</button>
+												</li>
+												<li class="filter-list__item">
+													<button class="active"><img src="img/filter1.jpg"
+																											alt="filter"><span>Sepia </span>
+													</button>
+												</li>
+												<li class="filter-list__item">
+													<button><img src="img/filter2.jpg"
+																			 alt="filter"><span>B&W<</span></button>
+												</li>
+												<li class="filter-list__item">
+													<button><img src="img/filter3.jpg"
+																			 alt="filter"><span>Sepia</span></button>
+												</li>
+												<li class="filter-list__item">
+													<button><img src="img/filter4.jpg"
+																			 alt="filter"><span>Blur</span></button>
+												</li>
+												<li class="filter-list__item">
+													<button><img src="img/filter5.jpg" alt="filter"><span>No</span>
+													</button>
+												</li>
+												<li class="filter-list__item">
+													<button><img src="img/filter6.jpg"
+																			 alt="filter"><span>Filter 5</span></button>
+												</li>
+												<li class="filter-list__item">
+													<button><img src="img/filter7.jpg"
+																			 alt="filter"><span>Filter 1</span></button>
+												</li>
+												<li class="filter-list__item">
+													<button><img src="img/filter8.jpg"
+																			 alt="filter"><span>Acadia</span></button>
+												</li>
+												<li class="filter-list__item">
+													<button><img src="img/filter9.jpg"
+																			 alt="filter"><span>Green</span></button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="tab win-setting_view" id="view">
+									<div class="win-setting__section">
+										<div class="input-wrp">
+											<input type="checkbox" id="fscreen" class="checkbox_dark">
+											<label for="fscreen" class="label_dark">Full Screen Height?</label>
+										</div>
+										<div class="input-wrp">
+											<input type="checkbox" id="fwidth" class="checkbox_dark">
+											<label for="fwidth" class="label_dark">Full Width?</label>
+										</div>
+									</div>
+									<div class="win-setting__section">
+										<div class="input-wrp clearfix">
+											<span class="vertical-c">Viewport Animation</span>
+											<div class="myselect myselect_dark myselect_lg fright">
+												<div class="myselect__open">None</div>
+												<ul class="myselect__opt">
+													<li>
+														<button class="myselect__option">Cover</button>
+													</li>
+													<li>
+														<button class="myselect__option">Bower</button>
+													</li>
+													<li>
+														<button class="myselect__option">Tower</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="win-setting__section">
+										<div class="vcenter">
+											<span class="vertical-c">Display on Devices</span>
+											<div class="input-wrp_display">
+												<input type="checkbox" id="desktop1" class="checkbox_dark">
+												<label for="desktop1" class="label_dark">
+													<span class="ico desktop-ico"></span>
+												</label>
+												<input type="checkbox" id="tablet1" class="checkbox_dark">
+												<label for="tablet1" class="label_dark">
+													<span class="ico mobile-ico"></span>
+												</label>
+												<input type="checkbox" id="mobile1" class="checkbox_dark">
+												<label for="mobile1" class="label_dark">
+													<span class="ico tablet-ico"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="win-setting__footer">
+								<div class="fright">
+									<button class="btn cancel">Cancel</button>
+									<button class="btn btn_link">Apply</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--win settings-->
+					<div class="win-setting" style="position: absolute; left:38%;top:72%"> <!--icons-->
+						<div class="win-setting__header">
+							<div class="drag drag-ico">Icon settings</div>
+							<button class="btn">Done</button>
+						</div>
+						<div class="win-setting__content">
+							<div class="tabs">
+								<div class="tabs__btn">
+									<button class="btn">Link</button>
+									<button class="btn active">Colors</button>
+									<button class="btn">Appearence</button>
+								</div>
+								<div class="tabs__content active">
+									<section>
+										<div class="input-wrp">
+											<div class="label quest-ico">Link to site page</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Services (/about/services/)</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">option1</li>
+													<li class="myselect__option">option2</li>
+													<li class="myselect__option">option3</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="label quest-ico">Link to page block (anchor)</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Image</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">Video</li>
+													<li class="myselect__option">Color</li>
+													<li class="myselect__option">Color Gradient</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="label quest-ico">Link alt text</div>
+											<input type="text" class="input input_dark input_full">
+										</div>
+										<div class="input-wrp">
+											<div class="group-btn group-btn_flex">
+												<input type="checkbox" name="maintenance" id="open_link" class="checkbox">
+												<label for="open_link" class="checkbox-label"></label>
+												<div class="label label_normal label_grey">Open in new window</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="tabs__content active">
+									<section>
+										<div class="input-wrp">
+											<div class="label quest-ico">Color overlay type</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Color Gradient</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="label quest-ico">Gradient type</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Linear</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp vcenter">
+											<div class="circle-range fleft">
+												<div class="circle-range__value">
+													45<sup>o</sup>
+												</div>
+											</div>
+											<div class="vcenter">
+												<div class="wrap">
+													<div class="label">First color</div>
+													<div class="drag-color__color">
+														<button href="#0" class="color-pick color-pick_dark"
+																		style="background:#127cff;"></button>
+														#127cff
+													</div>
+												</div>
+												<div class="wrap">
+													<div class="label">Second color</div>
+													<div class="drag-color__color">
+														<button href="#0" class="color-pick color-pick_dark"
+																		style="background:#127cff;"></button>
+														#127cff
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="slider slider_dblrange gradient"></div>
+										</div>
+										<div class="input-wrp">
+											<input type="checkbox" id="hover" class="checkbox_dark">
+											<label for="hover" class="label_dark">Create hover reaction</label>
+										</div>
+									</section>
+								</div>
+								<div class="tabs__content active">
+									<section>
+										<div class="input-wrp">
+											<div class="label quest-ico">Bounce in</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Linear</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="label quest-ico">Animation on scroll</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Short: left to right</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+												</ul>
+											</div>
+										</div>
+									</section>
+									<div class="input-wrp border">
+										<section>
+											<div class="vcenter">
+												<span class="vertical-c">Visibility on devices</span>
+												<div class="input-wrp_display">
+													<div class="ico-wrp">
+														<input type="checkbox" id="desktop199" class="checkbox_dark">
+														<label for="desktop199" class="label_dark">
+															<span class="ico desktop-ico"></span>
+														</label>
+													</div>
+													<div class="ico-wrp">
+														<input type="checkbox" id="mobile199" class="checkbox_dark">
+														<label for="mobile199" class="label_dark">
+															<span class="ico tablet-ico"></span>
+														</label>
+													</div>
+													<div class="ico-wrp">
+														<input type="checkbox" id="tablet199" class="checkbox_dark">
+														<label for="tablet199" class="label_dark">
+															<span class="ico mobile-ico"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="win-setting" style="position: absolute; left: 66%;top: 23%; z-index: 999"> <!--buttons-->
+						<div class="win-setting__header">
+							<div class="drag drag-ico">Change button</div>
+							<button class="btn">Done</button>
+						</div>
+						<div class="win-setting__content">
+							<div class="tabs">
+								<!--<div class="tabs__btn">
+									<button class="btn active">Concept Style</button>
+									<button class="btn">Solid</button>
+									<button class="btn">Gradient</button>
+								</div>-->
+								<div class="tabs__content active nopadding">
+									<div class="wrap-icons buttons">
+										<div class="myscroll right"></div>
+										<ul class="list-icon clearfix">
+											<li><button class="btn  yellow">Button</button></li>
+											<li><button class="btn  grey br">Button</button></li>
+											<li class="active"><button class="btn  blue br">Button</button></li>
+											<li><button class="btn  blue dbl-br gradient">Button</button></li>
+											<li><button class="btn  yellow br">Button</button></li>
+											<li><button class="btn  yellow inv br gradient">Button</button></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="win-setting" style="position: absolute; left:66%;top:70%"> <!--buttns settings-->
+						<div class="win-setting__header">
+							<div class="drag drag-ico">Button settings</div>
+							<button class="btn">Done</button>
+						</div>
+						<div class="win-setting__content">
+							<div class="tabs">
+								<div class="tabs__btn">
+									<button class="btn active">Link</button>
+									<button class="btn">Colors</button>
+									<button class="btn">Border</button>
+									<button class="btn">Appearence</button>
+								</div>
+								<div class="tabs__content active">
+									<section>
+										<div class="input-wrp">
+											<div class="label quest-ico">Link to site page </div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Services (/about/services/)</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">Video</li>
+													<li class="myselect__option">Color</li>
+													<li class="myselect__option">Color Gradient</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="label quest-ico">Link to page block (anchor)</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">None</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">Video</li>
+													<li class="myselect__option">Color</li>
+													<li class="myselect__option">Color Gradient</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="label quest-ico">Link alt text</div>
+											<input type="text" class="input input_dark input_full">
+										</div>
+										<div class="input-wrp">
+											<div class="group-btn group-btn_flex">
+												<input type="checkbox" name="maintenance" id="open_link555" class="checkbox">
+												<label for="open_link555" class="checkbox-label"></label>
+												<div class="label label_normal label_grey">Open in new window</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="tabs__content active">
+									<section>
+										<div class="input-wrp">
+											<div class="label quest-ico">Color overlay type</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Color Gradient</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">option</li>
+													<li class="myselect__option">option</li>
+													<li class="myselect__option">option</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="label quest-ico">Gradient type</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Linear</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">option</li>
+													<li class="myselect__option">option</li>
+													<li class="myselect__option">option</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp vcenter">
+											<div class="circle-range fleft">
+												<div class="circle-range__value">
+													45<sup>o</sup>
+												</div>
+											</div>
+											<div class="vcenter">
+												<div class="wrap">
+													<div class="label">First color</div>
+													<div class="drag-color__color fright">
+														<button href="#0" class="color-pick color-pick_dark"
+																		style="background:#127cff;"></button>
+														#127cff
+													</div>
+												</div>
+												<div class="wrap">
+													<div class="label">Second color</div>
+													<div class="drag-color__color fright">
+														<button href="#0" class="color-pick color-pick_dark"
+																		style="background:#127cff;"></button>
+														#127cff
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="slider slider_dblrange gradient"></div>
+										</div>
+										<div class="input-wrp">
+											<input type="checkbox" id="hover3333" class="checkbox_dark">
+											<label for="hover3333" class="label_dark">Create hover reaction</label>
+										</div>
+									</section>
+								</div>
+								<div class="tabs__content active">
+									<section>
+										<div class="input-wrp">
+											<div class="label quest-ico">Border type</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Solid</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="label quest-ico">Border width</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">1px</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="label">Border Color</div>
+											<div class="drag-color__color">
+												<button href="#0" class="color-pick color-pick_dark"
+																style="background:#127cff;"></button>
+												#127cff
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="tabs__content active">
+									<section>
+										<div class="input-wrp">
+											<div class="label">Bounce in</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Linear</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+												</ul>
+											</div>
+										</div>
+										<div class="input-wrp">
+											<div class="label">Animation on scroll</div>
+											<div class="myselect myselect_dark myselect_full">
+												<button class="myselect__open">Short: left to right</button>
+												<ul class="myselect__opt">
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+													<li class="myselect__option">optoin</li>
+												</ul>
+											</div>
+										</div>
+									</section>
+									<div class="input-wrp border">
+										<section>
+											<div class="vcenter">
+												<span class="vertical-c">Visibility on devices</span>
+												<div class="input-wrp_display">
+													<div class="ico-wrp">
+														<input type="checkbox" id="desktop169" class="checkbox_dark">
+														<label for="desktop169" class="label_dark">
+															<span class="ico desktop-ico"></span>
+														</label>
+													</div>
+													<div class="ico-wrp">
+														<input type="checkbox" id="mobile169" class="checkbox_dark">
+														<label for="mobile169" class="label_dark">
+															<span class="ico tablet-ico"></span>
+														</label>
+													</div>
+													<div class="ico-wrp">
+														<input type="checkbox" id="tablet169" class="checkbox_dark">
+														<label for="tablet169" class="label_dark">
+															<span class="ico mobile-ico"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="win-setting" style="position: absolute; left: 38%; top: 28%;">
+						<div class="win-setting__header">
+							<div class="drag drag-ico">Change icon</div>
+							<button class="btn">Done</button>
+						</div>
+						<div class="win-setting__content">
+							<section>
+								<div class="input-wrp">
+									<input type="text" class="input input_dark input_full search">
+									<i class="search-ico"></i>
+								</div>
+							</section>
+							<section>
+								<div class="group-btn group-btn_flex">
+									<input type="checkbox" name="maintenance" id="color_icon" class="checkbox">
+									<label for="color_icon" class="checkbox-label"></label>
+									<div class="label label_normal label_grey">Color icons only</div>
+								</div>
+							</section>
+							<div class="wrap-icons">
+								<span class="myscroll right"></span>
+								<ul class="list-icon clearfix">
+									<li><img src="img/clock.svg" alt="icon"/></li>
+									<li class="active"><img src="img/clock.svg" alt="icon"/></li>
+									<li><img src="img/clock.svg" alt="icon"/></li>
+									<li><img src="img/clock.svg" alt="icon"/></li>
+									<li><img src="img/clock.svg" alt="icon"/></li>
+									<li><img src="img/clock.svg" alt="icon"/></li>
+									<li><img src="img/clock.svg" alt="icon"/></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--win settings-->
+					<!--Тут блок-->
+					<div class="one-block__settings" style="display: none">
+						<div class="one-block__settings left">
+							<button class="btn btn_link"><i class="ico image_1"></i>Change Image</button>
+							<button class="btn btn_link"><i class="ico levels-ico"></i>Block Settings</button>
+						</div>
+						<div class="one-block__settings center">
+							<button class="btn prev"><i class="ico left-arrow"></i></button>
+							<span>Layout (3/5)</span>
+							<button class="btn next"><i class="ico right-arrow"></i></button>
+						</div>
+						<div class="one-block__settings right">
+							<div class="btn btn_move">Move Block</div>
+							<button class="btn btn_gray close-ico">Delete</button>
+						</div>
+						<div class="btn btn_slider absolute"></div>
+					</div>
+					<!--Тут блок-->
+
+					<div class="one-block__add" style="display: none">
+						<div class="add-block">
+							<button class="btn btn_add-block add" id="addBlock11">
+								Add Blocks
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="one-block">
+					<div class="one-block__page">
+						<div class="panel panel_dark text-editor" style="top:139%; position: absolute">
+							<div class="text-editor__group">
+								<ul class="menu menu_text-editor">
+									<li>
+										<button class="btn btn_editor paste-ico">Paste</button>
+									</li>
+									<li>
+										<button class="btn btn_editor cut-ico disabled"></button>
+									</li>
+									<li>
+										<button class="btn btn_editor copy-ico disabled"></button>
+									</li>
+								</ul>
+								<ul class="menu menu_text-editor">
+									<li>
+										<button class="btn_editor bold-ico">b</button>
+									</li>
+									<li>
+										<button class="btn_editor italic-ico">i</button>
+									</li>
+									<li>
+										<button class="btn_editor underline-ico">u</button>
+									</li>
+									<li>
+										<button class="btn_editor strikethrough-ico">t</button>
+									</li>
+									<li>
+										<button class="btn_editor x2-ico">X <sup>2</sup></button>
+									</li>
+								</ul>
+								<ul class="menu menu_text-editor">
+									<li>
+										<button class="btn btn_editor left-ico"></button>
+									</li>
+									<li>
+										<button class="btn btn_editor center-ico"></button>
+									</li>
+									<li>
+										<button class="btn btn_editor right-ico"></button>
+									</li>
+									<li>
+										<button class="btn btn_editor justified-ico"></button>
+									</li>
+								</ul>
+								<ul class="menu menu_text-editor">
+									<li>
+										<button class="btn btn_editor numlist-ico open-drop active"><i
+												class="triangle"></i></button>
+										<ul class="sub-menu sub-menu_dark top" style="display: none">
+											<li class="menu-row">
+												<div class="btn btn_text">
+													<ul class="list-type list-type_default">
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+												<div class="btn btn_text">
+													<ul class="list-type list-type_bracket">
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+												<div class="btn btn_text active">
+													<ul class="list-type list-type_up-roman">
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</li>
+											<li class="menu-row">
+												<div class="btn btn_text">
+													<ul class="list-type list-type_low-alpha">
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+												<div class="btn btn_text">
+													<ul class="list-type list-type_low-alpha bracket">
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+												<div class="btn btn_text">
+													<ul class="list-type list-type_up-alpha">
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<button class="btn btn_editor ico-list open-drop"><i class="triangle"></i>
+										</button>
+										<ul class="sub-menu sub-menu_dark top" style="display: block;">
+											<li class="menu-row">
+												<div class="btn btn_text">
+													<span class="none">None</span>
+												</div>
+												<div class="btn btn_text">
+													<img src="img/circle2.svg" alt="">
+												</div>
+												<div class="btn btn_text">
+													<img src="img/disc.svg" alt="">
+												</div>
+											</li>
+											<li class="menu-row">
+												<div class="btn btn_text active">
+													<img src="img/square2.svg" alt="">
+												</div>
+												<div class="btn btn_text">
+													<img src="img/check.svg" alt="">
+												</div>
+												<div class="btn btn_text">
+													<img src="img/triangle5.svg" alt="">
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<button class="btn btn_editor eraser-ico"></button>
+									</li>
+								</ul>
+							</div>
+							<div class="text-editor__group">
+								<ul class="menu menu_text-editor">
+									<li>
+										<button class="btn lg btn_editor open-drop text">Times New Roman <i
+												class="triangle"></i></button>
+										<div class="sub-menu sub-menu_dark bottom lg" style="display:none">
+											<div class="wrap-outer">
+												<span class="myscroll right"></span>
+												<ul class="list-font list-font_dark">
+													<li>Arial</li>
+													<li>Open Sans</li>
+													<li class="active">Helvetica</li>
+													<li>Roboto</li>
+													<li>Helvetica</li>
+													<li>Kaushan Script</li>
+													<li>Georgia</li>
+													<li>Helvetica</li>
+													<li>Kaushan Script</li>
+													<li>Georgia</li>
+													<li>Helvetica</li>
+													<li>Kaushan Script</li>
+													<li>Georgia</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="menu menu_text-editor">
+									<li>
+										<button class="btn btn_editor open-drop text">Paragraph<i class="triangle"></i>
+										</button>
+										<div class="sub-menu sub-menu_dark bottom md center">
+											<div class="wrap-outer">
+												<ul class="list-font list-font_dark">
+													<li><p>Paragraph</p></li>
+													<li>
+														<pre>pre</pre>
+													</li>
+													<li><h1>Header1</h1></li>
+													<li class="active"><h2>Header2</h2></li>
+													<li><h3>Header3</h3></li>
+													<li><h4>Header4</h4></li>
+													<li><h5>Header5</h5></li>
+													<li><h6>Header6</h6></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="menu menu_text-editor">
+									<li>
+										<button class="btn btn_editor open-drop text">36pt<i class="triangle"></i></button>
+										<div class="sub-menu sub-menu_dark bottom sx" style="display: none">
+											<div class="wrap-outer">
+												<span class="myscroll right"></span>
+												<ul class="list-font list-font_dark">
+													<li>6pt</li>
+													<li>8pt</li>
+													<li class="active">9pt</li>
+													<li>12pt</li>
+													<li>18pt</li>
+													<li>36pt</li>
+													<li>36pt</li>
+													<li>36pt</li>
+													<li>36pt</li>
+													<li>36pt</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<button class="btn btn_editor open-drop justified-ico"><i
+												class="triangle"></i></button>
+										<div class="sub-menu sub-menu_dark bottom sx">
+											<div class="wrap-outer">
+												<span class="myscroll right"></span>
+												<ul class="list-font list-font_dark">
+													<li>1</li>
+													<li>1.15</li>
+													<li class="active">1.3</li>
+													<li>1.5</li>
+													<li>1.7</li>
+													<li>2</li>
+													<li>2.3</li>
+													<li>2.6</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="menu menu_text-editor">
+									<li>
+										<button class="btn btn_editor open-drop water-ico"><i class="triangle"></i>
+										</button>
+										<div class="sub-menu sub-menu_dark bottom lg" style="display: none">
+											<div class="btn-group">
+												<button class="tab-link tab-link_color active">HEX</button>
+												<button class="tab-link tab-link_color ">rgb</button>
+												<button class="tab-link tab-link_color ">cmyk</button>
+												<button class="tab-link tab-link_color ">hsb</button>
+												<button class="tab-link tab-link_color fright">Palettes</button>
+											</div>
+											<div class="tab-content" id="hex-tab">
+												<div class="input-wrp">
+													<div class="group-btn_flex colorpicker">
+														<div class="color-pick"></div>
+														<input type="text" class="input input_sm" value="#cdcdcd"
+																	 disabled>
+													</div>
+												</div>
+											</div>
+											<div class="tab-content" id="rgb-tab">
+												<div class="input-wrp">
+													<div class="group-btn_flex colorpicker colorpicker_group">
+														<div class="color-pick"></div>
+														<label for="rcolor">r</label>
+														<input id="rcolor" type="text" class="input input_xs"
+																	 value="20">
+														<label for="gcolor">g</label>
+														<input id="gcolor" type="text" class="input input_xs"
+																	 value="20">
+														<label for="bcolor">b</label>
+														<input id="bcolor" type="text" class="input input_xs"
+																	 value="20">
+													</div>
+												</div>
+											</div>
+											<div class="tab-content active" id="cmyk-tab">
+												<div class="input-wrp">
+													<div class="group-btn_flex colorpicker colorpicker_group">
+														<div class="color-pick"></div>
+														<label for="cccolor">c</label>
+														<input id="cccolor" type="text" class="input input_xs"
+																	 value="20">
+														<label for="mcolor">m</label>
+														<input id="mcolor" type="text" class="input input_xs"
+																	 value="20">
+														<label for="ycolor">y</label>
+														<input id="ycolor" type="text" class="input input_xs"
+																	 value="20">
+														<label for="kcolor">k</label>
+														<input id="kcolor" type="text" class="input input_xs"
+																	 value="20">
+													</div>
+												</div>
+											</div>
+											<div class="tab-content" id="hsb-tab">
+												<div class="input-wrp">
+													<div class="group-btn_flex colorpicker colorpicker_group">
+														<div class="color-pick"></div>
+														<label for="hcolor">h</label>
+														<input id="hcolor" type="text" class="input input_xs"
+																	 value="20">
+														<label for="scolor">s</label>
+														<input id="scolor" type="text" class="input input_xs"
+																	 value="20%">
+														<label for="bbcolor">b</label>
+														<input id="bbcolor" type="text" class="input input_xs"
+																	 value="20%">
+													</div>
+												</div>
+											</div>
+											<div class="tab-content " id="pallete-tab">
+												<ul class="pallete-wrap">
+													<li><span></span><span></span><span></span><span></span></li>
+													<li><span></span><span></span><span></span><span></span></li>
+													<li><span></span><span></span><span></span><span></span></li>
+													<li class="active">
+														<span></span><span></span><span></span><span></span></li>
+													<li><span></span><span></span><span></span><span></span></li>
+													<li><span></span><span></span><span></span><span></span></li>
+													<li><span></span><span></span><span></span><span></span></li>
+												</ul>
+											</div>
+											<div class="color-picker">
+												<div class="color-picker__slider">
+													<div class="thumb"></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<button class="btn btn_editor open-drop color-text-ico"
+														data-color="#fff"><i
+												class="triangle"></i></button>
+									</li>
+								</ul>
+								<ul class="menu menu_text-editor">
+									<li>
+										<button class="btn btn_editor open-drop link-ico"></button>
+										<div class="sub-menu sub-menu_dark bottom lg">
+											<div class="btn-group">
+												<button class="tab-link tab-link_dark ">Link to Site Page</button>
+												<button class="tab-link tab-link_dark active">External URL</button>
+											</div>
+											<div class="tab-content">
+												<div class="input-wrp">
+													<div class="myselect myselect_editor myselect_full">
+														<div class="myselect__open">About Us</div>
+														<ul class="myselect__opt">
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+														</ul>
+													</div>
+													<div class="myselect myselect_editor myselect_full">
+														<div class="myselect__open">About Us</div>
+														<ul class="myselect__opt">
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="group-btn group-btn_flex">
+													<input type="checkbox" name="new_window" id="new_window1"
+																 class="checkbox">
+													<label for="new_window1"
+																 class="checkbox-label checkbox-label_dark"></label>
+													<div class="label label_normal label_grey">New window</div>
+													<button class="btn btn_link-add text-right">Remove Link</button>
+												</div>
+												<div class="input-wrp">
+													<div>Alt Text</div>
+													<input type="text" class="input input_dark">
+												</div>
+											</div>
+											<div class="tab-content active">
+												<div class="input-wrp">
+													<div class="myselect myselect_editor myselect_full">
+														<div class="myselect__open">About Us</div>
+														<ul class="myselect__opt">
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+														</ul>
+													</div>
+													<div class="myselect myselect_editor myselect_full">
+														<div class="myselect__open">About Us</div>
+														<ul class="myselect__opt">
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+															<li>
+																<button class="myselect__option">About</button>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="group-btn group-btn_flex">
+													<input type="checkbox" name="new_window" id="new_window"
+																 class="checkbox">
+													<label for="new_window"
+																 class="checkbox-label checkbox-label_dark"></label>
+													<div class="label label_normal label_grey">New window</div>
+													<button class="btn btn_link-add text-right">Remove Link</button>
+												</div>
+												<div class="input-wrp">
+													<div>Alt Text</div>
+													<input type="text" class="input input_dark">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<button class="btn btn_editor open-drop link-break-ico"></button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="one-block__add">
+							<div class="add-block">
+								<button class="btn btn_add-block add" id="addBlock">
+									Add Block
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="one-block__page">
+						<ul class="btn-group btn-group_dark prop" style="position: absolute;top:100px;">
+							<li class="title">
+								<button class="btn">Edit Text</button>
+							</li>
+							<li>
+								<button class="btn">Settings <span class="command-ico">+p</span></button>
+							</li>
+							<li>
+								<button class="btn">Dublicate <span class="command-ico">+s</span></button>
+							</li>
+							<li>
+								<button class="btn">Copy style <span class="command-ico">+c</span></button>
+							</li>
+							<li>
+								<button class="btn">Lock <span class="command-ico">+l</span></button>
+							</li>
+							<li>
+								<button class="btn">Remove <span class="command-ico">+del</span></button>
+							</li>
+						</ul>
+						<br><br><br><br>
+						<ul class="btn-group btn-group_dark prop" style="position:absolute;top:18%;">
+							<li class="title">
+								<button class="btn">Change Icon</button>
+							</li>
+							<li>
+								<button class="btn">Settings<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Dublicate<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Lock<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Remove<span class="command-ico">+del</span></button>
+								</button></li>
+						</ul>
+						<ul class="btn-group btn-group_dark prop" style="position:absolute;top:39%;">
+							<li class="title">
+								<button class="btn">Change button design</button>
+							</li>
+							<li>
+								<button class="btn">Settings<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Copy style<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Dublicate<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Lock<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Remove<span class="command-ico">+del</span><</button>
+								</button></li>
+						</ul>
+
+						<ul class="btn-group btn-group_dark prop" style="position:absolute;top:29%;">
+							<li class="title">
+								<button class="btn">Edit image</button>
+							</li>
+							<li>
+								<button class="btn">Settings<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Copy style<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Dublicate<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Lock<span class="command-ico">+p</span></button>
+								</button></li>
+							<li>
+								<button class="btn">Remove<span class="command-ico">+del</span></button>
+								</button></li>
+						</ul>
+					</div>
+					<div class="one-block__page">
+						<div class="win-setting" style="position: absolute; left: 66%;top: 65%;"> <!--image settings-->
+							<div class="win-setting__header">
+								<div class="drag drag-ico">Image settings</div>
+								<button class="btn">Done</button>
+							</div>
+							<div class="win-setting__content">
+								<div class="tabs">
+									<div class="tabs__btn">
+										<button class="btn active">Link</button>
+										<button class="btn">Colors</button>
+										<button class="btn">Appearence</button>
+									</div>
+									<div class="tabs__content active">
+										<section>
+											<div class="input-wrp">
+												<div class="label quest-ico">Link to site page</div>
+												<div class="myselect myselect_dark myselect_full">
+													<button class="myselect__open">Services (/about/services/)</button>
+													<ul class="myselect__opt">
+														<li class="myselect__option">option1</li>
+														<li class="myselect__option">option2</li>
+														<li class="myselect__option">option3</li>
+													</ul>
+												</div>
+											</div>
+											<div class="input-wrp">
+												<div class="label quest-ico">Link to page block (anchor)</div>
+												<div class="myselect myselect_dark myselect_full">
+													<button class="myselect__open">Image</button>
+													<ul class="myselect__opt">
+														<li class="myselect__option">Video</li>
+														<li class="myselect__option">Color</li>
+														<li class="myselect__option">Color Gradient</li>
+													</ul>
+												</div>
+											</div>
+											<div class="input-wrp">
+												<div class="label quest-ico">Link alt text</div>
+												<input type="text" class="input input_dark input_full">
+											</div>
+											<div class="input-wrp">
+												<div class="group-btn group-btn_flex">
+													<input type="checkbox" name="maintenance" id="open_link" class="checkbox">
+													<label for="open_link" class="checkbox-label"></label>
+													<div class="label label_normal label_grey">Open in new window</div>
+												</div>
+											</div>
+										</section>
+									</div>
+									<div class="tabs__content active">
+										<section>
+											<div class="input-wrp">
+												<div class="label quest-ico">Color overlay type</div>
+												<div class="myselect myselect_dark myselect_full">
+													<button class="myselect__open">Color Gradient</button>
+													<ul class="myselect__opt">
+														<li class="myselect__option">optoin</li>
+														<li class="myselect__option">optoin</li>
+														<li class="myselect__option">optoin</li>
+													</ul>
+												</div>
+											</div>
+											<div class="input-wrp">
+												<div class="label quest-ico">Gradient type</div>
+												<div class="myselect myselect_dark myselect_full">
+													<button class="myselect__open">Linear</button>
+													<ul class="myselect__opt">
+														<li class="myselect__option">optoin</li>
+														<li class="myselect__option">optoin</li>
+														<li class="myselect__option">optoin</li>
+													</ul>
+												</div>
+											</div>
+											<div class="input-wrp vcenter">
+												<div class="circle-range fleft">
+													<div class="circle-range__value">
+														45<sup>o</sup>
+													</div>
+												</div>
+												<div class="vcenter">
+													<div class="wrap">
+														<div class="label">First color</div>
+														<div class="drag-color__color">
+															<button href="#0" class="color-pick color-pick_dark"
+																			style="background:#127cff;"></button>
+															#127cff
+														</div>
+													</div>
+													<div class="wrap">
+														<div class="label">Second color</div>
+														<div class="drag-color__color">
+															<button href="#0" class="color-pick color-pick_dark"
+																			style="background:#127cff;"></button>
+															#127cff
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="input-wrp">
+												<div class="slider slider_dblrange gradient"></div>
+											</div>
+											<div class="input-wrp">
+												<input type="checkbox" id="hover" class="checkbox_dark">
+												<label for="hover" class="label_dark">Create hover reaction</label>
+											</div>
+										</section>
+									</div>
+									<div class="tabs__content active">
+										<section>
+											<div class="input-wrp">
+												<div class="label quest-ico">Bounce in</div>
+												<div class="myselect myselect_dark myselect_full">
+													<button class="myselect__open">Linear</button>
+													<ul class="myselect__opt">
+														<li class="myselect__option">optoin</li>
+														<li class="myselect__option">optoin</li>
+														<li class="myselect__option">optoin</li>
+													</ul>
+												</div>
+											</div>
+											<div class="input-wrp">
+												<div class="label quest-ico">Animation on scroll</div>
+												<div class="myselect myselect_dark myselect_full">
+													<button class="myselect__open">Short: left to right</button>
+													<ul class="myselect__opt">
+														<li class="myselect__option">optoin</li>
+														<li class="myselect__option">optoin</li>
+														<li class="myselect__option">optoin</li>
+													</ul>
+												</div>
+											</div>
+										</section>
+										<div class="input-wrp border">
+											<section>
+												<div class="vcenter">
+													<span class="vertical-c">Visibility on devices</span>
+													<div class="input-wrp_display">
+														<div class="ico-wrp">
+															<input type="checkbox" id="desktop199" class="checkbox_dark">
+															<label for="desktop199" class="label_dark">
+																<span class="ico desktop-ico"></span>
+															</label>
+														</div>
+														<div class="ico-wrp">
+															<input type="checkbox" id="mobile199" class="checkbox_dark">
+															<label for="mobile199" class="label_dark">
+																<span class="ico tablet-ico"></span>
+															</label>
+														</div>
+														<div class="ico-wrp">
+															<input type="checkbox" id="tablet199" class="checkbox_dark">
+															<label for="tablet199" class="label_dark">
+																<span class="ico mobile-ico"></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+</div>
+<!-- Move block
+  <div class="win-setting__section black">
+                  <div class="input-wrp input-wrp_paralax">
+                    <input type="checkbox" id="paralax1" class="checkbox_dark">
+                    <label for="paralax1" class="label_dark">Enable Parallax</label>
+                  </div>
+                  <div class="flex-field">
+                    <span>Speed</span>
+                    <input type="range" id="paralax-range">
+                    <label for="height" class="form-label">
+                      <input type="text" class="input input_dark" id="paralax-val">
+                      <label for="paralax-val">px</label>
+                    </label>
+                  </div>
+                </div>
+-->
+
+<script src="libs/index.js"></script>
+<script src="js/build.js"></script>
+<script id="__bs_script__">//<![CDATA[
+document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.14.0.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+</body>
+</html>
+

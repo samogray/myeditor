@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fitable</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,700,600,800,900' rel='stylesheet'
+        type='text/css'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="padding: 0 100px;">
+<h1>1.Background Type:Image</h1>
+<div class="win-setting">
+  <div class="win-setting__header">
+    <h2>Background Settings</h2>
+    <div class="group-btn">
+      <i class="drag-ico"></i>
+      <i class="close-ico"></i>
+    </div>
+  </div>
+  <div class="win-setting__layout">
+    <ul class="tabs-control">
+      <li><a href="#0" class="tabs-control__btn active" data-target="bg">bg</a></li>
+      <li><a href="#0" class="tabs-control__btn rgb-ico" data-target="rgb"></a></li>
+      <li><a href="#0" class="tabs-control__btn view-ico" data-target="view"></a></li>
+    </ul>
+    <div class="tab win-setting_bg active" id="bg">
+      <div class="win-setting__section">
+        <div class="input-wrp clearfix">
+          <span class="vertical-c">Background Type</span>
+          <div class="myselect myselect_dark myselect_sm fright">
+            <a href="#0" class="myselect__open">Image</a>
+            <ul class="myselect__opt">
+              <li><a href="#0" class="myselect__option">Video</a></li>
+              <li><a href="#0" class="myselect__option">Color</a></li>
+              <li><a href="#0" class="myselect__option">Color Gradient</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="type-wrap active" id="image-type">
+        <div class="win-setting__section">
+          <div class="bg-view">
+            <div class="bg-view__control">
+              <a href="#0" class="btn btn_link-add">Change</a>
+              <a href="#0" class="btn btn_link-add label_red">Delete</a>
+            </div>
+          </div>
+          <div class="input-wrp">
+            <span class="vertical-c">Background  Position</span>
+            <div class="myselect myselect_dark myselect_sm fright">
+              <a href="#0" class="myselect__open">Center</a>
+              <ul class="myselect__opt">
+                <li><a href="#0" class="myselect__option">Left</a></li>
+                <li><a href="#0" class="myselect__option">Right</a></li>
+                <li><a href="#0" class="myselect__option">Top</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="input-wrp">
+            <input type="checkbox" id="cover" class="checkbox_dark">
+            <label for="cover" class="label_dark">Cover whole background</label>
+          </div>
+          <div class="input-wrp">
+            <input type="checkbox" id="paralax1" class="checkbox_dark">
+            <label for="paralax1" class="label_dark">Enable Parallax</label>
+            <div class="flex-field flex-field_right open-check">
+              <span>Speed</span>
+              <input type="range" id="paralax-range">
+              <label for="height" class="form-label">
+                <input type="text" class="input input_dark input_sm" id="paralax-val">
+                <label for="paralax-val">px</label>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="win-setting__section">
+          <ul class="image-control">
+            <li class="image-control__item"><span><i class="ico contrast-ico"></i>Contrast</span>
+              <input type="range" id="contrast">
+              <label class="form-label" for="contrast">60%</label>
+            </li>
+            <li class="image-control__item"><span><i class="ico brightness-ico"></i>Brightness</span>
+              <input type="range" id="brightness"><label class="form-label" for="brightness">40%</label>
+            </li>
+            <li class="image-control__item"><span><i class="ico blur-ico"></i>Blur</span>
+              <input type="range" id="blur"><label class="form-label" for="blur">70%</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="type-wrap" id="video-type">
+        <div class="win-setting__section">
+          <div class="input-wrp clearfix">
+            <span class="vertical-c bold">Video URL <i class="sub">YouTube, Vimeo</i></span>
+            <input type="text" class="input_dark input_lg fright">
+          </div>
+        </div>
+        <div class="win-setting__section">
+          <div class="input-wrp">
+            <input type="checkbox" id="cover33" class="checkbox_dark">
+            <label for="cover33" class="label_dark">Cover whole background</label>
+          </div>
+          <div class="input-wrp">
+            <input type="checkbox" id="paralax133" class="checkbox_dark">
+            <label for="paralax133" class="label_dark">Enable Parallax</label>
+            <div class="flex-field flex-field_right open-check">
+              <span>Speed</span>
+              <input type="range" id="paralax-range1333">
+              <label for="height" class="form-label">
+                <input type="text" class="input input_dark input_sm" id="paralax-val">
+                <label for="paralax-val">px</label>
+              </label>
+            </div>
+          </div>
+          <div class="input-wrp">
+            <input type="checkbox" id="cover44" class="checkbox_dark">
+            <label for="cover44" class="label_dark">Enable Color Overlay</label>
+            <div class="flex-field flex-field_right open-check">
+              <div class="grp-right fright">
+                <div class="color_ov clearfix">
+                  <span class="vertical-c">Overlay Type</span>
+                  <div class="myselect myselect_dark myselect_sm fright">
+                    <a href="#0" class="myselect__open">Gradient</a>
+                    <ul class="myselect__opt">
+                      <li><a href="#0" class="myselect__option">Cover</a></li>
+                      <li><a href="#0" class="myselect__option">Bower</a></li>
+                      <li><a href="#0" class="myselect__option">Tower</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <ul>
+                  <li class="drag-color color_ov clearfix">
+                    <span class="vertical-c drag-ico">Select Color</span>
+                    <div class="drag-color__color">
+                      <a href="#0" class="color-pick color-pick_dark" data-color="#cfcfcf" style="background:#cd1bdd;"></a>
+                    </div>
+                  </li>
+                  <li class="drag-color color_ov clearfix">
+                    <span class="vertical-c drag-ico">Select Color</span>
+                    <div class="drag-color__color">
+                      <a href="#0" class="color-pick color-pick_dark" data-color="#127cff" style="background:#127cff;"></a>
+                    </div>
+                  </li>
+                </ul>
+                <div class="input-wrp">
+                  <input type="range" id="color_ov" class="range_mm" min="20" max="50" multiple>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="type-wrap" id="color-type">
+        <div class="win-setting__section">
+          <div class="drag-color color_ov clearfix">
+            <span class="vertical-c">Select Color</span>
+            <div class="drag-color__color">
+              <a href="#0" class="color-pick color-pick_dark" data-color="#cfcfcf" style="background:#cd1bdd;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="type-wrap" id="gradient-type">
+        <div class="win-setting__section">
+          <div class="input-wrp">
+            <div class="color_ov clearfix">
+              <span class="vertical-c">Overlay Type</span>
+              <div class="myselect myselect_dark myselect_sm fright">
+                <a href="#0" class="myselect__open">Gradient</a>
+                <ul class="myselect__opt">
+                  <li><a href="#0" class="myselect__option">Cover</a></li>
+                  <li><a href="#0" class="myselect__option">Bower</a></li>
+                  <li><a href="#0" class="myselect__option">Tower</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul>
+              <li class="drag-color color_ov clearfix">
+                <span class="vertical-c drag-ico">Select Color</span>
+                <div class="drag-color__color">
+                  <a href="#0" class="color-pick color-pick_dark" data-color="#cfcfcf" style="background:#cd1bdd;"></a>
+                </div>
+              </li>
+              <li class="drag-color color_ov clearfix">
+                <span class="vertical-c drag-ico">Select Color</span>
+                <div class="drag-color__color">
+                  <a href="#0" class="color-pick color-pick_dark" data-color="#127cff" style="background:#127cff;"></a>
+                </div>
+              </li>
+            </ul>
+            <div class="input-wrp">
+              <a href="#0" class="btn btn_link-add">+Add color</a>
+            </div>
+            <div class="input-wrp">
+              <input type="range" id="color_ov" class="range_mm">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab win-setting_filter" id="rgb">
+      <div class="win-setting__section">
+        <div class="input-wrp clearfix">
+          <span class="vertical-c">Select one of the photo filters for the background image</span>
+        </div>
+        <div class="input-wrp">
+          <ul class="filter-list">
+            <li class="filter-list__item">
+              <a href="#0"><img src="img/filter1.jpg" alt="filter"><span>No</span></a>
+            </li>
+            <li class="filter-list__item">
+              <a href="#0" class="active"><img src="img/filter1.jpg" alt="filter"><span>Sepia </span></a>
+            </li>
+            <li class="filter-list__item">
+              <a href="#0"><img src="img/filter2.jpg" alt="filter"><span>B&W<</span></a>
+            </li>
+            <li class="filter-list__item">
+              <a href="#0"><img src="img/filter3.jpg" alt="filter"><span>Sepia</span></a>
+            </li>
+            <li class="filter-list__item">
+              <a href="#0"><img src="img/filter4.jpg" alt="filter"><span>Blur</span></a>
+            </li>
+            <li class="filter-list__item">
+              <a href="#0"><img src="img/filter5.jpg" alt="filter"><span>No</span></a>
+            </li>
+            <li class="filter-list__item">
+              <a href="#0"><img src="img/filter6.jpg" alt="filter"><span>Filter 5</span></a>
+            </li>
+            <li class="filter-list__item">
+              <a href="#0"><img src="img/filter7.jpg" alt="filter"><span>Filter 1</span></a>
+            </li>
+            <li class="filter-list__item">
+              <a href="#0"><img src="img/filter8.jpg" alt="filter"><span>Acadia</span></a>
+            </li>
+            <li class="filter-list__item">
+              <a href="#0"><img src="img/filter9.jpg" alt="filter"><span>Green</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tab win-setting_view" id="view">
+      <div class="win-setting__section">
+        <div class="input-wrp">
+          <input type="checkbox" id="fscreen" class="checkbox_dark">
+          <label for="fscreen" class="label_dark">Full Screen Height?</label>
+        </div>
+        <div class="input-wrp">
+          <input type="checkbox" id="fwidth" class="checkbox_dark">
+          <label for="fwidth" class="label_dark">Full Width?</label>
+        </div>
+      </div>
+      <div class="win-setting__section">
+        <div class="input-wrp clearfix">
+          <span class="vertical-c">Viewport Animation</span>
+          <div class="myselect myselect_dark myselect_lg fright">
+            <a href="#0" class="myselect__open">None</a>
+            <ul class="myselect__opt">
+              <li><a href="#0" class="myselect__option">Cover</a></li>
+              <li><a href="#0" class="myselect__option">Bower</a></li>
+              <li><a href="#0" class="myselect__option">Tower</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="win-setting__section">
+        <div class="vcenter">
+          <span class="vertical-c">Display on Devices</span>
+          <div class="input-wrp_display">
+            <input type="checkbox" id="desktop1" class="checkbox_dark">
+            <label for="desktop1" class="label_dark">
+              <span class="ico desktop-ico"></span>
+            </label>
+            <input type="checkbox" id="tablet1" class="checkbox_dark">
+            <label for="tablet1" class="label_dark">
+              <span class="ico mobile-ico"></span>
+            </label>
+            <input type="checkbox" id="mobile1" class="checkbox_dark">
+            <label for="mobile1" class="label_dark">
+              <span class="ico tablet-ico"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="win-setting__footer">
+    <div class="fright">
+      <a href="#0" class="btn cancel">Cancel </a>
+      <a href="#0" class="btn btn_link">Apply</a>
+    </div>
+  </div>
+</div>
+
+
+<script src="libs/index.js"></script>
+<script src="js/build.js"></script>
+
+<script>
+  var tab = $('.tabs-control__btn');
+  tab.click(function () {
+    var target = $(this).attr('data-target');
+    $('.tabs-control__btn').removeClass('active');
+    $(this).addClass('active');
+    console.log(target);
+    $('.tab').removeClass('active');
+    $('#' + target + '').addClass('active');
+
+  });
+</script>
+</body>
+</html>
+
