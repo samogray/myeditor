@@ -13,7 +13,7 @@
       }
       li {
         display: flex;
-        height: 36px;
+        height: 38px;
         font-size: 14px;
         align-items: stretch;
 
@@ -29,10 +29,8 @@
           align-items: stretch;
           border-bottom: 1px solid $border-dark;
           overflow: hidden;
-          border-radius: 15px 15px 0 0;
-          .btn {
-            color: #d5d5d5;
-          }
+          border-radius: 10px 10px 0 0;
+
         }
         &:last-child {
           .btn {
@@ -46,17 +44,15 @@
         width: 100%;
         text-align: left;
         color: #7f7f7f;
-        line-height: normal;
         border-radius: 0;
+        padding:0 20px;
+        line-height: 33px;
+        @include animation;
         &:hover {
-          color: $color;
-          background-color: black;
-          .command-ico {
-            @include svg('command.svg', '#{$color}', 12px, 12px, $mr: 3px);
-          }
+         // color: $color-editor-editor;
+          background-color: #191818;
         }
         span {
-          text-transform: uppercase;
           font-size: 10px;
           display: flex;
           align-items: center;

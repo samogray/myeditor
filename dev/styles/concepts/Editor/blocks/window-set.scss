@@ -1,331 +1,4 @@
-/*.win-setting {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-between;
-  background-color: $dark;
-  width: 345px;
-  height: auto;
-  color: #b0b0b0;
-  font-size: 12px;
-  font-weight: 400;
-  box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.52);
-  border: 1px solid #2b2b2b;
-  border-radius: 4px;
-  @include animation;
 
-  @include respondTo(xlg) {
-    width: 400px;
-    font-size: 14px;
-  }
-
-  &:hover .tabs-control {
-    display: block;
-    opacity: 1;
-    transform: rotateX(0deg);
-    !* animation-name: control;
-     transition-duration: .3s;
-     animation-duration: .3s;
-     animation-fill-mode: forwards;
-     animation-timing-function: ease-in-out;*!
-    transform-origin: 50% 50%;
-
-  }
-  &__header {
-    height: 43px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 0 20px;
-    background-color: #000;
-    border: none;
-
-    @include respondTo(xlg) {
-      height: 52px;
-    }
-    &:after {
-      display: none;
-    }
-
-    .close-ico {
-      @include svg('close.svg', '#414141', 14px, 14px, $mr: 0);
-      cursor: pointer;
-      margin-left: 20px;
-
-      &:hover {
-        @include svg('close.svg', '#b0b0b0', 14px, 14px, $mr: 0);
-
-      }
-    }
-    .btn-group {
-      display: flex;
-      align-items: center;
-      height: 43px;
-    }
-  }
-  &__footer {
-    padding: 0;
-    height: 43px;
-    background-color: black;
-    line-height: 43px;
-    border: none;
-    flex: 0 0 auto;
-    @include respondTo(xlg) {
-      height: 52px;
-      line-height: 52px;
-    }
-
-    .btn {
-      padding: 0 15px;
-      color: $color;
-      font-size: 14px;
-      font-weight: 400;
-    }
-    .cancel {
-      color: #c4c4c4;
-
-    }
-
-    .btn_link:hover {
-      color: $color;
-    }
-    .cancel:hover {
-      color: #ececec;
-    }
-  }
-
-  &__layout {
-    position: relative;
-    background-color: $dark;
-    flex: 1 0 auto;
-
-  }
-  .vertical-c.bold {
-    width: 98px;
-    display: inline-block;
-    line-height: 1.5;
-  }
-
-  .tabs-control {
-    position: absolute;
-    left: -49px;
-    top: 0;
-    opacity: 0;
-    display: block;
-    perspective: 1000px;
-    transform: rotateX(50deg);
-    @include animation;
-
-    @include respondTo(xlg) {
-      left: -60px
-    }
-    li {
-      &:last-child {
-        button {
-          border-bottom: none;
-        }
-      }
-    }
-
-    &__btn {
-      width: 49px;
-      height: 49px;
-      background-color: black;
-      color: #127cff;
-      font-size: 14px;
-      font-weight: 400;
-      text-transform: uppercase;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-bottom: 1px solid #2b2b2b;
-      border-right: 1px solid #2b2b2b;
-      !*@include animation;*!
-      @include respondTo(xlg) {
-        width: 60px;
-        height: 60px;
-      }
-
-      &.active {
-        background-color: $dark;
-        box-shadow: inset 3px 0px 0px 0px #127cff;
-        border-right: 0;
-      }
-      &:hover {
-        background-color: $dark;
-      }
-    }
-  }
-  .vcenter {
-    justify-content: space-between;
-    &:after {
-      display: none;
-    }
-  }
-  .grp-right {
-    width: 274px;
-  }
-  .input-wrp {
-    padding: 15px 0;
-    padding-bottom: 0;
-    clear: both;
-    @include susy-clearfix;
-
-    input.input_sm {
-      width: 40px;
-      padding-left: 0;
-      flex-basis: 40px;
-    }
-  ;
-    input {
-      margin: 0;
-      padding: 0;
-    }
-    &_display {
-      text-align: center;
-      padding-bottom: 0;
-      width: auto;
-      display: flex;
-      label {
-        width: auto;
-        display: inline-flex;
-        align-items: center;
-        margin: 0 8px;
-
-        &:before {
-          margin-right: 0;
-          order: 2;
-        }
-
-        &:after {
-          left: 30px;
-          bottom: 7px;
-        }
-
-        .ico {
-          display: inline-block;
-          position: static;
-          width: 24px;
-          height: 24px;
-          margin-top: 0;
-          order: 1;
-          margin-right: 5px;
-        }
-        .desktop-ico {
-          background-image: svg-load('#{$img-path}desktop.svg', 'fill:#ffffff');
-        }
-
-        .tablet-ico {
-          background-image: svg-load('#{$img-path}tablet.svg', 'fill:#ffffff');
-        }
-        .mobile-ico {
-          background-image: svg-load('#{$img-path}mobile.svg', 'fill:#ffffff');
-        }
-      }
-    }
-
-    &_paralax {
-      margin-bottom: 4px;
-    }
-
-  }
-
-  &__section {
-    border-bottom: 1px solid #2b2b2b;
-    padding: 15px 20px;
-    @include susy-clearfix;
-    @include respondTo(xlg) {
-      padding: 20px;
-    }
-
-    & > :first-child {
-      margin-top: 0;
-      padding-top: 0;
-    }
-
-    &:last-child {
-      border-bottom: none;
-    }
-
-    h2 {
-      color: #f8f9fd;
-      font-size: 16px;
-      font-weight: 400;
-    }
-    h3 {
-      color: #f8f9fd;
-      font-size: 12px;
-      font-weight: 400;
-      text-align: center;
-      padding-bottom: 17px;
-    }
-    &.black {
-      background-color: #121212;
-    }
-
-    &.lite-black {
-      background-color: $dark;
-    }
-
-    .btn-group {
-      @include susy-clearfix;
-      .btn_fleft, .btn_fright {
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        box-sizing: border-box;
-        color: #a5a5a5;
-        font-size: 14px;
-        font-weight: 400;
-        @include animation;
-        padding: 0;
-        &:hover {
-          color: $color;
-        }
-      }
-
-      .btn_fleft {
-        float: left;
-        border-right: 1px solid #2b2b2b;
-
-        &:hover {
-          color: $red;
-        }
-      }
-      .btn_fright {
-        float: right;
-      }
-    }
-
-    &.size {
-      height: 130px;
-    }
-  }
-
-  &__layout {
-    .tab {
-      display: none;
-      transition: all .8s ease-in-out;
-      @include animation;
-      @include fadeIn();
-      &.active {
-        display: block;
-      }
-      .win-setting__section {
-        &:last-child {
-          border: none;
-        }
-      }
-    }
-
-  }
-}*/
 .win-setting {
   width: 326px;
   background-color: #181818;
@@ -353,7 +26,7 @@
       background-color: #262626;
     }
     &:hover {
-      color: $color;
+      color: $color-editor;
     }
   }
   &__header {
@@ -361,7 +34,7 @@
     background-color: black;
     color: #f8f9fd;
     font-weight: 400;
-    padding: 0 18px;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -371,12 +44,19 @@
       color: #1071e9;
       font-size: 14px;
       font-weight: 700;
-      width: 25%;
       text-align: right;
+      padding: 0;
+      margin-right: 25px;
+      &:hover {
+        color: #1071e9;
+      }
     }
 
     .drag {
       width: 75%;
+      padding-left: 20px;
+      height: 100%;
+      color:#f8f9fd;
       &:before {
         margin-right: 10px;
       }
@@ -500,19 +180,22 @@
       .btn {
         padding: 0 19px;
         font-size: 12px;
+        border-top:1px solid transparent;
+        color:white;
         &.active {
           background-color: #262626;
-          color: $color;
+          color: $color-editor;
+          border-color: $border-dark;
         }
         &:hover {
-          color: $color;
+          color: $color-editor;
         }
       }
     }
 
     &__content {
       display: none;
-      padding: 25px 0;
+      padding: 18px 0;
       background-color: #262626;
       border-radius: 0 0 15px 15px;
       &.active {
@@ -527,10 +210,10 @@
         font-size: 12px;
         display: flex;
         align-items: center;
-        margin-bottom:5px;
+        margin-bottom:4px;
         &:before {
           order: 2;
-          margin-left: 4px;
+          margin-left:13px;
         }
         &_normal {
           margin-bottom: 0;
@@ -543,10 +226,10 @@
         }
       }
       .input_dark {
-        background-color: #272727;
+        background-color:#323232;
         color: #a1a1a1;
         border: 1px solid #4d4d4d;
-        height: 26px;
+        height: 33px;
         width: 100%;
         text-align: left;
       }
@@ -679,30 +362,60 @@
   .desktop-ico {
     @include svg('desktop.svg', '#959595', 22px, 22px, $mr: 0);
     &:hover {
-      @include svg('desktop.svg', '#{$color}', 22px, 22px, $mr: 0);
+      @include svg('desktop.svg', '#{$color-editor}', 22px, 22px, $mr: 0);
     }
     &.active {
-      @include svg('desktop.svg', '#{$color}', 22px, 22px, $mr: 0);
+      @include svg('desktop.svg', '#{$color-editor}', 22px, 22px, $mr: 0);
+    }
+
+    &:before {
+      right: 44px;
     }
   }
 
   .mobile-ico {
     @include svg('mobile.svg', '#959595', 22px, 22px, $mr: 0);
     &:hover {
-      @include svg('mobile.svg', '#{$color}', 22px, 22px, $mr: 0);
+      @include svg('mobile.svg', '#{$color-editor}', 22px, 22px, $mr: 0);
     }
     &.active {
-      @include svg('mobile.svg', '#{$color}', 22px, 22px, $mr: 0);
+      @include svg('mobile.svg', '#{$color-editor}', 22px, 22px, $mr: 0);
+    }
+    &:before {
+      right:36px;
     }
   }
 
   .tablet-ico {
     @include svg('tablet.svg', '#959595', 22px, 22px, $mr: 0);
     &:hover {
-      @include svg('tablet.svg', '#{$color}', 22px, 22px, $mr: 0);
+      @include svg('tablet.svg', '#{$color-editor}', 22px, 22px, $mr: 0);
     }
     &.active {
-      @include svg('tablet.svg', '#{$color}', 22px, 22px, $mr: 0);
+      @include svg('tablet.svg', '#{$color-editor}', 22px, 22px, $mr: 0);
+    }
+    &:before {
+      right: 41px;
+    }
+  }
+
+  .desktop-ico {
+    @include svg('desktop.svg', '#959595', 22px, 22px, $mr: 0);
+    &:hover {
+      @include svg('desktop.svg', '#959595', 22px, 22px, $mr: 0);
+    }
+  }
+
+  .tablet-ico {
+    @include svg('tablet.svg', '#959595', 22px, 22px, $mr: 0);
+    &:hover {
+      @include svg('tablet.svg', '#959595', 22px, 22px, $mr: 0);
+    }
+  }
+  .mobile-ico {
+    @include svg('mobile.svg', '#959595', 22px, 22px, $mr: 0);
+    &:hover {
+      @include svg('mobile.svg', '#959595', 22px, 22px, $mr: 0);
     }
   }
 
@@ -717,14 +430,14 @@
             display: inline-block;
           }
           .desktop-ico {
-            @include svg('desktop.svg', '#{$color}', 22px, 22px, $mr: 0);
+            @include svg('desktop.svg', '#{$color-editor}', 22px, 22px, $mr: 0);
           }
 
           .tablet-ico {
-            @include svg('tablet.svg', '#{$color}', 22px, 22px, $mr: 0);
+            @include svg('tablet.svg', '#{$color-editor}', 22px, 22px, $mr: 0);
           }
           .mobile-ico {
-            @include svg('mobile.svg', '#{$color}', 22px, 22px, $mr: 0);
+            @include svg('mobile.svg', '#{$color-editor}', 22px, 22px, $mr: 0);
           }
         }
       }
@@ -738,7 +451,7 @@
       margin-right: 37px;
     }
     &:last-child {
-      margin-right: 13px;
+      margin-right: -7px;
     }
   }
 
@@ -748,18 +461,13 @@
   }
 
   .btn {
-    padding: 0 27px;
-    line-height: 38px;
-
-    &:hover {
-      color: white;
-    }
 
     &.yellow {
       background-color: #ffba00;
       @include animation;
       &:hover {
         box-shadow: 0px 0px 29px 0px rgba(255, 186, 0, 0.47);
+        color:white;
       }
 
       &.gradient {
@@ -786,6 +494,9 @@
 
     &.inv {
       color:black;
+      &:hover {
+        color:black;
+      }
     }
 
 
@@ -793,6 +504,7 @@
       background-color: #127cff;
       &:hover {
         box-shadow: 0px 0px 29px 0px rgba(18, 124, 255, 0.36);
+        color:white;
       }
 
       &.gradient {
@@ -847,7 +559,7 @@
       text-decoration: none;
       @include animation;
       &.active {
-        color: $color;
+        color: $color-editor;
         img {
           border: 2px solid #127cff;
           border-radius: 4px;
@@ -856,7 +568,7 @@
       }
 
       &:hover {
-        color: $color;
+        color: $color-editor;
       }
     }
   }
@@ -984,31 +696,6 @@
   }
 }
 
-/*.checkbox {
-  &_dark {
-    position: absolute;
-    opacity: 0;
-
-    &:checked {
-      + .label_dark {
-        &:after {
-          display: inline-block;
-        }
-        .desktop-ico {
-          background-image: svg-load('#{$img-path}desktop.svg', 'fill:#00A7FF');
-        }
-
-        .tablet-ico {
-          background-image: svg-load('#{$img-path}tablet.svg', 'fill:#00A7FF');
-        }
-        .mobile-ico {
-          background-image: svg-load('#{$img-path}mobile.svg', 'fill:#00A7FF');
-        }
-      }
-    }
-  }
-
-}*/
 
 .label {
 
@@ -1100,7 +787,7 @@
       margin: 0;
       padding: 0;
       &:hover {
-        color: $color;
+        color: $color-editor;
       }
     }
     .label_red {

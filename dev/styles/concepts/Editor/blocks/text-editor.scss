@@ -52,7 +52,7 @@
 }
 
 .text-editor {
-  border-radius: 25px;
+  border-radius: 15px;
   display: inline-block;
 
   &__group {
@@ -61,10 +61,10 @@
     height: 47px;
     align-items: stretch;
     &:first-child {
-      border-radius: 25px 25px 0 0;
+      border-radius: 15px 15px 0 0;
     }
     &:last-child {
-      border-radius: 0px 0px 25px 25px;
+      border-radius: 0px 0px 15px 15px;
       border-top: 1px solid $border-grey;
     }
   }
@@ -99,7 +99,17 @@
       }
     }
     button.text {
-      height: 41px;
+      position: relative;
+      top:-2px;
+      .triangle {
+        &:before {
+          left:-2px;
+        }
+      }
+    }
+
+    .myselect {
+      margin-bottom: 5px;
     }
   }
 
@@ -137,7 +147,6 @@
   position: absolute;
   z-index: 500;
   left: 50%;
-  bottom: 59px;
   border-radius: 5px;
   margin-left: -98px;
   &_dark {
@@ -206,18 +215,15 @@
       margin-right: 6px;
     }
     .btn_link-add {
-      color: $color;
+      color: $color-editor;
+
+      &:hover {
+        $color:$color-editor;
+      }
     }
+
     .input_dark {
-      box-sizing: border-box;
-      max-width: 100%;
-      background-color: $myselect-dark;
-      height: 33px;
-      color: $color-grey;
-      border: none;
-      text-align: left;
       padding-left: 7px;
-      margin-top: 4px;
     }
 
   }
@@ -246,7 +252,6 @@
   &.lg {
     border-radius: 5px;
     width: 326px;
-    height: 235px;
     left: 50%;
     margin-left: -163px;
     padding: 20px;
@@ -281,7 +286,7 @@
       position: absolute;
       left: 50%;
       margin-left: -9px;
-      top: -9px;
+      top: -8px;
       width: 0;
       height: 0;
       border-style: solid;
@@ -291,12 +296,16 @@
 
   }
 
+  &.top{
+    top: -140px;
+  }
+
   &:after {
     content: '';
     position: absolute;
     left: 50%;
     margin-left: -9px;
-    bottbottom: -9px;om: -9px;
+    bottom: -8px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -543,8 +552,8 @@ span.none {
 
 .tab-link {
   text-decoration: none;
-  border-radius: 10px;
-  height: 25px;
+  border-radius: 20px;
+  height: 33px;
   width: auto;
   padding: 0 12px;
   font-size: 12px;
@@ -555,7 +564,6 @@ span.none {
     color: $color-grey;
     &.active {
       background-color: $black-hover;
-      color: white;
     }
   }
   &_color {
@@ -570,7 +578,7 @@ span.none {
 
   }
   &:hover {
-    color: $color;
+    color: white;
   }
 
 }

@@ -11,6 +11,7 @@ body {
   background-color: $body;
   font-size: 16px;
   color: black;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 ul,ol {
@@ -548,11 +549,15 @@ div {
   }
 
   &_dark {
-    background-color: #272727;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: #323232;
+    height: 33px;
+    color: #8b8b8b;
     border: 1px solid $border-dark;
-    border-radius: 1px;
-    color: #d9d9d9;
-    text-align: center;
+    text-align: left;
+    padding-left: 7px;
+    margin-top: 4px;
   }
 
   &_sm {
@@ -926,7 +931,7 @@ input[type="radio"] {
       box-sizing: border-box;
       &:after {
         background-color: #3498db;
-        left: 17px;
+        left: 18px;
         box-shadow: 0 0 2px rgba(17, 85, 194, 0.49);
       }
     }
@@ -1104,11 +1109,12 @@ ul {
   &__option {
     color: #b5b5b5;
     display: block;
+    width: 100%;
+    text-align: left;
     text-decoration: none;
     padding: 7px 5px;
-    transition: all .2s ease-in-out;
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
 
     &:hover {
       background-color: #f9f9f9;
@@ -1121,13 +1127,13 @@ ul {
       box-shadow: none;
     }
     .myselect__open {
-      background-color: #353535;
-      color: #cecece;
       border: 1px solid $border-dark;
-      height: 26px;
-      line-height: 26px;
+      background-color: #323232;
+      height: 33px;
+      line-height: 33px;
+      color: #8b8b8b;
       font-size: 12px;
-      font-weight: 400;
+
     }
     .myselect__opt {
       background-color: #272727;
@@ -1137,10 +1143,18 @@ ul {
       box-shadow: none;
     }
     .myselect__option {
+      border-top:0;
+      cursor: pointer;
+      &:not(:last-child) {
+        border-bottom: 1px solid #313030;
+      }
+      font-size: 12px;
       &:hover {
         background-color: #353535;
-        border-color: #4d4c4c;
+        border-color: $border-dark;
         font-size: 12px;
+        border-top:0;
+      }
       }
     }
   }
@@ -1185,7 +1199,8 @@ ul {
   &_full {
     width: 100%;
   }
-}
+
+
 
 @keyframes select {
   0% {
@@ -1250,7 +1265,7 @@ ul {
     right:0;
     width: 3px;
     height: 30%;
-    background-color:$color;
+    background-color:$color-editor;
   }
 
 
@@ -1268,8 +1283,9 @@ ul {
 }
 
 sup {
-  top: -0.8em;
+  top: -0.6em;
   left: -0.3em;
+  font-weight: 400;
 }
 
 .tooltip {
@@ -1284,4 +1300,8 @@ sup {
 
 .nopadding {
   padding: 0;
+}
+
+.text-center {
+  text-align: center;
 }
