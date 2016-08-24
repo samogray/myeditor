@@ -925,10 +925,12 @@ input[type="radio"] {
   position: absolute;
   &:checked {
     + .checkbox-label {
-      background-color: rgba(0, 167, 255, 0.42);
-      border-radius: 20px;
-      cursor: pointer;
-      box-sizing: border-box;
+      &:before {
+        background-color: rgba(0, 167, 255, 0.42);
+        border-radius: 20px;
+        cursor: pointer;
+        box-sizing: border-box;
+      }
       &:after {
         background-color: #3498db;
         left: 18px;
@@ -941,14 +943,22 @@ input[type="radio"] {
 
 .checkbox-label {
   position: relative;
-  display: inline-block;
-  width: 38px;
-  height: 14px;
-  background-color: #bdbdbd;
-  border-radius: 20px;
+  display: inline-flex;
   cursor: pointer;
   box-sizing: border-box;
   @include animation;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 38px;
+    height: 14px;
+    background-color: #bdbdbd;
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 8px;
+  }
 
   &:after {
     content: '';
@@ -971,7 +981,8 @@ input[type="radio"] {
 .group-btn {
 
   label {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     &:not(:last-child) {
       margin-right: 15px;
     }
@@ -1155,50 +1166,50 @@ ul {
         font-size: 12px;
         border-top:0;
       }
-      }
     }
   }
+}
 
-  &_editor {
-    &:hover {
-      box-shadow: none;
-    }
+&_editor {
+  &:hover {
+    box-shadow: none;
+  }
+  font-size: 12px;
+  .myselect__open {
+    background-color:$myselect-dark;
+    height: 33px;
+    line-height: 33px;
+    color:$color-grey;
+    border:none;
     font-size: 12px;
-    .myselect__open {
-      background-color:$myselect-dark;
-      height: 33px;
-      line-height: 33px;
-      color:$color-grey;
-      border:none;
-      font-size: 12px;
+  }
+  .myselect__opt {
+    background-color:$myselect-dark;
+    color: #a1a1a1;
+    border:none;
+    border-top: 1px solid $border-dark;
+    box-shadow: none;
+  }
+
+  .myselect__option {
+    &:hover {
+      background-color: #383838;
+      border-color: #4d4c4c;
     }
-    .myselect__opt {
-      background-color:$myselect-dark;
-      color: #a1a1a1;
-      border:none;
-      border-top: 1px solid $border-dark;
-      box-shadow: none;
-    }
-
-    .myselect__option {
-      &:hover {
-        background-color: #383838;
-        border-color: #4d4c4c;
-      }
-    }
-
   }
 
-  &_lg {
-    width: 170px;
-  }
-  &_sm {
-    width: 117px;
-  }
+}
 
-  &_full {
-    width: 100%;
-  }
+&_lg {
+  width: 170px;
+}
+&_sm {
+  width: 117px;
+}
+
+&_full {
+  width: 100%;
+}
 
 
 
