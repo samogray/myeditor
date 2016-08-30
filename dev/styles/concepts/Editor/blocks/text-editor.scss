@@ -101,11 +101,6 @@
     button.text {
       position: relative;
       top:-2px;
-      .triangle {
-        &:before {
-          left:-2px;
-        }
-      }
     }
 
     .myselect {

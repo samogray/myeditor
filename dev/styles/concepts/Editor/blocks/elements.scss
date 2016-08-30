@@ -30,7 +30,9 @@
           border-bottom: 1px solid $border-dark;
           overflow: hidden;
           border-radius: 10px 10px 0 0;
-
+          .btn {
+            color: #d5d5d5;
+          }
         }
         &:last-child {
           .btn {
