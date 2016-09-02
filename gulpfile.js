@@ -27,22 +27,12 @@ var concat = require('gulp-concat');
 var path = require('path');
 var mainBowerFiles = require('gulp-main-bower-files');
 var gulpFilter = require('gulp-filter');
+var stylus = require('gulp-stylus')
 
 
 var isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
 /*SET NODE_ENV=dev (production)  --- команда для віндовс*/
 
-/*gulp.task('bower', function() {
-
- var filterJS = gulpFilter('dev/bower/!**!/!*.js', { restore: true });
- return gulp.src('bower.json')
- .pipe(mainBowerFiles())
- .pipe(filterJS)
- .pipe(concat('vendor.js'))
- .pipe(uglify())
- .pipe(filterJS.restore)
- .pipe(gulp.dest('dev/assets/js/'));
- });*/
 
 gulp.task('styles', function () {
 
@@ -55,26 +45,14 @@ gulp.task('styles', function () {
         .pipe(gulpif(isDevelopment, sourcemaps.init()))
         .pipe(sass({
                 /* outputStyle: 'compressed'*/
-            })/*.on('error', notify.onError())*/
+            })
         )
-
         .pipe(cache('styles'))
         .pipe(postcss(processors))
         .pipe(remember('styles'))
         .pipe(gulpif(isDevelopment, sourcemaps.write()))
         .pipe(gulp.dest('dev/assets/css/')).pipe(browserSync.stream());
 });
-
-/*gulp.task('postcss', function(){
-    var processors = [
-        autoprefixer({browsers: ['last 3 version']}),
-        require('postcss-inline-svg'),
-        require('postcss-svgo')
-    ];
-    return gulp.src('dev/assets/css/style.css')
-        .pipe(postcss(processors))
-        .pipe(gulp.dest('public/css/'));
-});*/
 
 
 gulp.task('style:sprite', function () {

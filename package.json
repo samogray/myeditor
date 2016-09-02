@@ -42,6 +42,7 @@
     "pump": "^1.0.1"
   },
   "dependencies": {
+    "gulp-stylus": "^2.5.0",
     "sass-inline-image": "0.0.3",
     "sass-svg": "^1.0.0",
     "sassdash": "^0.8.2"
