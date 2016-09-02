@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="45px" height="41px" viewBox="0 0 45 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>warning-ico</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Customer-Account" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Suggestions" transform="translate(-300.000000, -913.000000)">
+            <g id="Group-3" transform="translate(97.000000, 913.000000)">
+                <g id="warning" transform="translate(203.000000, 0.000000)">
+                    <g id="Layer_1">
+                        <g id="XMLID_12_">
+                            <path d="M4.93039286,40.8483651 C0.538071429,40.8483651 -1.258875,37.6977103 0.937285714,33.8468016 L18.5068929,3.03985714 C20.7030536,-0.811051587 24.2967857,-0.811051587 26.4929464,3.03985714 L44.0625536,33.8468016 C46.2587143,37.6977103 44.4617679,40.8483651 40.0694464,40.8483651 L4.93039286,40.8483651 L4.93039286,40.8483651 Z" id="XMLID_441_" fill="#FFDA44"></path>
+                            <path d="M44.0627143,33.8468016 L26.4931071,3.03985714 C25.3951071,1.11432143 23.9473929,0.154400794 22.5,0.154563492 L22.5,40.8483651 L40.0696071,40.8483651 C44.4619286,40.8483651 46.258875,37.6977103 44.0627143,33.8468016 L44.0627143,33.8468016 Z" id="XMLID_443_" fill="#FF9811"></path>
+                            <polygon id="XMLID_444_" fill="#FFFFFF" points="22.5 26.2055079 19.2857143 26.2055079 17.6785714 13.1896349 22.5 13.1896349 24.1071429 19.6975714"></polygon>
+                            <polygon id="XMLID_445_" fill="#FFDA44" points="25.7142857 26.2055079 22.5 26.2055079 22.5 13.1896349 27.3214286 13.1896349"></polygon>
+                            <polygon id="XMLID_446_" fill="#FFFFFF" points="22.5 35.9674127 19.2857143 35.9674127 19.2857143 29.4594762 22.5 29.4594762 24.1071429 32.7134444"></polygon>
+                            <rect id="XMLID_447_" fill="#FFDA44" x="22.5" y="29.4594762" width="3.21428571" height="6.50793651"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,51 @@
+/*======icons========*/
+.media-ico {
+   @include svg('media.svg', '#d6d6d6', 34px, 31px, $mr: 0);
+ }
+.wallet-ico {
+  @include svg('wallet-ico.svg', '#d6d6d6', 33px, 30px, $mr: 0);
+
+}
+.profile-ico {
+  @include svg('profile.svg', '#d6d6d6', 34px, 24px, $mr: 0);
+}
+.support-ico {
+  @include svg('support-ico.svg', '#d6d6d6', 34px, 30px, $mr: 0);
+}
+/*======icons========*/
+
+.menu-block {
+  border-top: solid 1px #d9d9da;
+  border-bottom: solid 1px #d9d9da;
+  .menu {
+    display: block;
+    li {
+      display: block;
+      position:relative;
+      padding-left: 50px;
+      &.title {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: $light-navy-blue;
+        margin-bottom: 12px;
+        padding-left:0;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 39px;
+          height: 39px;
+          margin-right: 11px;
+        }
+      }
+    }
+    .link {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 2.6;
+      color: $brownish-grey-two;
+    }
+  }
+}

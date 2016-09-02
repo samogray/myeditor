@@ -1,0 +1,30 @@
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: $light-navy-blue;
+  text-align: center;
+  line-height: 28px;
+  margin:35px 0;
+
+  &:first-child{
+    margin: 0;
+    margin-bottom: 35px;
+  }
+}
+
+.my-section {
+  padding:80px 0;
+}
+
+.separator-t {
+  border-top: solid 1px $silver;
+
+}
+.separator-b {
+  border-bottom: solid 1px $silver;
+}
+.separator-h {
+  border-top: solid 1px $silver;
+  border-bottom: solid 1px $silver;
+}

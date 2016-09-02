@@ -1,0 +1,60 @@
+/*=====icons======*/
+.logo-mini {
+  width: 32px;
+  height: 21px;
+  @include svg('mini-logo-ico.svg', '#4d4d4d', 32px, 21px, $mr: 0);
+}
+
+.facebook-ico {
+  width: 25px;
+  height: 25px;
+  @include svg('facebook-ico.svg', '#4d4d4d', 25px, 25px, $mr: 0);
+}
+
+.inst-ico {
+  width: 26px;
+  height: 26px;
+  @include svg('Instagram-ico.svg', '#4d4d4d', 26px, 26px, $mr: 0);
+}
+
+.youtube-ico {
+  width: 34px;
+  height: 25px;
+  @include svg('youtube-logos-ico.svg', '#4d4d4d', 34px, 25px, $mr: 0);
+}
+
+/*=====icons======*/
+
+.footer {
+  margin: 72px 0;
+  display: flex;
+  .logo {
+    margin-right: 66px;
+  }
+
+  .menu {
+    &__footer {
+      color: $bluey-grey;
+      font-weight: 400;
+    }
+
+    li {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    &.social {
+      li{
+        &:not(:last-child) {
+          margin-right: 27px;
+      }
+
+    }
+    }
+  }
+
+  .flex-grid {
+    flex-wrap: nowrap;
+  }
+
+}

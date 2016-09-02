@@ -1,0 +1,30 @@
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .col-3 {
+    flex-basis: 33.33%;
+  }
+
+  .col-4 {
+    flex-basis: 25%;
+  }
+
+  .col-6 {
+   flex-basis: 50%;
+  }
+}
+
+.flex-v-center{
+  align-items: center;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.flex-left {
+  justify-content: flex-start;
+}
+

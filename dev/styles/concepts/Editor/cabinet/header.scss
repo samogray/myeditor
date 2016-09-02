@@ -1,0 +1,57 @@
+.mvp {
+  background-color: $very-light-blue;
+  max-width: 1140px;
+  margin:auto;
+}
+
+/*=====icons=====*/
+.logo-ico {
+    @include svg('logo.svg', '#d6d6d6', 138px, 21px, $mr: 0);
+}
+
+/*=====icons====*/
+
+.header{
+  padding:40px 0px;
+
+  &__nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  li {
+    display: inline-block;
+    &:not(:last-child){
+      margin-right: 50px;
+    }
+  }
+
+  &__header{
+    color:black;
+    justify-content: flex-end;
+
+  }
+
+  .badge {
+    display: inline-block;
+    height: 18px;
+    padding: 3px;
+    line-height: 13px;
+    border-radius: 16px;
+    text-align: center;
+    cursor:pointer;
+    color:white;
+    letter-spacing: 1px;
+    font-size: 12px;
+    background-color: $apple-green;
+  }
+  a, button {
+    text-decoration: none;
+  }
+}

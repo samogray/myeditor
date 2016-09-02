@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 36 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>157A9484-0348-40CB-9C25-DA6CC3BA9618</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="2.22044605e-15" y="-2.32702746e-13" width="24.9653151" height="19.0215819" rx="1"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.252038043 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="24.9653151" height="19.0215819" rx="1"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.252038043 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="21.0913869" height="14.8901976"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Customer-Account-Menu" transform="translate(17.000000, 0.000000)">
+            <g id="Group-7" transform="translate(-17.000000, 0.000000)">
+                <g id="Group-2">
+                    <g id="Group-9">
+                        <g id="archive-copy">
+                            <g id="Capa_1">
+                                <g id="Group">
+                                    <path d="M12.9161538,16.2786207 C15.3918429,16.2786207 17.4571635,14.5572414 17.9339904,12.2473563 L7.90064103,12.2473563 C8.38165064,14.5521839 10.4441827,16.2786207 12.9161538,16.2786207 L12.9161538,16.2786207 Z" id="Shape" fill="#0E3260"></path>
+                                    <path d="M12.9161538,23.6147126 C15.3918429,23.6147126 17.4571635,21.8933333 17.9339904,19.5834483 L7.90064103,19.5834483 C8.38165064,21.8882759 10.4441827,23.6147126 12.9161538,23.6147126 L12.9161538,23.6147126 Z" id="Shape" fill="#0E3260"></path>
+                                    <polygon id="Shape" fill="#D07C40" points="0 12.4547126 26.025641 12.4445977 26.025641 5.51724138 19.9839744 0 6.04166667 0 0 5.51724138"></polygon>
+                                    <path d="M13.0128205,9.1954023 C10.7699679,9.1954023 8.89844551,7.60827586 8.46205128,5.51724138 L0.0176602564,5.52275862 C0.00790064103,5.52275862 0,12.4547126 0,12.4547126 L26.025641,12.4445977 L26.025641,5.53471264 C26.025641,5.52505747 17.5659135,5.52275862 17.5659135,5.52275862 C17.1332372,7.61885057 15.2589263,9.1954023 13.0128205,9.1954023 Z" id="Shape" fill="#FFD898"></path>
+                                    <path d="M13.0128205,16.091954 C10.7699679,16.091954 8.89844551,14.52 8.46205128,12.4285057 L0,12.434023 L0,19.7701149 L26.025641,19.7701149 L26.025641,12.4137931 L17.5659135,12.4193103 C17.1332372,14.5154023 15.2589263,16.091954 13.0128205,16.091954 Z" id="Shape" fill="#FFC25C"></path>
+                                    <path d="M17.5659135,19.7701149 C17.1332372,21.8657471 15.2589263,23.4482759 13.0128205,23.4482759 C10.7699679,23.4482759 8.89844551,21.8611494 8.46205128,19.7701149 L0,19.7701149 L0,26.6666667 L26.025641,26.6565517 L26.025641,19.7701149 L17.5659135,19.7701149 L17.5659135,19.7701149 Z" id="Shape" fill="#F4B459"></path>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-15" transform="translate(4.487179, 5.333333)">
+                            <g id="Group-4" transform="translate(14.851816, 13.196332) rotate(-16.000000) translate(-14.851816, -13.196332) translate(2.351816, 3.196332)">
+                                <g id="Rectangle-8">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                </g>
+                                <rect id="Rectangle-8-Copy" fill="#487DA9" x="1.98000775" y="2.06569215" width="21.0913869" height="14.8901976"></rect>
+                                <path d="M20.6624765,6.24303429 C20.6624765,8.94333534 18.4515846,9.0733254 18.9391656,9.0733254 C20.6186943,9.0733254 21.9802214,7.71206385 21.9802214,6.03286264 C21.9802214,4.35366142 20.9587274,3.2455001 18.9391656,3.10252083 C18.2363341,3.05276234 17.5618078,3.48569786 17.5618078,3.48569786 C17.5618078,3.48569786 20.6624765,3.54273323 20.6624765,6.24303429 Z" id="Oval-6" fill="#FFD133"></path>
+                            </g>
+                            <g id="Group-13" transform="translate(4.382996, 6.259427)">
+                                <g id="Rectangle-8-Copy-2">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                </g>
+                                <g id="Oval-7-Copy-+-Oval-7-Copy-2-+-Oval-7-+-Path-2-+-Path-2-Copy-Mask" transform="translate(1.893920, 2.151763)">
+                                    <mask id="mask-6" fill="white">
+                                        <use xlink:href="#path-5"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#A1DFF4" xlink:href="#path-5"></use>
+                                    <ellipse id="Oval-7-Copy" fill="#40ABA1" mask="url(#mask-6)" cx="2.19522598" cy="16.9128545" rx="6.84393982" ry="6.84260525"></ellipse>
+                                    <ellipse id="Oval-7-Copy-2" fill="#F2CC4F" mask="url(#mask-6)" cx="2.19522598" cy="1.76444538" rx="3.91697185" ry="3.91620804"></ellipse>
+                                    <ellipse id="Oval-7" fill="#48BFA9" mask="url(#mask-6)" cx="16.1844111" cy="24.7883058" rx="16.7009349" ry="16.6976782"></ellipse>
+                                    <path d="M17.2651962,1.70891074 C19.2182196,2.40781071 18.894205,4.46848208 18.894205,4.46848208 C18.894205,4.46848208 19.8114354,4.51732751 19.7730357,5.38069133 C19.7223827,6.51955527 18.4039862,6.43037082 18.4039862,6.43037082 L12.2436454,6.40277514 C12.2436454,6.40277514 11.1016569,6.45404064 11.1970027,5.47380893 C11.3040793,4.37297593 12.4751484,4.69960383 12.4751484,4.69960383 C12.4751484,4.69960383 12.2509386,4.05104805 12.8685628,3.35112967 C13.4861871,2.65121129 14.3367659,2.83227738 14.3367659,2.83227738 C14.3367659,2.83227738 15.3121729,1.01001076 17.2651962,1.70891074 Z" id="Path-2" fill="#FFFFFF" mask="url(#mask-6)"></path>
+                                    <path d="M10.1970375,6.7491988 C10.3297454,8.03652292 9.28261083,8.18139058 9.28261083,8.18139058 L5.20077937,8.15379491 C5.20077937,8.15379491 4.37200215,7.94669259 4.39076583,7.19306256 C4.40000229,6.82208675 4.37263707,6.50644901 4.79469647,6.20462795 C4.95909843,6.08706162 5.52271708,5.99248232 5.52271708,5.99248233 C5.52271708,5.99248233 5.416386,4.86616717 6.81465363,4.67084549 C8.21292127,4.47552381 8.55213957,5.58638823 8.57861322,5.58638826 C8.86297731,5.58638856 10.0643297,5.46187468 10.1970375,6.7491988 Z" id="Path-2-Copy" fill="#FFFFFF" mask="url(#mask-6)"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
