@@ -687,3 +687,22 @@
     @include svg('ico-rome.svg', '#{$color-editor}', 34px, 34px, $mr: 0);
   }
 }
+
+.list-1 {
+  @include svg('list-1.svg', '#d6d6d6', 34px, 32px, $mr: 0);
+}
+.list-2 {
+  @include svg('list-2.svg', '#d6d6d6', 34px, 32px, $mr: 0);
+}
+.list-3 {
+  @include svg('list-3.svg', '#d6d6d6', 34px, 32px, $mr: 0);
+}
+.list-4 {
+  @include svg('list-4.svg', '#d6d6d6', 35px, 31px, $mr: 0);
+}
+.list-5 {
+  @include svg('list-5.svg', '#d6d6d6', 34px, 34px, $mr: 0);
+}
+.list-6 {
+  @include svg('list-6.svg', '#d6d6d6', 34px, 32px, $mr: 0);
+}

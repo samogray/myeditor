@@ -1,0 +1,57 @@
+<svg id="list-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="57" viewBox="0 0 36 57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #222;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #1071e9;
+      }
+
+      .cls-2 {
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        filter: url(#filter-2);
+      }
+
+      .cls-4 {
+        filter: url(#filter-3);
+      }
+
+      .cls-5 {
+        font-size: 23.528px;
+        fill: #fff;
+        font-family: PTSans;
+      }
+    </style>
+    <filter id="filter" x="624" y="628" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="624" y="640" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="624" y="652" width="24" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Фігура_6_копія_26" data-name="Фігура 6 копія 26" class="cls-1" d="M630.006,682l12-11H618l12,11" transform="translate(-612 -625)"/>
+  <path id="Фігура_818_копія_5" data-name="Фігура 818 копія 5" class="cls-2" d="M624,631v-3h24v3H624Z" transform="translate(-612 -625)"/>
+  <path id="Фігура_818_копія_5-2" data-name="Фігура 818 копія 5" class="cls-3" d="M624,643v-3h24v3H624Z" transform="translate(-612 -625)"/>
+  <path id="Фігура_818_копія_5-3" data-name="Фігура 818 копія 5" class="cls-4" d="M624,655v-3h24v3H624Z" transform="translate(-612 -625)"/>
+  <text id="a_" data-name="a)" class="cls-5" transform="translate(-0.173 8.48) scale(0.461)">a)</text>
+  <text id="b_" data-name="b)" class="cls-5" transform="translate(-0.173 20.48) scale(0.461)">b)</text>
+  <text id="c_" data-name="c)" class="cls-5" transform="translate(-0.173 32.48) scale(0.461)">c)</text>
+</svg>

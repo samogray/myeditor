@@ -1,0 +1,50 @@
+<svg id="list-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="32" viewBox="0 0 35 32">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #1071e9;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        filter: url(#filter-3);
+      }
+
+      .cls-4 {
+        font-size: 23.528px;
+        fill: #ffffff;
+        font-family: PTSans;
+        margin-right:2px;
+      }
+    </style>
+    <filter id="filter" x="686" y="567" width="22" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="686" y="579" width="22" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="686" y="591" width="22" height="3" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#7b7b7b"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Фігура_818_копія_4" data-name="Фігура 818 копія 4" class="cls-1" d="M686,570v-3h24v3H686Z" transform="translate(-672 -564)"/>
+  <path id="Фігура_818_копія_4-2" data-name="Фігура 818 копія 4" class="cls-2" d="M686,582v-3h24v3H686Z" transform="translate(-672 -564)"/>
+  <path id="Фігура_818_копія_4-3" data-name="Фігура 818 копія 4" class="cls-3" d="M686,594v-3h24v3H686Z" transform="translate(-672 -564)"/>
+  <text id="I" class="cls-4" transform="translate(-0.172 8.48) scale(0.461)">I</text>
+  <text id="II" class="cls-4" transform="translate(-0.172 20.48) scale(0.461)">II</text>
+  <text id="III" class="cls-4" transform="translate(-0.172 32.481) scale(0.461)">III</text>
+</svg>
