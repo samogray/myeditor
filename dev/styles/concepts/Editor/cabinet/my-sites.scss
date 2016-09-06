@@ -3,21 +3,15 @@
 .plus-ico-green {
   @include svg('plus-ico.svg', '#d6d6d6', 51px, 51px, $mr: 0);
 }
+
+.earth-ico {
+  @include svg('earth-ico.svg', '#d6d6d6', 41px, 41px, $mr: 0);
+}
 /*====ico====*/
 
 .text-center {
   text-align: center;
   justify-content: center;
-}
-
-.big-title {
-  font-size: 36px;
-  font-weight: bold;
-  color: $light-navy-blue;
-  margin-bottom: 40px;
-}
-.my-sites {
-  padding-bottom: 29px;
 }
 
 .page-view {
@@ -122,3 +116,52 @@
   }
 }
 
+.block-view {
+  img {
+    max-width: 100%;
+    max-height:239px;
+  }
+}
+
+.block-view-edit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  .label {
+    width: 142px;
+    margin:12px auto 22px;
+    padding-bottom: 15px;
+  }
+
+  .btn-group {
+    margin-bottom: 15px;
+    .button {
+      &:not(:last-child){
+        margin-right: 7px;
+      }
+
+      &.logo-mini {
+        @include svg('mini-logo-ico-wh.svg', '#ffffff', 13px, 9px, $mr:4px);
+      }
+    }
+  }
+}
+
+.domain-name {
+  text-align: center;
+  width:100%;
+  .small-title {
+    display: inline-block;
+  }
+}
+
+.suggestions {
+  margin:69px 0  80px;
+   .lg-title{
+     margin-bottom:29px;
+   }
+}

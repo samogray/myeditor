@@ -1,3 +1,11 @@
+
+/*======ico========*/
+
+.capa-ico {
+  @include svg('capa-ico.svg', '#3C9FFF', 12px, 10px, $mr: 4px);
+}
+
+/*======ico========*/
 .button {
   height: 27px;
   line-height: 27px;
@@ -7,16 +15,16 @@
   font-size: 12px;
   padding: 0 12px;
   font-weight: 400;
+  color:white;
+  transition: all .2s ease-in-out;
 
   &.green {
-    color: #ffffff;
     background-color: $apple-green;
     box-shadow: 0 1px 0 0 #6fbb1c;
     border: solid 1px #8adc30;
   }
 
   &.blue {
-    color: #ffffff;
     background-color: $dodger-blue;
     box-shadow: 0 1px 0 0 #1a6dbd;
     border: solid 1px #69b2f8;
@@ -25,6 +33,28 @@
   &.light-blue {
     background-color: $light-navy-blue;
     box-shadow: 0 1px 0 0 #14445c;
-    color: #ffffff;
+  }
+
+  &__link {
+    color:black;
+    padding: 0;
+    border-radius: 0;
+
+    &_green {
+      color: $apple-green;
+    }
+
+    &_blue {
+      color: $dodger-blue;
+    }
+  }
+
+  &.disabled {
+    opacity: .6;
+  }
+
+  &.flat-blue {
+    background-color: $light-navy-blue;
+    box-shadow: 0 1px 0 0 #14445c;
   }
 }

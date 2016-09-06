@@ -1,7 +1,5 @@
 /*=====icons======*/
 .logo-mini {
-  width: 32px;
-  height: 21px;
   @include svg('mini-logo-ico.svg', '#4d4d4d', 32px, 21px, $mr: 0);
 }
 
@@ -26,7 +24,7 @@
 /*=====icons======*/
 
 .footer {
-  margin: 72px 0;
+  padding: 45px 0;
   display: flex;
   .logo {
     margin-right: 66px;

@@ -10,156 +10,157 @@
 </head>
 <body class="mvp">
 <header class="header">
-  <div class="header__nav">
-    <button class="logo logo-ico"></button>
-    <ul class="menu menu__header">
-      <li>
-        <button>Billing</button>
-      </li>
-      <li>
-        <button>Support</button>
-      </li>
-      <li>
-        <button>My account <span class="badge">56</span></button>
-      </li>
-    </ul>
+  <div class="flex-grid between">
+    <div class="col-2">
+      <button class="logo logo-ico"></button>
+    </div>
+    <div class="col-10 flex-grid between">
+      <ul class="drop-list">
+        <li class="drop-list__item triangle">
+          <button class="button">Burger Bar landing</button>
+          <span>www.siteaddress.com</span>
+          <ul class="drop-list__content">
+            <li class="drop-list__item">
+              <button class="button">Burger Bar landing</button>
+              <span>www.siteaddress.com</span>
+            </li>
+            <li class="drop-list__item">
+              <button class="button">Burger Bar landing</button>
+              <span>www.siteaddress.com</span>
+            </li>
+            <li class="drop-list__item">
+              <button class="button">Burger Bar landing</button>
+              <span>www.siteaddress.com</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu menu__header">
+        <li>
+          <button>Billing</button>
+        </li>
+        <li>
+          <button>Support</button>
+        </li>
+        <li>
+          <button>My account <span class="badge">56</span></button>
+          <ul class="drop-list__content tool-menu">
+            <li class="drop-list__item">
+              <button class="button">Burger Bar landing</button>
+            </li>
+            <li class="drop-list__item">
+              <button class="button">Burger Bar landing</button>
+            </li>
+            <li class="drop-list__item">
+              <button class="button">Burger Bar landing</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
-<section class="my-sites">
-  <div class="big-title text-center">My websites</div>
-  <div class="flex-grid row">
-    <div class="col-3">
-      <div class="page-view">
-        <div class="img-wrp">
-          <img src="img/imeg.jpeg" alt="">
+<section class="flex-grid">
+  <aside class="col-2">
+    <ul class="aside-menu">
+      <li><div class="button active"><i class="ico levels-ico"></i>Dashboard</div></li>
+      <li><div class="button"><i class="ico settings-2-ico"></i>Site Settings</div></li>
+    </ul>
+  </aside>
+  <section class="col-10">
+    <div class="panel panel_big white">
+      <div class="col-6">
+        <div class="block-view">
+          <img src="img/imeg.jpeg" alt="preview">
         </div>
-        <div class="page-view__name">Burger Bar Landing</div>
-        <a href="#0" class="page-view__link">Gustoso Restaurant</a>
       </div>
-    </div>
-    <div class="col-3">
-      <div class="page-view">
-        <div class="img-wrp">
-          <img src="img/imeg.jpeg" alt="">
-        </div>
-        <div class="page-view__name">Burger Bar Landing</div>
-        <a href="#0" class="page-view__link">Gustoso Restaurant</a>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="page-view">
-        <div class="img-wrp">
-          <img src="img/imeg.jpeg" alt="">
-        </div>
-        <div class="page-view__name">Burger Bar Landing</div>
-        <a href="#0" class="page-view__link">Gustoso Restaurant</a>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="page-view">
-        <div class="img-wrp">
-          <img src="img/imeg.jpeg" alt="">
-          <div class="fade-block">
-            <div class="text-center">
-              <div class="title">
-                Burger Bar Landing
-              </div>
-              <p>5 trial days left</p>
-              <button class="button green">Edit website</button>
-              <button class="button blue">Manage</button>
-            </div>
+      <div class="col-6">
+        <div class="block-view-edit">
+          <div class="lg-title">Burger Bar landing</div>
+          <div class="domain-name">
+            <div class="small-title">burgerplace.weblium.com</div>
+            <button class="button button__link button__link_green">(Connect domain)</button>
           </div>
-        </div>
-        <div class="page-view__name">Burger Bar Landing</div>
-        <a href="#0" class="page-view__link">Gustoso Restaurant</a>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="page-view add-site">
-        <div class=center>
-          <button class="plus-ico-green"></button>
-          <div class="page-view__name">Start new website</div>
-          <a href="#0" class="page-view__link">14 days free trial</a>
+          <div class="label center separator-b">90 trial days left</div>
+          <div class="btn-group">
+            <button class="button green">Edit website</button>
+            <button class="button blue logo-mini disabled">Update to Premium</button>
+          </div>
+          <button class="button button__link button__link_blue capa-ico">View website</button>
+          </button>
         </div>
       </div>
     </div>
-  </div>
+    <section class="suggestions">
+      <div class="lg-title">Quick suggestions</div>
+      <div class="flex-grid between">
+        <div class="notif">
+          <div class="close-ico"></div>
+          <div class="notif__ico">
+            <div class="ico alarm-ico"></div>
+          </div>
+          <div class="middle-title">Create a first page!</div>
+          <p>
+            Press <span>Edit website</span> button and go to Pages section in the left panel.
+            You will see the sctructure of your website.
+            Press <span>Add Page</span> button, enter page name and press Ok. Thats it!
+            Now go on and edit it.
+          </p>
+          <button class="button flat-blue">Add page</button>
+        </div>
+        <div class="notif">
+          <div class="close-ico"></div>
+          <div class="notif__ico">
+            <div class="ico alarm-ico"></div>
+          </div>
+          <div class="middle-title">Create a unique design!<br>
+            Manage your blocks in web editor
+          </div>
+          <p>Press <span>Edit website</span> button and go to Pages section in the left panel.
+            You will see the sctructure of your website.</p>
+          <button class="button flat-blue">Connect domain name</button>
+        </div>
+        <div class="notif">
+          <div class="close-ico"></div>
+          <div class="notif__ico">
+            <div class="ico earth-ico"></div>
+          </div>
+          <div class="middle-title">Make sure you have changed all texts
+            to your personal.
+          </div>
+          <p>Press <span>Edit website</span> button and go to Pages section in the left panel.
+            You will see the sctructure of your website.</p>
+          <button class="button flat-blue">Connect domain name</button>
+        </div>
+        <div class="notif">
+          <div class="close-ico"></div>
+          <div class="notif__ico">
+            <div class="ico alarm-ico"></div>
+          </div>
+          <div class="middle-title">Publish Burger Bar landing to the web!
+          </div>
+          <p>Press <span>Edit website</span> button and go to Pages section in the left panel.
+            You will see the sctructure of your website.</p>
+          <button class="button flat-blue">Connect domain name</button>
+        </div>
+        <div class="notif">
+          <div class="close-ico"></div>
+          <div class="notif__ico">
+            <div class="ico alarm-ico"></div>
+          </div>
+          <div class="middle-title">Create a unique design!<br>
+            Manage your blocks in web editor
+          </div>
+          <p>Press <span>Edit website</span> button and go to Pages section in the left panel.
+            You will see the sctructure of your website.</p>
+          <button class="button flat-blue">Connect domain name</button>
+        </div>
+      </div>
+    </section>
+  </section>
 </section>
-<section class="menu-block my-section separator-h">
-  <div class="flex-grid">
-    <div class="col-4">
-      <ul class="menu">
-        <li class="title"><span class="media-ico"></span>Media storage</li>
-        <li>
-          <button class="link">View my images</button>
-        </li>
-        <li>
-          <button class="link">Upload new images</button>
-        </li>
-        <li>
-          <button class="link">Buy stock images</button>
-        </li>
-      </ul>
-    </div>
-    <div class="col-4">
-      <ul class="menu">
-        <li class="title"><span class="wallet-ico"></span>Money & billing</li>
-        <li>
-          <button class="link">Payment methods</button>
-        </li>
-        <li>
-          <button class="link">Payment history</button>
-        </li>
-      </ul>
-    </div>
-    <div class="col-4">
-      <ul class="menu">
-        <li class="title"><span class="profile-ico"></span>My account</li>
-        <li>
-          <button class="link">Manage my account</button>
-        </li>
-        <li>
-          <button class="link"> Invite friends and earn</button>
-        </li>
-        <li>
-          <button class="link">Connect social accounts</button>
-        </li>
-      </ul>
-    </div>
-    <div class="col-4">
-      <ul class="menu">
-        <li class="title"><span class="support-ico"></span>Support Center</li>
-        <li>
-          <button class="link">View video tutorials</button>
-        </li>
-        <li>
-          <button class="link">View FAQ library</button>
-        </li>
-        <li>
-          <button class="link">Get support in chat</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="video-tut my-section separator-b">
-  <div class="section-title clearfix">
-    Get started now with video tutorials!
-    <button class="button light-blue fright">Discover more</button>
-  </div>
-  <div class="flex-grid row">
-    <div class="col-3">
-      <div class="panel-shadow"></div>
-    </div>
-    <div class="col-3">
-      <div class="panel-shadow"></div>
-    </div>
-    <div class="col-3">
-      <div class="panel-shadow"></div>
-    </div>
-  </div>
-</section>
-<footer class="footer">
+
+<footer class="footer separator-t">
   <div class="flex-grid">
     <div class="flex-grid flex-left flex-v-center">
       <div class="logo">
@@ -199,6 +200,7 @@
   </div>
 
 </footer>
+</body>
 <script src="libs/index.js"></script>
 <script src="js/build.js"></script>
 <script id="__bs_script__">//<![CDATA[

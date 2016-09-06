@@ -27,14 +27,26 @@
   font-weight: bold;
   li {
     display: inline-block;
+    position: relative;
     &:not(:last-child){
       margin-right: 50px;
+    }
+
+    &:hover .drop-list__content {
+      display: block;
     }
   }
 
   &__header{
     color:black;
     justify-content: flex-end;
+    height: 40px;
+
+    li {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
 
   }
 
@@ -54,4 +66,10 @@
   a, button {
     text-decoration: none;
   }
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  height: 41px;
 }

@@ -1,0 +1,51 @@
+
+/*====icons======*/
+.settings-2-ico{
+  @include svg('capa-capa.svg', '#4d4d4d', 22px, 22px);
+  &:before {
+    margin-right: 0;
+  }
+}
+/*====icons======*/
+.aside-menu {
+
+  li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .button {
+      min-width: 147px;
+      height: 46px;
+      position: relative;
+      display: inline-flex;
+      color:black;
+      align-items: center;
+      cursor: pointer;
+      .ico {
+        height: 100%;
+        width: 40px;
+        margin:0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &:before{
+          margin-right: 0;
+        }
+      }
+      &.active {
+        font-weight: bold;
+        border-radius: 24px;
+        background-color: $very-light-blue-two;
+      }
+
+      .levels-ico {
+        @include svg('levels.svg', '#000000', 22px, 22px, $mr: 0);
+        &:hover {
+          @include svg('levels.svg', '#000000', 22px, 22px, $mr: 0);
+        }
+      }
+
+    }
+  }
+}

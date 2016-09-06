@@ -1,0 +1,140 @@
+.drop-list {
+  display: inline-flex;
+  li {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-right: 0;
+  }
+  &__item {
+    height: 35px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    .button {
+      font-size: 14px;
+      font-weight: bold;
+      height: 21px;
+      color: $light-navy-blue;
+      text-align: left;
+      display: inline-block;
+      padding: 0;
+    }
+    span{
+      font-size: 10px;
+      color: $brownish-grey-three;
+    }
+
+    &.triangle {
+      @include svg('triangular.svg', '#{$light-navy-blue;}', 8px, 8px, $mr: 0);
+      &:before {
+        transform: rotate(90deg);
+        position: absolute;
+        right: -18px;
+        top:50%;
+        margin-top:-5px;
+        transform-origin: center;
+        transition: .1s transform ease-in-out;
+      }
+    }
+
+    &:hover:before{
+      transform: rotate(-90deg);
+    }
+
+    &:hover .drop-list__content{
+      display: block;
+    }
+  }
+  &__content {
+    display: none;
+    position: absolute;
+    left: 0;
+    left: 0;
+    bottom: -149px;
+    width: auto;
+    background: #fafbff;
+    min-width: 155px;
+    box-shadow: 0 12px 8px 2px rgba(0, 0, 0, 0.08);
+
+
+    li {
+      height: 50px;
+      padding:4px 8px;
+      box-sizing: border-box;
+
+      &:hover {
+        background-color: #efefef;
+      }
+      &:not(:last-child){
+        margin-right: 0;
+      }
+    }
+
+    .drop-list__item {
+      display: block;
+
+    }
+
+    &.tool-menu{
+      padding: 0;
+      border-radius: 5px;
+      background-color: #ffffff;
+      box-shadow: 0 0 20px 2px rgba(1, 55, 106, 0.22);
+      min-width: 146px;
+      width: 100%;
+      bottom: -115px;
+      left: 50%;
+      margin-left: -73px;
+      li{
+        overflow: hidden;
+        height: auto;
+        display: block;
+        padding: 0;
+        &:first-child{
+          overflow: visible;
+          button{
+            border-radius:5px 5px 0 0;
+            width:100%;
+          }
+
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 8px 7px 8px;
+            border-color: transparent transparent #ffffff transparent;
+            left: 50%;
+            margin-left: -8px;
+            top: -6px;
+            transition: all .2s ease-in-out;
+          }
+
+          &:hover:after {
+            border-color: transparent transparent $very-light-blue-two transparent;
+          }
+        }
+        &:last-child{
+          border-radius: 0 0 5px 5px;
+        }
+      }
+      button {
+        padding:0 15px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 12px;
+        background-color: #fff;
+        border-radius: 0;
+        width: 100%;
+        &:hover {
+          background-color: $very-light-blue-two;
+        }
+      }
+    }
+
+  }
+}
