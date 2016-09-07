@@ -30,7 +30,7 @@
     margin-right: 66px;
   }
 
-  .menu.mvp {
+  .menu.mvp-style {
     &__footer {
       color: $bluey-grey;
       font-weight: 400;
@@ -39,6 +39,9 @@
     li {
       display: inline-flex;
       align-items: center;
+      color: $bluey-grey;
+      font-weight: 400;
+      font-size: 14px;
     }
 
     &.social {

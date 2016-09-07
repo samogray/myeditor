@@ -64,6 +64,7 @@
       padding:4px 8px;
       box-sizing: border-box;
 
+
       &:hover {
         background-color: #efefef;
       }
@@ -84,9 +85,11 @@
       box-shadow: 0 0 20px 2px rgba(1, 55, 106, 0.22);
       min-width: 146px;
       width: 100%;
-      bottom: -115px;
+      bottom: -110px;
       left: 50%;
       margin-left: -73px;
+
+
       li{
         overflow: hidden;
         height: auto;
@@ -121,12 +124,15 @@
         &:last-child{
           border-radius: 0 0 5px 5px;
         }
+        &:not(:last-child) {
+          margin-right: 0;
+        }
       }
       button {
         padding:0 15px;
         height: 38px;
         line-height: 38px;
-        font-size: 12px;
+        font-size: 0.75rem;
         background-color: #fff;
         border-radius: 0;
         width: 100%;

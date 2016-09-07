@@ -1,8 +1,4 @@
-.mvp {
-  background-color: $very-light-blue;
-  max-width: 1140px;
-  margin:auto;
-}
+
 
 /*=====icons=====*/
 .logo-ico {
@@ -21,13 +17,15 @@
   }
 }
 
-.menu.mvp {
+.menu.mvp-style {
   display: flex;
   align-items: center;
   font-weight: bold;
   li {
-    display: inline-block;
+    display: inline-flex;
     position: relative;
+    height: 100%;
+    align-items: center;
     &:not(:last-child){
       margin-right: 50px;
     }
@@ -60,7 +58,7 @@
     cursor:pointer;
     color:white;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 0.75rem;
     background-color: $apple-green;
   }
   a, button {

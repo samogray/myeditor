@@ -1,5 +1,5 @@
 .section-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   color: $light-navy-blue;
@@ -34,11 +34,14 @@
 
 
 .big-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
   color: $light-navy-blue;
   margin-bottom: 40px;
   text-align: center;
+  &.lite {
+    font-weight: 400;
+  }
 
   &.lg {
     max-width: 681px;
@@ -47,24 +50,63 @@
 }
 
 .lg-title {
-  font-size: 24px;
+  font-size:1.5rem;
   font-weight: bold;
   text-align: center;
-  color: $light-navy-blue;
+  color:black;
   width:100%;
   text-align: center;
+  &.lite {
+    font-weight: 400;
+  }
+
+  &.lg {
+    max-width: 681px;
+    margin:auto;
+  }
+  &.blue {
+    color: $light-navy-blue;
+  }
+  &.brown {
+  color: $greyish-brown;
+}
 }
 
 .middle-title{
-  font-size: 18px;
+  font-size: 1.125rem;
   color: $light-navy-blue;
   font-weight: bold;
   transition: all .2s ease-in-out;
+  &.lite {
+    font-weight: 400;
+  }
 
+  &.lg {
+    max-width: 681px;
+    margin:auto;
+  }
+
+  span {
+    font-size:0.875rem;
+    color: #8e8e8e;
+    font-weight: 400;
+  }
 }
 
 .small-title {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   color: $light-navy-blue;
+}
+
+form {
+  width: 100%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }

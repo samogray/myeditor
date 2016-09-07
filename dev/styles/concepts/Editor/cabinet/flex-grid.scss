@@ -6,9 +6,18 @@ body {
   align-items: stretch;
 }
 
-header {
+.mvp {
+  background-color: $very-light-blue;
+
 }
-footer {
+.container-fix {
+  width: 1140px;
+  margin:auto;
+
+  @media screen and (max-width: 1150px) {
+    width: 100%;
+    padding:0 15px;
+  }
 }
 
 .flex-grid {
@@ -42,6 +51,10 @@ footer {
 }
 .flex-v-center{
   align-items: center;
+}
+
+.f-end {
+  align-items: flex-end;
 }
 
 .flex-right {
