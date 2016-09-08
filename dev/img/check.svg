@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Shapecheck</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MVP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Customer:-My-account-Copy" transform="translate(-434.000000, -661.000000)" fill="#3C9FFF">
+            <g id="Group" transform="translate(431.000000, 657.000000)">
+                <g id="check-mark-black-outline" transform="translate(3.000000, 4.000000)">
+                    <g id="Capa_1">
+                        <path d="M13.5003387,1.70974138 L5.09542695,10.9252759 C5.02139468,11.0064483 4.90152466,11.0064483 4.82766536,10.9252759 L0.0553512331,5.6925 C-0.0185080686,5.6117069 -0.0185080686,5.48027586 0.0553512331,5.39910345 L1.21495957,4.12765517 C1.28899184,4.04667241 1.40886185,4.04667241 1.48272116,4.12765517 L4.96171913,7.942 L12.0731418,0.144706897 C12.147347,0.0637241379 12.2668711,0.0637241379 12.3409034,0.144706897 L13.5003387,1.41615517 C13.574371,1.49713793 13.574371,1.62837931 13.5003387,1.70974138 L13.5003387,1.70974138 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

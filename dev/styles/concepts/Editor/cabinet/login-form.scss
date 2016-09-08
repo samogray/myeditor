@@ -1,0 +1,93 @@
+/*=====icons======*/
+.check-ico{
+  @include svg('check.svg', '#3C9FFF', 12px, 10px, $mr: 4px);
+}
+/*=====icons======*/
+
+
+.login-section {
+  .panel.form {
+    padding:0;
+    max-width: 1105px;
+    margin:auto;
+    margin-top: 40px;
+
+    .checkbox-label {
+      display: inline-flex;
+      align-items: center;
+      width:auto;
+      margin-bottom: 17px;
+      &:before {
+        width: 18.2px;
+        height: 20px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        border: solid 1px $dodger-blue;
+      }
+    }
+    .separator-t {
+      padding-top: 17px;
+    }
+    .separator-b {
+      padding-top: 6px;
+    }
+
+    .checkbox:checked + .checkbox-label:before {
+      width: 18.2px;
+      height: 20px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      border: solid 1px $dodger-blue;
+    }
+
+    .checkbox-label:after {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 11px;
+      left: 3px;
+      top: 14px;
+      box-shadow: none;
+      transform: scale(0);
+      opacity: 1;
+      background-color: transparent;
+      transition: all .1s linear;
+    }
+    .checkbox:checked + .checkbox-label:after {
+      background-color: transparent;
+      left: 3px;
+      top: 14px;
+      opacity: 1;
+      width: 14px;
+      transform: scale(1,1);
+      height: 11px;
+      box-shadow: none;
+      background:svg-load('#{$img-path}check.svg');
+
+    }
+  }
+}
+
+.sign-up-block {
+  padding: 25px 38px 25px 25px;
+  .input {
+    max-width: 314px;
+  }
+}
+
+.login-block {
+  padding: 25px;
+  height: 100%;
+
+  button {
+    &.facebook-ico {
+      @include svg('facebook.svg', '#ffffff', 12px, 12px, $mr:10px);
+      &:before {
+        top:2px;
+      }
+    }
+  }
+}
+.login-btn {
+  height: 132px;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>fitable</title>
+  <title>Weblium mvp</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=latin-ext" rel="stylesheet">
@@ -61,156 +61,106 @@
       </div>
     </div>
   </header>
-  <section>
-    <section class="flex-grid">
-      <aside class="col-2">
-        <ul class="aside-menu">
-          <li>
-            <div class="button active"><i class="ico levels-ico"></i>Dashboard</div>
-          </li>
-          <li>
-            <div class="button"><i class="ico settings-2-ico"></i>Site Settings</div>
-          </li>
-        </ul>
-      </aside>
-      <section class="col-10">
-        <div class="lg-title text-center">Site settings</div>
-        <!--=========Site Setting=======-->
-        <div class="panel panel_big white form">
-          <form class="general-settings" id="general-settings">
-            <div class="flex-grid between separator-b">
-              <div class="middle-title">
-                General settings
-              </div>
-              <div class="label">Site ID: <span class="bold">AT34564</span></div>
-            </div>
-            <div class="flex-grid between">
-              <div class="col-6">
-                <div class="row">
-                  <label for="site-name">Site name</label>
-                  <input type="text" name="name" id="site-name" class="input input_mvp">
-                </div>
-                <div class="row">
-                  <div class="flex-grid between f-end vcenter">
-                    <div class="label">Favicon</div>
-                    <button class="button button__link">Upload favicon</button>
-                  </div>
-                  <div class="input input_mvp favicon-file">
-                    <img src="img/mini-logo-ico.svg" alt="favicon">
-                    <span>burgerplace.weblium.com</span>
-                  </div>
-                </div>
-                <div class="row">
-                  <button class="button slate-blue sm">Save changes</button>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="row">
-                  <label for="site-address">Site address</label>
-                  <div class="input-wrp">
-                    <input type="text" name="site-address" id="site-address" class="input input_mvp site-address">
-                    <div class="dom-value">.weblium.com</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <label for="site-email">Email for website notifications</label>
-                  <input type="email" name="email" id="site-email" class="input input_mvp">
-                </div>
-              </div>
-            </div>
-          </form>
+  <section class="flex-grid">
+    <aside class="col-2">
+      <ul class="aside-menu">
+        <li><div class="button active"><i class="ico levels-ico"></i>Dashboard</div></li>
+        <li><div class="button"><i class="ico settings-2-ico"></i>Site Settings</div></li>
+      </ul>
+    </aside>
+    <section class="col-10">
+      <div class="panel panel_big white">
+        <div class="col-6">
+          <div class="block-view">
+            <img src="img/imeg.jpeg" alt="preview">
+          </div>
         </div>
-        <!--=========Site Setting=======-->
-
-        <!--=========Current Plan=======-->
-        <div class="panel panel_big white form">
-          <form action="#0" class="current-plan" id="current-plan">
-            <div class="flex-grid between separator-b">
-              <div class="middle-title">
-                Current plan settings
-              </div>
+        <div class="col-6">
+          <div class="block-view-edit">
+            <div class="lg-title">Burger Bar landing</div>
+            <div class="domain-name">
+              <div class="small-title">burgerplace.weblium.com</div>
+              <button class="button button__link button__link_green">(Connect domain)</button>
             </div>
-            <div class="flex-grid between">
-              <div class="col-6">
-                <div class="row">
-                  <div class="label">Site status</div>
-                  <div class="panel blue-form">
-                    <input class="radio" id="not-published" name="publish" type="radio" checked>
-                    <label tabindex="4" for="not-published" class="radio-label"><span class="bold">Not published </span>
-                      (only you can see the website)</label>
-                    <input class="radio" id="published" name="publish" type="radio">
-                    <label tabindex="4" for="published" class="radio-label"><span class="bold">Published </span> (all
-                      visitors will see the website)</label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="row">
-                  <div class="label">Allow search engines to show my website in search results</div>
-                  <div class="panel blue-form">
-                    <input class="radio" id="allow" name="allow" type="radio" checked>
-                    <label tabindex="4" for="allow" class="radio-label"><span class="bold">Allow</span></label>
-                    <input class="radio" id="disallow" name="allow" type="radio">
-                    <label tabindex="4" for="disallow" class="radio-label"><span class="bold">Disallow</span></label>
-                  </div>
-                </div>
-              </div>
+            <div class="label center separator-b">90 trial days left</div>
+            <div class="btn-group">
+              <button class="button green">Edit website</button>
+              <button class="button blue logo-mini disabled">Update to Premium</button>
             </div>
-          </form>
+            <button class="button button__link button__link_blue capa-ico">View website</button>
+            </button>
+          </div>
         </div>
-        <!--=========Current Plan=======-->
-
-        <!--=========Current Plan Settings=======-->
-        <div class="panel panel_big white form">
-          <form action="#0" class="current-plan-settings" id="current-plan-settings">
-            <div class="flex-grid between separator-b">
-              <div class="middle-title">
-                Current plan settings
-              </div>
+      </div>
+      <section class="suggestions">
+        <div class="lg-title">Quick suggestions</div>
+        <div class="flex-grid between">
+          <div class="notif">
+            <div class="close-ico"></div>
+            <div class="notif__ico">
+              <div class="ico alarm-ico"></div>
             </div>
-            <div class="panel blue-form first">
-              <div class="col-6">
-                <div class="big-title text-left lite">Beta plan</div>
-                <div class="label block"><span class="bold">Started:</span> 31/08/2016</div>
-                <div class="label block"><span class="bold">Ending:</span> 13/11/2016</div>
-              </div>
-              <div class="col-6">
-                <div class="lg-title text-right lite brown">90 days left</div>
-                <div class="btn-group">
-                  <button class="button blue logo-mini disabled sm">Update to Premium</button>
-                </div>
-              </div>
-
+            <div class="middle-title">Create a first page!</div>
+            <p>
+              Press <span>Edit website</span> button and go to Pages section in the left panel.
+              You will see the sctructure of your website.
+              Press <span>Add Page</span> button, enter page name and press Ok. Thats it!
+              Now go on and edit it.
+            </p>
+            <button class="button flat-blue">Add page</button>
+          </div>
+          <div class="notif">
+            <div class="close-ico"></div>
+            <div class="notif__ico">
+              <div class="ico alarm-ico"></div>
             </div>
-          </form>
+            <div class="middle-title">Create a unique design!<br>
+              Manage your blocks in web editor
+            </div>
+            <p>Press <span>Edit website</span> button and go to Pages section in the left panel.
+              You will see the sctructure of your website.</p>
+            <button class="button flat-blue">Connect domain name</button>
+          </div>
+          <div class="notif">
+            <div class="close-ico"></div>
+            <div class="notif__ico">
+              <div class="ico earth-ico"></div>
+            </div>
+            <div class="middle-title">Make sure you have changed all texts
+              to your personal.
+            </div>
+            <p>Press <span>Edit website</span> button and go to Pages section in the left panel.
+              You will see the sctructure of your website.</p>
+            <button class="button flat-blue">Connect domain name</button>
+          </div>
+          <div class="notif">
+            <div class="close-ico"></div>
+            <div class="notif__ico">
+              <div class="ico alarm-ico"></div>
+            </div>
+            <div class="middle-title">Publish Burger Bar landing to the web!
+            </div>
+            <p>Press <span>Edit website</span> button and go to Pages section in the left panel.
+              You will see the sctructure of your website.</p>
+            <button class="button flat-blue">Connect domain name</button>
+          </div>
+          <div class="notif">
+            <div class="close-ico"></div>
+            <div class="notif__ico">
+              <div class="ico alarm-ico"></div>
+            </div>
+            <div class="middle-title">Create a unique design!<br>
+              Manage your blocks in web editor
+            </div>
+            <p>Press <span>Edit website</span> button and go to Pages section in the left panel.
+              You will see the sctructure of your website.</p>
+            <button class="button flat-blue">Connect domain name</button>
+          </div>
         </div>
-        <!--=========Current Plan Settings=======-->
-
-        <!--=========Google Analytics code =======-->
-        <div class="panel panel_big white form">
-          <form action="#0" class="analytics" id="analytics">
-            <div class="flex-grid between separator-b">
-              <div class="middle-title">
-                Google Analytics code
-                <span>(optional)</span>
-              </div>
-              <button class="button button__link">How to get a tracking code?</button>
-            </div>
-            <div class="flex-grid full">
-              <div class="row">
-                <div class="label">Insert Google Analytics tracking code or other custom JS code.</div>
-              </div>
-              <div class="row">
-                <textarea name="analitics-value" id="analitics-value" class="textarea" placeholder="Paste the code here"></textarea>
-              </div>
-              <div class="row">
-                <button class="button slate-blue sm">Save changes</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <!--=========Google Analytics code  =======-->
-
+        <section class="share-block">
+          <div class="middle-title text-center">Share Welium to friends</div>
+          <p>Share weblium in one of the following social networks and get 1 dollar on your bonus account.</p>
+        </section>
       </section>
     </section>
   </section>
@@ -255,6 +205,7 @@
     </div>
   </footer>
 </div>
+</body>
 <script src="libs/index.js"></script>
 <script src="js/build.js"></script>
 <script id="__bs_script__">//<![CDATA[

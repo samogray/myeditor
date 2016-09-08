@@ -1,3 +1,14 @@
+
+.invalid{
+  border: solid 1px #ec232d;
+  color:#ec232d;
+}
+
+.valid {
+  border: solid 1px #47c2ff;
+}
+
+
 .panel {
   font-size: 0.875rem;
   &.form {
@@ -19,6 +30,9 @@
 
     .middle-title {
       align-items: center;
+      +.button__link {
+        padding: 0;
+      }
     }
     .separator-b {
       padding: 12px 0;
@@ -32,6 +46,10 @@
       display: block;
       text-align: left;
       padding-left: 0;
+      &.inline {
+        display: inline-flex;
+        width:auto;
+      }
     }
 
     .label {
@@ -127,7 +145,7 @@
     padding: 10px 14px;
 
     &:focus {
-      border-color: #245c78;
+      border-color: #47c2ff;
     }
   }
 
@@ -184,4 +202,5 @@
     @include svg('mini-l.svg', '#ffffff', 13px, 9px, $mr: 10px);
   }
 }
+
 

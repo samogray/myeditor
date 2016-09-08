@@ -24,6 +24,13 @@
     border: solid 1px #8adc30;
   }
 
+
+  &.sky-blue {
+    background-color: $dodger-blue;
+    box-shadow: 0 1px 0 0 #2888e5;
+    border: solid 1px $sky-blue;
+  }
+
   &.blue {
     background-color: $dodger-blue;
     box-shadow: 0 1px 0 0 #1a6dbd;
@@ -40,10 +47,20 @@
     box-shadow: none;
   }
 
+  &.gradient-blue {
+    background-image: linear-gradient(to bottom, #547ecf, #3058af);
+  }
+
   &__link {
     color:black;
     padding: 0;
     border-radius: 0;
+    font-size:0.75rem;
+    &_blue-two {
+      color: #2766a4;
+      padding: 0;
+      text-decoration: underline;
+    }
 
     &_green {
       color: $apple-green;
@@ -67,5 +84,9 @@
     height: 37px;
     line-height: 37px;
     padding:0 19px;
+  }
+
+  &.full {
+    width: 100%;
   }
 }

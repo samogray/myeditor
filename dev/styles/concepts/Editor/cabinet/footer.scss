@@ -1,24 +1,24 @@
 /*=====icons======*/
 .logo-mini {
-  @include svg('mini-logo-ico.svg', '#4d4d4d', 32px, 21px, $mr: 0);
+  @include svg('mini-logo-ico.svg', '#8e99a8', 32px, 21px, $mr: 0);
 }
 
 .facebook-ico {
   width: 25px;
   height: 25px;
-  @include svg('facebook-ico.svg', '#4d4d4d', 25px, 25px, $mr: 0);
+  @include svg('facebook.svg', '#8e99a8', 25px, 25px, $mr: 0);
 }
 
 .inst-ico {
   width: 26px;
   height: 26px;
-  @include svg('Instagram-ico.svg', '#4d4d4d', 26px, 26px, $mr: 0);
+  @include svg('Instagram.svg', '#8e99a8', 26px, 26px, $mr: 0);
 }
 
 .youtube-ico {
   width: 34px;
   height: 25px;
-  @include svg('youtube-logos-ico.svg', '#4d4d4d', 34px, 25px, $mr: 0);
+  @include svg('youtube-logos.svg', '#8e99a8', 34px, 25px, $mr: 0);
 }
 
 /*=====icons======*/
