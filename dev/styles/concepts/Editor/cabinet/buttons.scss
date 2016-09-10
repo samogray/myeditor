@@ -22,6 +22,11 @@
     background-color: $apple-green;
     box-shadow: 0 1px 0 0 #6fbb1c;
     border: solid 1px #8adc30;
+
+    &.lite-border {
+      box-shadow: 0 1px 0 0 #6fbb1c;
+      border-radius: 8px;
+    }
   }
 
 
@@ -69,6 +74,10 @@
     &_blue {
       color: $dodger-blue;
     }
+
+    &.grey {
+      color: #9e9e9e;
+    }
   }
 
   &.disabled {
@@ -89,4 +98,12 @@
   &.full {
     width: 100%;
   }
+
+  &.lg {
+    height: 47px;
+    line-height: 47px;
+    font-size:1.125rem;
+    min-width: 248px;
+  }
+
 }

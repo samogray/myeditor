@@ -7,6 +7,35 @@
 .earth-ico {
   @include svg('earth-ico.svg', '#d6d6d6', 41px, 41px, $mr: 0);
 }
+
+.facebook-3 {
+  @include svg('facebook-3.svg', '#d6d6d6', 41px, 41px, $mr: 10px);
+}
+.inst-3 {
+  @include svg('instagram-3.svg', '#d6d6d6', 41px, 41px, $mr: 10px);
+
+}
+
+.twit-3 {
+  @include svg('twitter-3.svg', '#d6d6d6', 41px, 41px, $mr: 10px);
+
+}
+
+.google-3 {
+  @include svg('google-plus-3.svg', '#d6d6d6', 41px, 41px, $mr: 10px);
+
+}
+
+.link-3 {
+  @include svg('linkedin-3.svg', '#d6d6d6', 41px, 41px, $mr: 10px);
+
+}
+
+.pint-3 {
+  @include svg('pinterest-3.svg', '#d6d6d6', 41px, 41px, $mr: 10px);
+
+}
+
 /*====ico====*/
 
 .text-center {
@@ -162,6 +191,38 @@
 .suggestions {
   margin:69px 0  80px;
    .lg-title{
-     margin-bottom:29px;
+     margin-bottom:30px;
    }
+}
+
+.menu {
+  &.share-btn {
+    margin: 40px auto;
+
+    li {
+      margin-bottom: 20px;
+    }
+    .small-title {
+      min-width: 160px;
+    }
+  }
+}
+
+.vcenter {
+  padding: 0;
+}
+
+.main {
+  margin-top: 40px;
+}
+
+.filter-block {
+  margin-top: 24px;
+  margin-bottom: 67px;
+  .text-up {
+    margin-right: 30px;
+    font-size:0.75rem;
+    font-weight: bold;
+    color: $greyish-brown;
+  }
 }

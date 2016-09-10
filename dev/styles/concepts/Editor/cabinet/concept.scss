@@ -1,0 +1,129 @@
+/*======ico=======*/
+.mac-ico {
+  @include svg('macbook.svg', '#d6d6d6', 344px, 200px, $mr: 0);
+
+  &.lg {
+    @include svg('macbook-white.svg', '#d6d6d6', 100%, 485px, $mr: 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before {
+      margin: 0 auto;
+    }
+  }
+}
+
+.iphone-ico {
+  @include svg('iphone.svg', '#ffffff', 75.1px, 158.2px);
+  top: 51px;
+  position: absolute;
+  right: -46px;
+
+  img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+/*======ico=======*/
+
+.concept {
+  position: relative;
+  cursor: pointer;
+  max-width: 100%;
+  margin-bottom: 75px;
+  transition: all .1s ease-in-out;
+
+  &:hover .shadow {
+    opacity: 1;
+    box-shadow: 0px 2px 38px 6px rgba(36, 92, 120, 0.3);
+  }
+
+  &__preview {
+  position: relative;
+
+  }
+
+  &__view {
+    width: 257.6px;
+    height: 162.4px;
+    border-radius: 2px;
+    position: absolute;
+    top: 16px;
+    left: 45px;
+
+    img {
+      max-width: 100%;
+      height: 100%;
+      border-radius: 2px;
+    }
+
+    &.lg {
+      width: 531.3px;
+      height: 330.1px;
+    }
+  }
+
+  &__mobile {
+    position: absolute;
+    width: 68px;
+    height: 120.4px;
+    top: 19px;
+    left: 4px;
+    background-color: #343434;
+    img {
+      border-radius: 0;
+    }
+  }
+}
+
+.shadow {
+  opacity: 0;
+  position: absolute;
+  bottom: 8px;
+  width: 290px;
+  z-index: -1;
+  /* height: 1px; */
+  left: 50%;
+  margin-left: -166px;
+  box-shadow: 0px 2px 28px 6px rgba(36, 92, 120, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.banner-concept {
+  p {
+    font-size: 13px;
+    line-height: 2;
+    text-align: center;
+    color: #494949;
+  }
+  .btn-group {
+    margin-top: 35px;
+    button {
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .iphone-img {
+    position: absolute;
+    top: 120px;
+    right: -25px;
+    width: 33%;
+  }
+}
+
+.test {
+  width: 100%;
+  height:509px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background: url("#{$img-path}mac-white.svg") no-repeat;
+  position: relative;
+  img {
+    max-width: 531px;
+    min-height:332.1px;
+  }
+}

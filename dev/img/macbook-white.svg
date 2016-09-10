@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg  viewBox="0 0 800 508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Macbook Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMorphology radius="4.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="9" dy="9" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251415308 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="531.258584" height="332.060032" rx="2"></rect>
+    </defs>
+    <g id="MVP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MVP:-concept-preview" transform="translate(-373.000000, -100.000000)">
+            <g id="Group-6-Copy-2" filter="url(#filter-1)" transform="translate(410.000000, 141.000000)">
+                <g id="Macbook-Copy-2">
+                    <g id="Body">
+                        <rect id="Rectangle-2" fill="#FFFFFF" transform="translate(354.172389, 196.730821) rotate(-90.000000) translate(-354.172389, -196.730821) " x="157.532927" y="-93.0837959" width="393.278924" height="579.629234" rx="13"></rect>
+                        <g id="Group" transform="translate(351.220953, 14.282281)">
+                            <path d="M3.32036615,4.79642269 C2.30322732,4.79642269 1.47571829,3.9688553 1.47571829,2.95164473 C1.47571829,1.93443417 2.30322732,1.10686677 3.32036615,1.10686677 C4.33750498,1.10686677 5.16501401,1.93443417 5.16501401,2.95164473 C5.16501401,3.9688553 4.33750498,4.79642269 3.32036615,4.79642269" id="Fill-9" fill="#BAC1C4"></path>
+                            <path d="M2.95143658,0 C1.32393012,0 0,1.32402349 0,2.95164473 C0,4.57926597 1.32393012,5.90328946 2.95143658,5.90328946 C4.57894303,5.90328946 5.90287315,4.57926597 5.90287315,2.95164473 C5.90287315,1.32402349 4.57894303,0 2.95143658,0 M2.95143658,1.68665413 C3.65008378,1.68665413 4.21633797,2.25294826 4.21633797,2.95164473 C4.21633797,3.6503412 3.65008378,4.21663533 2.95143658,4.21663533 C2.25278937,4.21663533 1.68653519,3.6503412 1.68653519,2.95164473 C1.68653519,2.25294826 2.25278937,1.68665413 2.95143658,1.68665413" id="Fill-11" fill="#D0D8DB"></path>
+                        </g>
+                        <rect id="Rectangle-3" fill="#DEE3E6" x="88.1741677" y="31.2542384" width="532.734302" height="333.535855" rx="2"></rect>
+                        <g id="Group-2" transform="translate(0.000000, 394.306540)">
+                            <path d="M2.36814742,0.00060092977 C1.26400989,7.36578379e-05 0.368929572,0.887446568 0.368929572,1.99635975 L0.368929572,4.84002651 C0.368929572,4.84002651 19.9214763,11.9798937 89.2809564,12.9130919 C158.827063,12.8006758 594.71447,12.9130919 594.71447,12.9130919 C594.71447,12.9130919 679.785162,13.3865369 708.188415,4.54457379 L708.188415,2.34254928 C708.188415,1.23527933 707.286613,0.337229033 706.189198,0.336704971 L2.36814742,0.00060092977 Z" id="Path-37" stroke="#CBD2D4" stroke-width="3"></path>
+                            <path d="M708.713708,4.4274671 C708.713708,4.4274671 701.41471,13.2824013 549.908742,12.9661536 C499.964033,12.861901 428.405192,12.8599114 354.910248,12.9040912 C280.548013,12.859905 208.833172,12.8617265 158.80488,12.9661536 C7.29899426,13.2824013 0,4.4274671 0,4.4274671 L354.541319,4.4274671 L708.713708,4.4274671 Z" id="Combined-Shape" fill="#CCD2D5"></path>
+                            <rect id="Rectangle-5" fill="#FFFFFF" x="0" y="0" width="708.713708" height="4.4274671" rx="2"></rect>
+                        </g>
+                    </g>
+                    <g id="Screen" transform="translate(88.912027, 31.992150)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" xlink:href="#path-2"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

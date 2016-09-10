@@ -116,6 +116,10 @@
   font-size: 0.75rem;
   font-weight: bold;
   color: $light-navy-blue;
+
+  &:hover {
+    color: $light-navy-blue;
+  }
 }
 
 form {
@@ -162,4 +166,14 @@ form {
       background-color:$silver;
     }
   }
+}
+
+.up-text {
+  text-transform: uppercase;
+}
+
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
 }

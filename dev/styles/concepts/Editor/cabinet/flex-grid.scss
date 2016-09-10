@@ -30,6 +30,7 @@ footer{
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
+    margin-top:0;
   }
 }
 
@@ -38,7 +39,7 @@ footer{
   flex-wrap: wrap;
   width: 100%;
 
-  .col-3 {
+  .col-4 {
     flex-basis: 33.33333333%;
   }
   .col-2 {
@@ -47,7 +48,7 @@ footer{
   .col-10 {
     flex-basis: 80%;
   }
-  .col-4 {
+  .col-3 {
     flex-basis: 25%;
   }
 
@@ -57,6 +58,11 @@ footer{
 
   .col-8 {
     flex-basis: 66.66666667%;
+  }
+
+  .col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
   }
 
 }

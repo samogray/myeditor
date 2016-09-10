@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="804px" height="509px" viewBox="0 0 804 509" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 25</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMorphology radius="4.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="9" dy="9" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251415308 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="534.255811" height="332.060032" rx="2"></rect>
+    </defs>
+    <g id="MVP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MVP:-concept-preview" transform="translate(-373.000000, -99.000000)">
+            <g id="Group-6-Copy-2" filter="url(#filter-1)" transform="translate(410.000000, 139.000000)">
+                <g id="Group-25">
+                    <g id="Macbook-Copy-2">
+                        <g id="Body">
+                            <rect id="Rectangle-2" fill="#FFFFFF" transform="translate(356.170541, 198.730821) rotate(-90.000000) translate(-356.170541, -198.730821) " x="158.421688" y="-91.0837959" width="395.497705" height="579.629234" rx="13"></rect>
+                            <g id="Group" transform="translate(353.202453, 16.282281)">
+                                <path d="M3.33909882,4.79642269 C2.31622155,4.79642269 1.48404392,3.9688553 1.48404392,2.95164473 C1.48404392,1.93443417 2.31622155,1.10686677 3.33909882,1.10686677 C4.36197609,1.10686677 5.19415372,1.93443417 5.19415372,2.95164473 C5.19415372,3.9688553 4.36197609,4.79642269 3.33909882,4.79642269" id="Fill-9" fill="#BAC1C4"></path>
+                                <path d="M2.96808784,0 C1.3313994,0 0,1.32402349 0,2.95164473 C0,4.57926597 1.3313994,5.90328946 2.96808784,5.90328946 C4.60477628,5.90328946 5.93617568,4.57926597 5.93617568,2.95164473 C5.93617568,1.32402349 4.60477628,0 2.96808784,0 M2.96808784,1.68665413 C3.67067663,1.68665413 4.24012549,2.25294826 4.24012549,2.95164473 C4.24012549,3.6503412 3.67067663,4.21663533 2.96808784,4.21663533 C2.26549905,4.21663533 1.69605019,3.6503412 1.69605019,2.95164473 C1.69605019,2.25294826 2.26549905,1.68665413 2.96808784,1.68665413" id="Fill-11" fill="#D0D8DB"></path>
+                            </g>
+                            <rect id="Rectangle-3" fill="#DEE3E6" x="88.6716242" y="33.2542384" width="535.739855" height="333.535855" rx="2"></rect>
+                            <g id="Group-2" transform="translate(0.000000, 396.306540)">
+                                <path d="M2.36587414,0.000593505875 C1.26414164,7.03340469e-05 0.37101098,0.887446568 0.37101098,1.99635975 L0.37101098,4.84002651 C0.37101098,4.84002651 20.0338683,11.9798937 89.7846572,12.9130919 C159.723125,12.8006758 598.0697,12.9130919 598.0697,12.9130919 C598.0697,12.9130919 683.620339,13.3865369 712.183837,4.54457379 L712.183837,2.34254928 C712.183837,1.23527933 711.298013,0.337239037 710.188974,0.336712395 L2.36587414,0.000593505875 Z" id="Path-37" stroke="#CBD2D4" stroke-width="3"></path>
+                                <path d="M712.712093,4.4274671 C712.712093,4.4274671 705.371915,13.2824013 553.011189,12.9661536 C502.784705,12.861901 430.822146,12.8599114 356.912563,12.9040912 C282.130794,12.859905 210.011356,12.8617265 159.700817,12.9661536 C7.34017336,13.2824013 0,4.4274671 0,4.4274671 L356.541552,4.4274671 L712.712093,4.4274671 Z" id="Combined-Shape" fill="#CCD2D5"></path>
+                                <rect id="Rectangle-5" fill="#FFFFFF" x="0" y="0" width="712.712093" height="4.4274671" rx="2"></rect>
+                            </g>
+                        </g>
+                        <g id="Screen" transform="translate(89.413646, 33.992150)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" xlink:href="#path-2"></use>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-12" fill="#E1E1E1" x="319.794076" y="396" width="94.5303244" height="5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
